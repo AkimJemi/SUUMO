@@ -1,0 +1,6 @@
+﻿# A5:SQL Mk-2 Database list
+
+[DatabaseList]
+localhost/mysql=__ConnectionType=Internal;ProviderName=MySQL;SavePassword=True;UseUnicodeMetaData=True;ServerName=localhost;Port=3306;Database=mysql;UserName=root;UseUnicode=True;Charset=utf8;EnableSSL=False;Password=
+localhost/postgres=__ConnectionType=Internal;ProviderName=PostgreSQL;SavePassword=True;ServerName=localhost;Port=5432;Database=postgres;UserName=postgres;DBType=PostgreSQL;ProtocolVersion=30;SSLMode=Disable;Password=
+suumo/akim=__ConnectionType=Internal;ProviderName=PostgreSQL;SavePassword=True;ServerName=localhost;Port=5432;Database=suumo;UserName=akim;Password=;DBType=PostgreSQL;ProtocolVersion=30;SSLMode=Disable
