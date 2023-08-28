@@ -12,6 +12,12 @@ public class practice {
 		Matcher matcher = pattern.matcher("/HOKKAIDO/");
 		System.out.println(matcher.find());
 		String area = AreaInfo.value(matcher.group(1));
+		new practice001();
 		System.out.println(area);
+		}
+
+	public void test(String test) {
+
+		System.out.println("practice.test()" + test);
 	}
 }

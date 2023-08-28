@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>【SUUMO】${areaValue}の不動産情報・不動産売買・住宅情報</title>
+<title>【SUUMO】${areaValue }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
 </head>
 <body>
 	<div>
@@ -12,7 +12,10 @@
 		<div>
 			<div>マンション・アパート・一戸建て</div>
 			<div>
-				<a href="/chintai/${areaKey}/">賃貸物件</a>
+				<a href="/chintai/${areaKey}/ensen">沿線</a>
+			</div>
+			<div>
+				<a href="/chintai/${areaKey}/city">エリア</a>
 			</div>
 		</div>
 	</div>

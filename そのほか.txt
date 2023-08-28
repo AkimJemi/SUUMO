@@ -1,0 +1,12 @@
+[AREA]
+HOKKAIDO
+TOHOKU
+KOSHINETSU
+KANTO
+TOKAI
+CHUGOKU
+KANSAI
+SHIKOKU
+KYUSHU
+
+hokkaido tohoku koshinetsu kanto tokai chugoku kansai shikoku kyush

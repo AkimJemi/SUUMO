@@ -9,23 +9,53 @@ public class SuumoUtil {
 
 	public static final String AREA_VALUE = "areaValue";
 	public static final String AREA_KEY = "areaKey";
-	private static Pattern areaPattern = Pattern.compile("[/](.*?)[/]");
+	public static final String CHINTAI_VALUE = "chintaiValue";
+	public static final String CHINTAI_KEY = "chintaiKey";
+	private static Pattern areaPattern = Pattern.compile("(.*?)[/]+");
+	private static Pattern chintaiPattern = Pattern.compile("[/](.*?)[/]");
 
 	public static String getAreaValue(String contextPath) {
-		Matcher matcher = areaPattern.matcher(contextPath.toUpperCase());
-		if (matcher.find()) {
-			String area = AreaInfo.value(matcher.group(1));
-			return area;
+		String[] areaArray = contextPath.split("/");
+		String result = null;
+		for (String area : areaArray) {
+			if (area != "") {
+				result = AreaInfo.value(area);
+				if (result != null) {
+					return result;
+				}
+			}
 		}
 		return SuumoMessage.NOTFOUND;
 	}
 
 	public static String getAreaKey(String contextPath) {
-		Matcher matcher = areaPattern.matcher(contextPath.toUpperCase());
-		if (matcher.find()) {
-			return matcher.group(1).toLowerCase();
+		String[] areaArray = contextPath.split("/");
+		String result = null;
+		for (String area : areaArray) {
+			if (area != "") {
+				result = AreaInfo.key(area);
+				if (result != null) {
+					return result;
+				}
+			}
 		}
 		return SuumoMessage.NOTFOUND;
 	}
 
+	public static String getChintaiValue(String contextPath) {
+		Matcher matcher = chintaiPattern.matcher(contextPath);
+		if (matcher.find()) {
+			String area = AreaInfo.value(matcher.group(0));
+			return area;
+		}
+		return SuumoMessage.NOTFOUND;
+	}
+
+	public static String getChintaiKey(String contextPath) {
+		Matcher matcher = chintaiPattern.matcher(contextPath);
+		if (matcher.find()) {
+			return matcher.group(1);
+		}
+		return SuumoMessage.NOTFOUND;
+	}
 }
