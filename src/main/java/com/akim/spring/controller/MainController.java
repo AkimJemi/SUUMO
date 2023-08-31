@@ -7,8 +7,8 @@ import com.akim.spring.util.SuumoUrl;
 
 @Controller
 public class MainController {
-	@GetMapping("")
-	public String main() {
-		return SuumoUrl.MAIN_PAGE;
-	}
+    @GetMapping("")
+    public String main() {
+        return SuumoUrl.MAIN_PAGE;
+    }
 }
