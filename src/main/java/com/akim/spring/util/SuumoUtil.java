@@ -7,11 +7,7 @@ import com.akim.spring.util.SuumoEnum.AreaInfo;
 
 public class SuumoUtil {
 
-    public static final String AREA_VALUE = "areaValue";
-    public static final String AREA_KEY = "areaKey";
-    public static final String CHINTAI_VALUE = "chintaiValue";
-    public static final String CHINTAI_KEY = "chintaiKey";
-    private static Pattern areaPattern = Pattern.compile("(.*?)[/]+");
+//    private static Pattern areaPattern = Pattern.compile("(.*?)[/]+");
     private static Pattern chintaiPattern = Pattern.compile("[/](.*?)[/]");
 
     public static String getAreaValue(String contextPath) {

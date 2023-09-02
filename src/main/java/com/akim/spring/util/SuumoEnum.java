@@ -6,20 +6,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.springframework.util.StringUtils;
+
 public final class SuumoEnum {
 
     // AkimWorkingon
     public static enum AreaInfo {
 
-        HOKKAIDO("hokkaido", "北海道"), 
-        TOHOKU("tohoku", "東北"), 
-        KOSHINETSU("koshinetsu", "甲信越・北陸"),
-        KANTO("kanto", "関西"), 
-        TOKAI("tokai", "東海"), 
-        CHUGOKU("chugoku", "中国"),
-        KANSAI("kansai", "関東"), 
-        SHIKOKU("shikoku", "四国"), 
-        KYUSHU("kyushu", "九州・沖縄");
+        HOKKAIDO("hokkaido", "北海道"), TOHOKU("tohoku", "東北"), KOSHINETSU("koshinetsu", "甲信越・北陸"),
+        KANTO("kanto", "関西"), TOKAI("tokai", "東海"), CHUGOKU("chugoku", "中国"),
+        KANSAI("kansai", "関東"), SHIKOKU("shikoku", "四国"), KYUSHU("kyushu", "九州・沖縄");
 
         private String key;
         private String value;
@@ -118,7 +114,7 @@ public final class SuumoEnum {
         map.put("ibaraki", "茨城県");
         map.put("tochigi", "栃木県");
         map.put("gumma", "群馬県");
-        
+
         kantoList = map;
     }
     static {
@@ -169,7 +165,7 @@ public final class SuumoEnum {
         kyushuList = map;
     }
 
-    public static enum ChintaiInfo {
+    public static enum PrefectureInfo {
 
         HOKKAIDO(AreaInfo.HOKKAIDO.key, hokkaidoList), TOHOKU(AreaInfo.TOHOKU.key, tohokuList),
         KOSHINETSU(AreaInfo.KOSHINETSU.key, koshinetsuList), KANTO(AreaInfo.KANTO.key, kantoList),
@@ -180,7 +176,7 @@ public final class SuumoEnum {
         private String key;
         private Map<String, String> value;
 
-        private ChintaiInfo(String key, Map<String, String> value) {
+        private PrefectureInfo(String key, Map<String, String> value) {
             this.key = key;
             this.value = value;
         }
@@ -194,7 +190,7 @@ public final class SuumoEnum {
         }
 
         public static Map<String, String> value(String key) {
-            for (ChintaiInfo value : values()) {
+            for (PrefectureInfo value : values()) {
                 if (key.equals(value.getKey())) {
                     return value.getValue();
                 }
@@ -204,7 +200,7 @@ public final class SuumoEnum {
 
         // コードNOに一致するジャンプ情報を返却するためのメソッド
         public static String key(String key) {
-            for (ChintaiInfo value : values()) {
+            for (PrefectureInfo value : values()) {
                 if (key.equals(value.getKey())) {
                     return value.getKey();
                 }
@@ -214,27 +210,35 @@ public final class SuumoEnum {
 
         public static Map<String, Map<String, String>> allValues() {
             Map<String, Map<String, String>> area = new LinkedHashMap<>();
-            for (ChintaiInfo chintaiInfo : values()) {
+            for (PrefectureInfo chintaiInfo : values()) {
                 area.put(chintaiInfo.key, chintaiInfo.value);
             }
             return area;
         }
 
-        public static List<Map<String, String>> getPrefecturesByWard(String ward) {
-            List<Map<String, String>> list = new ArrayList<>();
+        public static Map<String, String> getPrefectureMapByWard(String ward) {
             Map<String, String> map = new LinkedHashMap<>();
-            SuumoError.resultCheckOrError(ward);
-            for (ChintaiInfo chintaiInfo : values()) {
+            for (PrefectureInfo chintaiInfo : values()) {
                 if (chintaiInfo.key.equals(ward)) {
                     for (Entry<String, String> entry : chintaiInfo.value.entrySet()) {
                         map.put(entry.getKey(), entry.getValue());
                     }
-                    list.add(map);
                     break;
                 }
             }
-            SuumoError.resultCheckOrError(ward);
-            return list;
+            return map;
+        }
+
+        public static Map<String, String> getPrefectureByPrefectureMap(String prefecture,
+                Map<String, String> prefectureMap) {
+            for (Entry<String, String> entry : prefectureMap.entrySet()) {
+                if (StringUtils.pathEquals(entry.getKey(), prefecture)) {
+                    Map<String, String> map = new LinkedHashMap<>();
+                    map.put(entry.getKey(), entry.getValue());
+                    return map;
+                }
+            }
+            return null;
         }
     }
 }

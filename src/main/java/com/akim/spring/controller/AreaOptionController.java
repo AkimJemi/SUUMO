@@ -10,17 +10,21 @@ import com.akim.spring.util.SuumoUrl;
 import com.akim.spring.util.SuumoUtil;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 @Controller
-public class AreaMapController extends SuumoCommonController {
+public class AreaOptionController extends SuumoCommonController {
 
     private void areaMapCommon(ModelAndView mv, HttpServletRequest rq, Method method) {
-        System.out.println("AreaMapController.areaMapCommon()");
-        System.out.printf("AreaMapController.%s()\n", method.getName());
         String servletPath = rq.getServletPath();
-        mv.addObject(SuumoUtil.AREA_VALUE, SuumoUtil.getAreaValue(servletPath));
-        mv.addObject(SuumoUtil.AREA_KEY, SuumoUtil.getAreaKey(servletPath));
-        mv.setViewName(SuumoUrl.AREA_OPTION);
+        String areaKey = SuumoUtil.getAreaKey(servletPath);
+        String areaValue = SuumoUtil.getAreaValue(servletPath);
+        mv.addObject(AREA_KEY, areaKey);
+        mv.addObject(AREA_VALUE, areaValue);
+        HttpSession session = rq.getSession();
+        session.setAttribute(AREA_KEY, areaKey);
+        session.setAttribute(AREA_VALUE, areaValue);
+        mv.setViewName(AREA_OPTION);
     }
 
     @RequestMapping("/hokkaido/")

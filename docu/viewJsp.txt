@@ -1,0 +1,10 @@
+[view]
+areaChoice
+areaOption
+chintaiPrefectureChoice
+chintaiEnsenChoice
+chintaiCityChoice
+shinchikuPrefectureChoice
+shinchikuEnsenChoice
+shinchikuCityChoice
+
