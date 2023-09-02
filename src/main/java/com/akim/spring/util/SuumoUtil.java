@@ -1,5 +1,6 @@
 package com.akim.spring.util;
 
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -53,5 +54,9 @@ public class SuumoUtil {
             return matcher.group(1);
         }
         return SuumoMessage.NOTFOUND;
+    }
+
+    public static String getPreFectureValueByPrefectureInfo(Map<String, String> prefectureInfo) {
+        return prefectureInfo.entrySet().stream().findFirst().map(Map.Entry::getValue).orElse(null);
     }
 }

@@ -15,10 +15,11 @@ public class SuumoCommonController {
     public static final String PREFECTURE_VALUE = "prefectureValue";
     public static final String PREFECTURE_LIST = "prefectureList";
     public static final String PREFECTURE_INFO = "prefectureInfo";
+    public static final String TRANSPORTATION_INFO = "transportationInfo";
 
     // Path
-    public static final String AREA_CHOICE = "/choice/areaChoice";
-    public static final String AREA_OPTION = "/option/areaOption";
+    public static final String AREA_CHOICE = "/choice/area/areaChoice";
+    public static final String AREA_OPTION = "/option/area/areaOption";
     public static final String CHINTAI_PREFECTURE_CHOICE = "/choice/chintai/chintaiPrefectureChoice";
     public static final String CHINTAI_ENSEN_CHOICE = "/choice/chintai/chintaiEnsenChoice";
     public static final String CHINTAI_CITY_CHOICE = "/choice/chintai/chintaiCityChoice";
