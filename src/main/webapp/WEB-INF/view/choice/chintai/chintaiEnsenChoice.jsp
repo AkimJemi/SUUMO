@@ -40,29 +40,52 @@
                 <span class="fr_search-icon fr_search-icon--checkbox"></span><span
                     class="selectareatitle-b">沿線にチェック</span>をいれてください（複数選択できます）
             </div>
-            <form action="">
-                <c:forEach items="${transportationInfo}" var="metro">
-                    <div class="areabox-middle">
-                        <div class="areabox-middle-box-header">
-                            <h4>${metro.getKey()}</h4>
+            <form name="chintai_kensaku_FR301FB003ActionForm"
+                id="js-gotoEkiForm" method="post"
+                action="/jj/chintai/kensaku/FR301FB003/ekiNext/">
+                <input type="hidden" name="ar" value="030"><input
+                    type="hidden" name="ra" value="013"><input
+                    type="hidden" name="bs" value="040"><input
+                    type="hidden" name="pageId" value="FR301FB003"><input
+                    type="hidden" name="fw2" value=""><input
+                    type="hidden" name="cb" value=""><input
+                    type="hidden" name="ct" value=""><input
+                    type="hidden" name="mb" value=""><input
+                    type="hidden" name="mt" value=""><input
+                    type="hidden" name="et" value=""><input
+                    type="hidden" name="cn" value=""><input
+                    type="hidden" name="shkr1" value=""><input
+                    type="hidden" name="shkr2" value=""><input
+                    type="hidden" name="shkr3" value=""><input
+                    type="hidden" name="shkr4" value="">
+                <div class="l-searchtable l-searchtable--01">
+
+                    <c:forEach items="${transportationInfo}" var="metro">
+                        <div class="areabox-middle">
+                            <div class="areabox-middle-box-header">
+                                <h4>${metro.getKey()}</h4>
+                            </div>
+                            <div class="areabox-middle-box-bottom">
+                                <c:forEach items="${metro.getValue()}"
+                                    var="subMetro">
+                                    <div>
+                                        <input type="checkbox" name="rn"
+                                            value="${subMetro.no}">${subMetro.railway}</div>
+                                </c:forEach>
+                            </div>
                         </div>
-                        <div class="areabox-middle-box-bottom">
-                            <c:forEach items="${metro.getValue()}"
-                                var="subMetro">
-                                <div>
-                                    <input type="checkbox" name="rn"
-                                        value="${subMetro.no}">${subMetro.railway}</div>
-                            </c:forEach>
-                        </div>
+                    </c:forEach>
+                    <div class="areabox-bottom">
+                        <a href="javascript:void(0);" title="絞り込む"
+                            id="js-gotoEkiBtn" class="ui-btn--more"><span
+                            class="ui-btn ui-btn--more-inner squeeze_action_btn squeeze_action_btn--large">チェックした沿線の駅を絞り込む</span></a>
                     </div>
-                </c:forEach>
-                <div class="areabox-bottom">
-                    <a href="javascript:void(0);" title="絞り込む"
-                        id="js-gotoEkiBtn" class="ui-btn--more"><span
-                        class="ui-btn ui-btn--more-inner squeeze_action_btn squeeze_action_btn--large">チェックした沿線の駅を絞り込む</span></a>
-                </div>
             </form>
         </div>
     </div>
+<script type="text/javascript">
+
+
+</script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+COPY transportation_info.area_prefecture FROM 'C:/work/sts-4.15.3.RELEASE-workspace/Suumo/docu/node/metro/csv/transportation_info.area_prefecture.csv';

@@ -1,0 +1,25 @@
+// $x(`//th[@class="searchtable-title"]`) // (12)
+// $x(`//th[@class="searchtable-title"]/input`)[0].id        // 'rn0573'
+// $x(`//th[@class="searchtable-title"]/label`)[0].innerHTML // 'ＪＲ山手線'
+// $x(`( //th[@class="searchtable-title"] )[1]/../td//li/input`)[0].value          // 000525620
+// $x(`( //th[@class="searchtable-title"] )[1]/../td//li/label/span`)[0].innerHTML // '東京'
+
+let str = "";
+for (const el of $x(`//th[@class="searchtable-title"]`)) {
+  // rn0573 ＪＲ山手線
+  //
+  // |ek |駅
+  // |--- |---
+  let s = `\n${$x(`./input`, el)[0].id} ${$x(`./label`, el)[0].innerHTML}\n\n|ek |駅\n|--- |---\n`;
+  // console.log(s);
+  str += s;
+
+  for (const el2 of $x(`../td//li`, el)) {
+    // |ek000525620 |東京
+    // debugger;
+    s = `|${$x(`./input`, el2)[0].value} |${$x(`./label/span`, el2)[0].innerHTML}\n`;
+    // console.log(s);
+    str += s;
+  }
+}
+copy(str);

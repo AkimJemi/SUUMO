@@ -1,0 +1,66 @@
+https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=013
+input[rn=]
+https://suumo.jp/jj/chintai/kensaku/FR301FB004/?ar=030&bs=040&ra=011&rn=0126&rn=0405&rn=0430&rn=0370&rn=0380&rn=0390
+FR301FB004
+
+
+input[ek=]
+
+
+
+HOKKAIDO
+　https://suumo.jp/chintai/hokkaido_/ensen/
+TOHOKU
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=020&bs=040&ra=002
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=020&bs=040&ra=003
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=020&bs=040&ra=004
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=020&bs=040&ra=005
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=020&bs=040&ra=006
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=020&bs=040&ra=007
+KOSHINETSU
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=040&bs=040&ra=015
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=040&bs=040&ra=016
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=040&bs=040&ra=017
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=040&bs=040&ra=018
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=040&bs=040&ra=019
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=040&bs=040&ra=020
+KANTO
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=008
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=009
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=010
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=011
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=012
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=013
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=030&bs=040&ra=014
+TOKAI
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=050&bs=040&ra=021
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=050&bs=040&ra=022
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=050&bs=040&ra=023
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=050&bs=040&ra=024
+CHUGOKU
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=080&bs=040&ra=031
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=080&bs=040&ra=032
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=080&bs=040&ra=033
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=080&bs=040&ra=034
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=080&bs=040&ra=035
+KANSAI
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=060&bs=040&ra=025
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=060&bs=040&ra=026
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=060&bs=040&ra=027
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=060&bs=040&ra=028
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=060&bs=040&ra=029
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=060&bs=040&ra=030
+SHIKOKU
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=070&bs=040&ra=036
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=070&bs=040&ra=037
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=070&bs=040&ra=038
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=070&bs=040&ra=039　
+KYUSHU
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=040
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=041
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=042
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=043
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=044
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=045
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=046
+　https://suumo.jp/jj/chintai/kensaku/FR301FB003/?ar=090&bs=040&ra=047

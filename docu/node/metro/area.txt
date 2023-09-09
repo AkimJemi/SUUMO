@@ -1,0 +1,12 @@
+　area
+area_no
+area_name
+　prefecture
+prefecture_no
+prefecture_name
+　railway
+railway_company_no
+railway_company_name
+　railway
+railway_no
+railway_name
