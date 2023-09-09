@@ -8,7 +8,7 @@ import com.akim.spring.dao.TransportationInfoDAO;
 import com.akim.spring.service.TransportationInfoService;
 
 @Controller
-public class AreaChoiceController extends SuumoCommonController {
+public class AreaChoiceController001 extends SuumoCommonController {
 
     @Autowired
     TransportationInfoService service;
@@ -18,6 +18,7 @@ public class AreaChoiceController extends SuumoCommonController {
 
     @GetMapping("")
     public String main() {
+        System.out.println("AreaChoiceController001.main()");
         return AREA_CHOICE;
     }
 }

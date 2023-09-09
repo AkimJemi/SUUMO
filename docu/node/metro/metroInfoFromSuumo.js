@@ -79,7 +79,8 @@ function run() {
     csvExport(db_schema, "metro", metro_csv_list.join("\n"));
     csvExport(db_schema, "area_prefecture", area_prefecture_list.join("\n"));
     setTimeout(() => {
-      require("./postgresQueryExecute.js");
+      var postgresQueryExecute = "./postgresQueryExecute.js";
+      require(postgresQueryExecute);
     }, 3000);
   }, 5000);
 }

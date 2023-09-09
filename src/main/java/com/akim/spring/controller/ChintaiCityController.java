@@ -17,6 +17,7 @@ public class ChintaiCityController extends SuumoCommonController {
 
     @RequestMapping(value = "/chintai/*/city/", method = RequestMethod.GET)
     public ModelAndView common(ModelAndView mv, HttpServletRequest rq) {
+        System.out.println("ChintaiCityController.common()");
         String prefecture = rq.getServletPath().split("/")[2];
         HttpSession session = rq.getSession();
         Map<String, String> prefectureInfo = PrefectureInfo.getPrefectureByPrefectureMap(prefecture,

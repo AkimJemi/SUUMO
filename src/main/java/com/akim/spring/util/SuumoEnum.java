@@ -13,9 +13,15 @@ public final class SuumoEnum {
     // AkimWorkingon
     public static enum AreaInfo {
 
-        HOKKAIDO("hokkaido", "北海道"), TOHOKU("tohoku", "東北"), KOSHINETSU("koshinetsu", "甲信越・北陸"),
-        KANTO("kanto", "関西"), TOKAI("tokai", "東海"), CHUGOKU("chugoku", "中国"),
-        KANSAI("kansai", "関東"), SHIKOKU("shikoku", "四国"), KYUSHU("kyushu", "九州・沖縄");
+        HOKKAIDO("hokkaido", "北海道"),
+        TOHOKU("tohoku", "東北"),
+        KOSHINETSU("koshinetsu", "甲信越・北陸"),
+        KANTO("kanto", "関東"),
+        TOKAI("tokai", "東海"),
+        CHUGOKU("chugoku", "中国"),
+        KANSAI("kansai", "関西"),
+        SHIKOKU("shikoku", "四国"),
+        KYUSHU("kyushu", "九州・沖縄");
 
         private String key;
         private String value;
@@ -138,7 +144,7 @@ public final class SuumoEnum {
         Map<String, String> map = new LinkedHashMap<>();
         map.put("osaka", "大阪府");
         map.put("hyogo", "兵庫県");
-        map.put("kyoto", "京都県");
+        map.put("kyoto", "京都府");
         map.put("shiga", "滋賀県");
         map.put("nara", "奈良県");
         map.put("wakayama", "和歌山県");

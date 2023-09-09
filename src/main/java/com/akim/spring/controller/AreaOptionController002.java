@@ -6,16 +6,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.akim.spring.util.SuumoUrl;
 import com.akim.spring.util.SuumoUtil;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
-public class AreaOptionController extends SuumoCommonController {
+public class AreaOptionController002 extends SuumoCommonController {
 
     private void areaMapCommon(ModelAndView mv, HttpServletRequest rq, Method method) {
+        System.out.println("AreaOptionController002.areaMapCommon()");
         String servletPath = rq.getServletPath();
         String areaKey = SuumoUtil.getAreaKey(servletPath);
         String areaValue = SuumoUtil.getAreaValue(servletPath);

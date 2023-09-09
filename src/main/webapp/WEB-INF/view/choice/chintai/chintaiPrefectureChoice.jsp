@@ -20,17 +20,17 @@
             items="${sessionScope.prefectureList}">
             <dl class="areabox areabox--aomori">
                 <dt class="areabox-title">
-                    <a href="/chintai/${prefecture.key }/">${prefecture.value }</a>
+                    <a href="/chintai/${prefecture.prefecture }/">${prefecture.prefectureName }</a>
                 </dt>
                 <dd>
                     <ul class="ui-list--hz">
                         <li><a
-                            href="/chintai/${prefecture.key }/ensen/"
+                            href="/chintai/${prefecture.prefecture }/ensen/" rel="ra=test"
                             class="areabox-link">
                                 <div class="areabox-txt">沿線</div>
                         </a></li>
                         <li><a
-                            href="/chintai/${prefecture.key }/city/"
+                            href="/chintai/${prefecture.prefecture }/city/"
                             class="areabox-link">
                                 <div class="areabox-txt">エリア</div>
                         </a></li>

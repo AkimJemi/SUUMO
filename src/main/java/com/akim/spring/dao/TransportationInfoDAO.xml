@@ -4,22 +4,77 @@
 
     <resultMap id="metroDTO"
         type="com.akim.spring.dto.MetroDTO">
-        <result column="no" property="no" />
-        <result column="area" property="area" />
+        <result column="area_no" property="areaNo" />
+        <result column="area_name" property="areaName" />
+        <result column="prefecture_no" property="prefectureNo" />
+        <result column="prefecture_name"
+            property="prefectureName" />
+        <result column="railway_company_no"
+            property="railwayCompanyNo" />
+        <result column="railway_company_name"
+            property="railwayCompanyName" />
+        <result column="railway_no" property="railwayNo" />
+        <result column="railway_name" property="railwayName" />
+        <result column="metro_no" property="metroNo" />
+        <result column="metro_name" property="metroName" />
+    </resultMap>
+
+    <resultMap id="prefectureBasicInfoDTO"
+        type="com.akim.spring.dto.PrefectureBasicInfoDTO">
+        <result column="prefecture_no" property="prefectureNo" />
         <result column="prefecture" property="prefecture" />
-        <result column="railway_company"
-            property="railwayCompany" />
-        <result column="created_on" property="createdOn" />
+        <result column="prefecture_name" property="prefectureName" />
+    </resultMap>
+
+    <resultMap id="railwayDTO"
+        type="com.akim.spring.dto.RailwayDTO">
+        <result column="prefecture_no" property="prefectureNo" />
+        <result column="railway_company_no" property="railwayCompanyNo" />
+        <result column="railway_company_name" property="railwayCompanyName" />
+        <result column="railway_no" property="railwayNo" />
+        <result column="railway_name" property="railwayName" />
     </resultMap>
 
     <select id="getTransportationInfo" resultMap="metroDTO">
         SELECT
-            no,
-            railway_company,
-            railway
+        railway_company_no,
+        railway_company_name,
+        railway_no,
+        railway_name
         FROM
-            transportation_info.metro
+        transportation_info.railway
         WHERE
-            prefecture = '${ prefectureInfoValue }'
+        prefecture_no = '${ prefectureNo }'
+    </select>
+
+    <select id="getPrefectureBasicInfoListByArea" resultMap="prefectureBasicInfoDTO">
+        SELECT
+            prefecture_no
+            , prefecture
+            , prefecture_name
+        FROM
+            transportation_info.area_prefecture
+        WHERE
+            area = '${ area }'
+    </select>
+    <select id="getRailwayInfoByPrefecture" resultMap="railwayDTO">
+        WITH sub AS (
+            SELECT
+                prefecture_no
+            FROM
+                transportation_info.area_prefecture
+            WHERE
+                prefecture = '${prefecture}'
+        )
+        SELECT
+            railway.prefecture_no
+            , railway.railway_company_no
+            , railway.railway_company_name
+            , railway.railway_no
+            , railway.railway_name
+        FROM
+            transportation_info.railway railway
+            INNER JOIN sub
+                ON railway.prefecture_no = sub.prefecture_no;
     </select>
 </mapper>

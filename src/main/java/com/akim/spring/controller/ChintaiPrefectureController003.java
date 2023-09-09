@@ -1,24 +1,32 @@
 package com.akim.spring.controller;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.akim.spring.util.SuumoEnum;
+import com.akim.spring.dto.PrefectureBasicInfoDTO;
+import com.akim.spring.service.TransportationInfoService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
-public class ChintaiPrefectureChoiceController extends SuumoCommonController {
+public class ChintaiPrefectureController003 extends SuumoCommonController {
+
+    @Autowired
+    TransportationInfoService transportationInfoService;
 
     private void chintaiCommon(ModelAndView mv, HttpServletRequest rq) {
+        System.out.println("ChintaiPrefectureController003.chintaiCommon()");
         HttpSession session = rq.getSession();
-        Map<String, String> prefectureList = SuumoEnum.PrefectureInfo
-                .value(session.getAttribute(AREA_KEY).toString());
-        session.setAttribute(PREFECTURE_LIST, prefectureList);
+        List<PrefectureBasicInfoDTO> prefectureBasicInfoList = transportationInfoService
+                .getPrefectureBasicInfoListByArea(session.getAttribute(AREA_KEY).toString());
+        session.setAttribute(PREFECTURE_LIST, prefectureBasicInfoList);
         mv.setViewName(CHINTAI_PREFECTURE_CHOICE);
     }
 

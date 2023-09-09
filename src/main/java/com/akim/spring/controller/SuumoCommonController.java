@@ -16,6 +16,8 @@ public class SuumoCommonController {
     public static final String PREFECTURE_LIST = "prefectureList";
     public static final String PREFECTURE_INFO = "prefectureInfo";
     public static final String TRANSPORTATION_INFO = "transportationInfo";
+    public static final String RAILWAY_LIST = "railwayList";
+    public static final String TAB_ITEM = "tabItem";
 
     // Path
     public static final String AREA_CHOICE = "/choice/area/areaChoice";
