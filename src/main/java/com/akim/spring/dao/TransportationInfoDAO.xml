@@ -2,23 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.akim.spring.dao.TransportationInfoDAO">
 
-    <resultMap id="metroDTO"
-        type="com.akim.spring.dto.MetroDTO">
-        <result column="area_no" property="areaNo" />
-        <result column="area_name" property="areaName" />
-        <result column="prefecture_no" property="prefectureNo" />
-        <result column="prefecture_name"
-            property="prefectureName" />
-        <result column="railway_company_no"
-            property="railwayCompanyNo" />
-        <result column="railway_company_name"
-            property="railwayCompanyName" />
-        <result column="railway_no" property="railwayNo" />
-        <result column="railway_name" property="railwayName" />
-        <result column="metro_no" property="metroNo" />
-        <result column="metro_name" property="metroName" />
-    </resultMap>
-
     <resultMap id="prefectureBasicInfoDTO"
         type="com.akim.spring.dto.PrefectureBasicInfoDTO">
         <result column="prefecture_no" property="prefectureNo" />
@@ -35,17 +18,13 @@
         <result column="railway_name" property="railwayName" />
     </resultMap>
 
-    <select id="getTransportationInfo" resultMap="metroDTO">
-        SELECT
-        railway_company_no,
-        railway_company_name,
-        railway_no,
-        railway_name
-        FROM
-        transportation_info.railway
-        WHERE
-        prefecture_no = '${ prefectureNo }'
-    </select>
+    <resultMap id="metroDTO"
+        type="com.akim.spring.dto.MetroDTO">
+        <result column="railway_no" property="railwayNo" />
+        <result column="railway_name" property="railwayName" />
+        <result column="metro_no" property="metroNo" />
+        <result column="metro_name" property="metroName" />
+    </resultMap>
 
     <select id="getPrefectureBasicInfoListByArea" resultMap="prefectureBasicInfoDTO">
         SELECT
@@ -77,4 +56,55 @@
             INNER JOIN sub
                 ON railway.prefecture_no = sub.prefecture_no;
     </select>
+    <select id="getAreaNoByArea" resultType="String">
+        SELECT
+            area_no
+        FROM
+            transportation_info.area_prefecture
+        WHERE
+            area_prefecture.area ='${areaKey}'
+        GROUP BY
+            area_no
+    </select>
+    <select id="getPrefectureBasicInfoByPrefecture" resultMap="prefectureBasicInfoDTO">
+        SELECT
+            prefecture_no
+            , prefecture
+            , prefecture_name
+        FROM
+            transportation_info.area_prefecture
+        WHERE
+            area_prefecture.prefecture ='${prefecture}'
+    </select>
+
+    <select id="getMetroListByHissu" resultMap="metroDTO">
+        WITH sub AS (
+            SELECT
+                railway.railway_no
+                , railway.railway_name
+                , railway.railway_company_name
+            FROM
+                transportation_info.railway railway
+                INNER JOIN transportation_info.area_prefecture area
+                    ON railway.prefecture_no = area.prefecture_no
+            WHERE
+                area.area_no = '${hissu.ar}'
+                AND area.prefecture_no = '${hissu.ra}'
+                AND railway.railway_no in
+                <foreach collection="hissu.rn" open="(" close=")" separator="," item="rn" >
+                    '${rn}'
+                </foreach>
+        )
+        SELECT
+             sub.railway_name
+            , metro.railway_no
+            , metro.metro_no
+            , metro.metro_name
+        FROM
+            transportation_info.metro
+            INNER JOIN sub
+                ON metro.railway_no = sub.railway_no
+                AND metro.railway_name = sub.railway_name
+    </select>
+
 </mapper>

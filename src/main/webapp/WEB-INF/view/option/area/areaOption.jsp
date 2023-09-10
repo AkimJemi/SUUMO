@@ -21,7 +21,7 @@
         <div>
             <div>マンション・アパート・一戸建て</div>
             <div>
-                <a href="/chintai/${areaKey}/">賃貸物件</a>
+                <a href="/chintai/${area}/">賃貸物件</a>
             </div>
         </div>
     </div>

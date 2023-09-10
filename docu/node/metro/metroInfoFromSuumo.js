@@ -52,7 +52,7 @@ function run() {
             );
           });
       });
-      csvExport(db_schema, "railway", railway_csv_list.join("\n"));
+      //csvExport(db_schema, "railway", railway_csv_list.join("\n"));
       url = url.replace("FB003", "FB004") + railway_no_list.join("");
       request(url, function (error, response, html) {
         if (error) {
@@ -60,7 +60,7 @@ function run() {
         }
         var $ = cheerio.load(html);
         $(".searchtable tbody tr").each(function () {
-          // var railwayName = $(this).find(".searchtable-title label").text();
+          var railwayName = $(this).find(".searchtable-title label").text();
           var railway_no = $(this).find(".searchtable-title input").val();
           $(this)
             .find("td .searchitem-list li")
@@ -68,7 +68,7 @@ function run() {
               var metro_no = $(this).find("input").val();
               var metro_name = $(this).find("label span:first-child").text();
               metro_csv_list.push(
-                [railway_company_no, railway_no, metro_no, metro_name].join(tab)
+                [railway_no, railwayName, metro_no, metro_name].join(tab)
               );
             });
         });
@@ -77,12 +77,12 @@ function run() {
   });
   setTimeout(() => {
     csvExport(db_schema, "metro", metro_csv_list.join("\n"));
-    csvExport(db_schema, "area_prefecture", area_prefecture_list.join("\n"));
+    //csvExport(db_schema, "area_prefecture", area_prefecture_list.join("\n"));
     setTimeout(() => {
       var postgresQueryExecute = "./postgresQueryExecute.js";
       require(postgresQueryExecute);
-    }, 3000);
-  }, 5000);
+    }, 5000);
+  }, 10000);
 }
 
 function csvExport(schema, table, csvText) {

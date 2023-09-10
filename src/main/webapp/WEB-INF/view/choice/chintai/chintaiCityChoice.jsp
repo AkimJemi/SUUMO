@@ -12,7 +12,7 @@
     width: 130px;
 }
 </style>
-<title>【SUUMO】${sessionScope.areaValue }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
+<title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
 </head>
 <body>city ${prefectureInfo }
 </body>

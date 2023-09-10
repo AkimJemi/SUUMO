@@ -29,8 +29,34 @@ create table if not exists transportation_info.area_prefecture(
 ); 
 
 UPDATE transportation_info.area_prefecture
-set area = ''
-where area_name = '';
+set area = 'hokkaido'
+where area_name = 'İÁú­Ô³';
+UPDATE transportation_info.area_prefecture
+set area = 'tohoku'
+where area_name = 'ÔÔİÁ';
+UPDATE transportation_info.area_prefecture
+set area = 'koshinetsu'
+where area_name = 'Ë£ãáêÆ?İÁ×Á';
+UPDATE transportation_info.area_prefecture
+set area = 'kanto'
+where area_name = '?ÔÔ';
+UPDATE transportation_info.area_prefecture
+set area = 'tokai'
+where area_name = 'ÔÔú­';
+UPDATE transportation_info.area_prefecture
+set area = 'chugoku'
+where area_name = 'ñé?';
+UPDATE transportation_info.area_prefecture
+set area = 'kansai'
+where area_name = '?à¤';
+UPDATE transportation_info.area_prefecture
+set area = 'shikoku'
+where area_name = 'ŞÌ?';
+UPDATE transportation_info.area_prefecture
+set area = 'kyushu'
+where area_name = 'Îúñ¶?õø?';
+
+
 create table if not exists transportation_info.railway( 
     prefecture_no character varying (10) not null
     , railway_company_no character varying (10) not null

@@ -28,14 +28,14 @@
     text-align: center;
 }
 </style>
-<title>【SUUMO】${areaValue }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
+<title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
 </head>
 <body>
     <!-- tatemonoShubetsuSearchLink01_01 end -->
     <div id="js-contents-mainPanel" class="contents">
         <div>
             <div>
-                <h2>${areaValue }-沿線を選択</h2>
+                <h2>${areaName }-沿線を選択</h2>
             </div>
             <div>
                 <div class="selectareatitle">
@@ -57,12 +57,13 @@
                 <div id="js-areaSelectPanel" class="tabbody">
                     <form name="chintai_kensaku_FR301FB003ActionForm"
                         id="js-gotoEkiForm" method="post"
-                        action="/jj/chintai/kensaku/FR301FB003/ekiNext/">
-                        <input type="hidden" name="ar" value="030"><input
-                            type="hidden" name="ra" value="013"><input
-                            type="hidden" name="bs" value="040"><input
+                        action="/jj/chintai/${prefecture}/FR301FB003/ekiNext/">
+                        <input type="hidden" name="ar" value="${areaNo }"><input
+                            type="hidden" name="ra" value="${prefectureNo }"><input
+                            type="hidden" name="bs" value="${bs }"><input
                             type="hidden" name="pageId"
-                            value="FR301FB003"><input
+                            value="${pageId }">
+                            <!-- <input
                             type="hidden" name="fw2" value=""><input
                             type="hidden" name="cb" value=""><input
                             type="hidden" name="ct" value=""><input
@@ -73,7 +74,7 @@
                             type="hidden" name="shkr1" value=""><input
                             type="hidden" name="shkr2" value=""><input
                             type="hidden" name="shkr3" value=""><input
-                            type="hidden" name="shkr4" value="">
+                            type="hidden" name="shkr4" value=""> -->
                         <div class="l-searchtable l-searchtable--01">
                             <c:forEach items="${railwayList}"
                                 var="metro">

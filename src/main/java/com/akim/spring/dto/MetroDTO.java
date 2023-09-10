@@ -8,14 +8,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MetroDTO {
-    private String areaNo;
-    private String area;
-    private String areaName;
-    private String prefectureNo;
-    private String prefecture;
-    private String prefectureName;
-    private String railwayCompanyNo;
-    private String railwayCompanyName;
+//    private String prefectureNo;
+//    private String railwayCompanyNo;
+//    private String railwayCompanyName;
     private String railwayNo;
     private String railwayName;
     private String metroNo;

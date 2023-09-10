@@ -12,12 +12,12 @@
     width: 130px;
 }
 </style>
-<title>【SUUMO】${sessionScope.areaValue }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
+<title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
 </head>
 <body>
     <div class="areamap-field-tohoku">
         <c:forEach var="prefecture"
-            items="${sessionScope.prefectureList}">
+            items="${prefectureList}">
             <dl class="areabox areabox--aomori">
                 <dt class="areabox-title">
                     <a href="/chintai/${prefecture.prefecture }/">${prefecture.prefectureName }</a>

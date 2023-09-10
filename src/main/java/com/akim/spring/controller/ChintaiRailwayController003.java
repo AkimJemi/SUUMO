@@ -11,16 +11,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.akim.spring.dto.PrefectureBasicInfoDTO;
 import com.akim.spring.dto.RailwayDTO;
 import com.akim.spring.service.TransportationInfoService;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 @Controller
-public class ChintaiPrefectureEnsenController004 extends SuumoCommonController {
+public class ChintaiRailwayController003 extends SuumoCommonController {
 
     @Autowired
-    TransportationInfoService transportationInfoService;
+    private TransportationInfoService transportationInfoService;
 
     @RequestMapping(value = "/chintai/*/ensen/", method = RequestMethod.GET)
     public ModelAndView common(ModelAndView mv, HttpServletRequest rq) {
@@ -32,7 +34,8 @@ public class ChintaiPrefectureEnsenController004 extends SuumoCommonController {
 //        session.setAttribute(PREFECTURE_INFO, prefectureInfo);
 //        String prefectureValue = SuumoUtil.getPreFectureValueByPrefectureInfo(prefectureInfo);
 //        List<RailwayDTO> metroList = transportationInfoService.getTransportationInfo(prefectureValue);
-        List<RailwayDTO> railwayList = transportationInfoService.getRailwayInfoByPrefecture(prefecture);
+        List<RailwayDTO> railwayList = transportationInfoService
+                .getRailwayInfoByPrefecture(prefecture);
         Map<String, List<RailwayDTO>> railwayInfoList = new LinkedHashMap<>();
 //         修正必要
         for (RailwayDTO railway : railwayList) {
@@ -41,6 +44,13 @@ public class ChintaiPrefectureEnsenController004 extends SuumoCommonController {
                     .collect(Collectors.toList());
             railwayInfoList.put(railway.getRailwayCompanyName(), subMetroList);
         }
+        HttpSession session = rq.getSession();
+        PrefectureBasicInfoDTO prefectureBasicInfo = transportationInfoService
+                .getPrefectureBasicInfoByPrefecture(prefecture);
+        session.setAttribute(PREFECTURE_NO, prefectureBasicInfo.getPrefectureNo());
+        session.setAttribute(PREFECTURE, prefecture);
+        session.setAttribute(PREFECTURE_NAME, prefectureBasicInfo.getPrefectureName());
+
         mv.addObject(RAILWAY_LIST, railwayInfoList);
         mv.setViewName(CHINTAI_ENSEN_CHOICE);
         return mv;

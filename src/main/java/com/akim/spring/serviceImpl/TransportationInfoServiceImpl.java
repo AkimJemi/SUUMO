@@ -9,6 +9,7 @@ import com.akim.spring.dao.TransportationInfoDAO;
 import com.akim.spring.dto.MetroDTO;
 import com.akim.spring.dto.PrefectureBasicInfoDTO;
 import com.akim.spring.dto.RailwayDTO;
+import com.akim.spring.dto.SuumoHissuParameter;
 import com.akim.spring.service.TransportationInfoService;
 
 @Service
@@ -28,6 +29,21 @@ public class TransportationInfoServiceImpl implements TransportationInfoService 
     @Override
     public List<RailwayDTO> getRailwayInfoByPrefecture(String prefectureNo) {
         return transportationInfoDAO.getRailwayInfoByPrefecture(prefectureNo);
+    }
+
+    @Override
+    public String getAreaNoByArea(String areaKey) {
+        return transportationInfoDAO.getAreaNoByArea(areaKey);
+    }
+
+    @Override
+    public PrefectureBasicInfoDTO getPrefectureBasicInfoByPrefecture(String prefecture) {
+        return transportationInfoDAO.getPrefectureBasicInfoByPrefecture(prefecture);
+    }
+
+    @Override
+    public List<MetroDTO> getMetroListByHissu(SuumoHissuParameter hissu) {
+        return transportationInfoDAO.getMetroListByHissu(hissu);
     }
 
 }

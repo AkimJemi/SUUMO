@@ -2,28 +2,44 @@ package com.akim.spring.controller;
 
 import java.lang.reflect.Method;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.akim.spring.dao.TransportationInfoDAO;
+import com.akim.spring.service.TransportationInfoService;
 import com.akim.spring.util.SuumoUtil;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
-public class AreaOptionController002 extends SuumoCommonController {
+public class ChintaiAreaController001 extends SuumoCommonController {
+
+    @Autowired
+    private TransportationInfoService transportationInfoService;
+
+    @GetMapping("")
+    public String main() {
+        System.out.println("AreaChoiceController001.main()");
+        return AREA_CHOICE;
+    }
 
     private void areaMapCommon(ModelAndView mv, HttpServletRequest rq, Method method) {
         System.out.println("AreaOptionController002.areaMapCommon()");
         String servletPath = rq.getServletPath();
         String areaKey = SuumoUtil.getAreaKey(servletPath);
         String areaValue = SuumoUtil.getAreaValue(servletPath);
-        mv.addObject(AREA_KEY, areaKey);
-        mv.addObject(AREA_VALUE, areaValue);
+        mv.addObject(AREA, areaKey);
+        mv.addObject(AREA_NAME, areaValue);
         HttpSession session = rq.getSession();
-        session.setAttribute(AREA_KEY, areaKey);
-        session.setAttribute(AREA_VALUE, areaValue);
+        String areaNo = transportationInfoService.getAreaNoByArea(areaKey);
+        session.setAttribute(AREA, areaKey);
+        session.setAttribute(AREA_NAME, areaValue);
+        session.setAttribute(AREA_NO, areaNo);
+        session.setAttribute(BS, CHINTAI_VAL);
         mv.setViewName(AREA_OPTION);
     }
 
@@ -89,5 +105,4 @@ public class AreaOptionController002 extends SuumoCommonController {
         }.getClass().getEnclosingMethod());
         return mv;
     }
-
 }
