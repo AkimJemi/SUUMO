@@ -45,7 +45,4 @@ public class SuumoCommonController {
     public static final String CHINTAI_CITY_CHOICE = "/choice/chintai/chintaiCityChoice";
 //    public static final String CHINTAI_OPTION = "/option/chintaiOption";
 
-
-
-
 }

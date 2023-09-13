@@ -26,6 +26,16 @@
         <result column="metro_name" property="metroName" />
     </resultMap>
 
+        <resultMap id="areaPrefectureDTO"
+        type="com.akim.spring.dto.AreaPrefectureDTO">
+        <result column="area_no" property="areaNo" />
+        <result column="area" property="area" />
+        <result column="area_name" property="areaName" />
+        <result column="prefecture_no" property="prefectureNo" />
+        <result column="prefecture" property="prefecture" />
+        <result column="prefecture_name" property="prefectureName" />
+    </resultMap>
+
     <select id="getPrefectureBasicInfoListByArea" resultMap="prefectureBasicInfoDTO">
         SELECT
             prefecture_no
@@ -107,4 +117,17 @@
                 AND metro.railway_name = sub.railway_name
     </select>
 
+   <select id="getAreaPrefectureInfoByPrefectureNo" resultMap="areaPrefectureDTO">
+        SELECT
+            area_no
+            , area
+            , area_name
+            , prefecture_no
+            , prefecture
+            , prefecture_name
+        FROM
+            transportation_info.area_prefecture
+        WHERE
+            prefecture_no = '${prefectureNo}'
+    </select>
 </mapper>

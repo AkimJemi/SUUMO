@@ -6,10 +6,26 @@
 <head>
 <meta charset="UTF-8">
 <style type="text/css">
-.areabox {
-    display: inline-block;
-    height: 100px;
-    width: 130px;
+.areabox-middle {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.areabox-middle-box-header {
+    padding: 20px 15px;
+    width: 50%;
+}
+
+.areabox-middle-box-bottom {
+    display: grid;
+    width: 50%;
+    text-align: left;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.areabox-bottom {
+    text-align: center;
 }
 </style>
 <title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
@@ -29,5 +45,8 @@
             </div>
         </div>
     </c:forEach>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <!-- <script src="/js/headerfooter.js"></script> -->
+    <script src="/js/fr-search.js"></script>
 </body>
 </html>

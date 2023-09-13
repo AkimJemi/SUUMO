@@ -13,15 +13,9 @@ public final class SuumoEnum {
     // AkimWorkingon
     public static enum AreaInfo {
 
-        HOKKAIDO("hokkaido", "北海道"),
-        TOHOKU("tohoku", "東北"),
-        KOSHINETSU("koshinetsu", "甲信越・北陸"),
-        KANTO("kanto", "関東"),
-        TOKAI("tokai", "東海"),
-        CHUGOKU("chugoku", "中国"),
-        KANSAI("kansai", "関西"),
-        SHIKOKU("shikoku", "四国"),
-        KYUSHU("kyushu", "九州・沖縄");
+        HOKKAIDO("hokkaido", "北海道"), TOHOKU("tohoku", "東北"), KOSHINETSU("koshinetsu", "甲信越・北陸"),
+        KANTO("kanto", "関東"), TOKAI("tokai", "東海"), CHUGOKU("chugoku", "中国"),
+        KANSAI("kansai", "関西"), SHIKOKU("shikoku", "四国"), KYUSHU("kyushu", "九州・沖縄");
 
         private String key;
         private String value;

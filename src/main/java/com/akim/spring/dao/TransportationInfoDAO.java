@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.dto.MetroDTO;
 import com.akim.spring.dto.PrefectureBasicInfoDTO;
 import com.akim.spring.dto.RailwayDTO;
@@ -26,5 +27,7 @@ public interface TransportationInfoDAO {
     PrefectureBasicInfoDTO getPrefectureBasicInfoByPrefecture(String prefecture);
 
     List<MetroDTO> getMetroListByHissu(@Param("hissu") SuumoHissuParameter hissu);
+
+    AreaPrefectureDTO getAreaPrefectureInfoByPrefectureNo(String prefectureNo);
 
 }

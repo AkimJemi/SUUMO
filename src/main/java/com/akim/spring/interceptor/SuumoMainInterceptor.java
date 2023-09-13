@@ -19,7 +19,7 @@ public class SuumoMainInterceptor implements HandlerInterceptor {
         if (StringUtils.pathEquals("/error", request.getServletPath())) {
             System.out.println("error");
         }
-        
+
         return HandlerInterceptor.super.preHandle(request, response, handler);
     }
 

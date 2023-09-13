@@ -23,7 +23,7 @@ public class ChintaiMetroController004 extends SuumoCommonController {
     @Autowired
     private TransportationInfoService transportationInfoService;
 
-    @GetMapping("/jj/chintai/*/FR301FB003/ekiNext/")
+    @GetMapping("/jj/chintai/*/FR301FB004/ekiNext/")
     public ModelAndView main(ModelAndView mv, HttpServletRequest rq, SuumoHissuParameter hissu) {
         System.out.println("ChintaiMetroController004.main()");
         mv.addObject(HISSU, hissu);

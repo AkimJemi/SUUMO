@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.akim.spring.dao.TransportationInfoDAO;
+import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.dto.MetroDTO;
 import com.akim.spring.dto.PrefectureBasicInfoDTO;
 import com.akim.spring.dto.RailwayDTO;
@@ -44,6 +45,11 @@ public class TransportationInfoServiceImpl implements TransportationInfoService 
     @Override
     public List<MetroDTO> getMetroListByHissu(SuumoHissuParameter hissu) {
         return transportationInfoDAO.getMetroListByHissu(hissu);
+    }
+
+    @Override
+    public AreaPrefectureDTO getAreaPrefectureInfoByPrefectureNo(String prefectureNo) {
+        return transportationInfoDAO.getAreaPrefectureInfoByPrefectureNo(prefectureNo);
     }
 
 }
