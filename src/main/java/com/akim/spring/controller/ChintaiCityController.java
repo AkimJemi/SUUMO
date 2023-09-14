@@ -23,7 +23,7 @@ public class ChintaiCityController extends SuumoCommonController {
         Map<String, String> prefectureInfo = PrefectureInfo.getPrefectureByPrefectureMap(prefecture,
                 (Map<String, String>) session.getAttribute(PREFECTURE_LIST));
         mv.addObject(PREFECTURE_INFO, prefectureInfo);
-        mv.setViewName(CHINTAI_CITY_CHOICE);
+        mv.setViewName(CHINTAI_CITY);
         return mv;
     }
 

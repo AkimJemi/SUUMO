@@ -87,7 +87,6 @@ $('#js-contents-mainPanel')
     })
     .delegate('#js-areatabPanel .js-areatabClickLink', 'click', function() {
         // ヒストリーバックの保存処理
-        alert("test");
         suumo.frSearch.setHistory({
             targetId: '#js-contents-mainPanel'
         });

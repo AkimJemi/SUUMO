@@ -50,7 +50,7 @@ public class ChintaiMetroController004 extends SuumoCommonController {
 //        metroInfoList.put("no", subMetroList);
 //        System.out.println(metroInfoList);
         mv.addObject(METRO_LIST, metroInfoList);
-        mv.setViewName(CHINTAI_METRO_CHOICE);
+        mv.setViewName(CHINTAI_METRO);
         return mv;
     }
 

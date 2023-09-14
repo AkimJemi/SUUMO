@@ -12,7 +12,9 @@ public class ChintaiIchiranController005 extends SuumoCommonController {
     @RequestMapping("/jj/chintai/kensaku/FR301FC001/")
     public ModelAndView common(HttpServletRequest rq, ModelAndView mv) {
         System.out.println("ChintaiIchiranController005.common()");
-        // これまで
+
+
+        mv.setViewName(CHINTAI_ICHIRAN);
         return mv;
     }
 

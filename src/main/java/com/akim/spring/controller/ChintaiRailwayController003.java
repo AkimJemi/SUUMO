@@ -54,7 +54,7 @@ public class ChintaiRailwayController003 extends SuumoCommonController {
         session.setAttribute(PREFECTURE, prefecture);
         session.setAttribute(PREFECTURE_NAME, prefectureBasicInfo.getPrefectureName());
         mv.addObject(RAILWAY_LIST, railwayInfoList);
-        mv.setViewName(CHINTAI_ENSEN_CHOICE);
+        mv.setViewName(CHINTAI_ENSEN);
         return mv;
     }
 

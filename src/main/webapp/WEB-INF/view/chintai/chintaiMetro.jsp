@@ -78,7 +78,6 @@
                                         <td
                                             id="js-rn${metro.getKey().railwayNo}-panel"
                                             class="searchtable-box">
-                                            ${metro.getKey()}
                                             <div class="searchitem">
                                                 <ul
                                                     class="searchitem-list"

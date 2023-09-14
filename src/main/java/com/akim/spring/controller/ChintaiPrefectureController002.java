@@ -25,7 +25,7 @@ public class ChintaiPrefectureController002 extends SuumoCommonController {
         List<PrefectureBasicInfoDTO> prefectureBasicInfoList = transportationInfoService
                 .getPrefectureBasicInfoListByArea(session.getAttribute(AREA).toString());
         session.setAttribute(PREFECTURE_LIST, prefectureBasicInfoList);
-        mv.setViewName(CHINTAI_PREFECTURE_CHOICE);
+        mv.setViewName(CHINTAI_PREFECTURE);
     }
 
     @RequestMapping("/chintai/hokkaido/")
