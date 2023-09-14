@@ -5,11 +5,17 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.akim.spring.dao.OthersDAO;
+import com.akim.spring.dto.OthersDTO;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
 
 @Configuration
+@RequiredArgsConstructor
 public class SuumoMainInterceptor implements HandlerInterceptor {
+    private OthersDAO otherDAO;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
@@ -19,7 +25,6 @@ public class SuumoMainInterceptor implements HandlerInterceptor {
         if (StringUtils.pathEquals("/error", request.getServletPath())) {
             System.out.println("error");
         }
-
         return HandlerInterceptor.super.preHandle(request, response, handler);
     }
 
@@ -32,6 +37,13 @@ public class SuumoMainInterceptor implements HandlerInterceptor {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response,
             Object handler, Exception ex) throws Exception {
+
+        OthersDTO othersDTO = new OthersDTO();
+//        othersDTO.builder().url(request.getRequestURI()).build();
+//        otherDAO.save(othersDTO);
+
+//        otherDAO.insert(othersDTO.builder().url());
+//        System.out.println();
         HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
     }
 }

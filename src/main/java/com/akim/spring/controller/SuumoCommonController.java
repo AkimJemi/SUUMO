@@ -36,13 +36,14 @@ public class SuumoCommonController {
     public static final String CHUKOIKKODATE_VAL = "021";
 
     // Path
-    public static final String AREA_CHOICE = "/choice/area/areaChoice";
-    public static final String AREA_OPTION = "/option/area/areaOption";
-    public static final String CHINTAI_PREFECTURE_CHOICE = "/choice/chintai/chintaiPrefectureChoice";
-    public static final String CHINTAI_ENSEN_CHOICE = "/choice/chintai/chintaiEnsenChoice";
-    public static final String CHINTAI_METRO_CHOICE = "/choice/chintai/chintaiMetroChoice";
+    public static final String AREA_CHOICE = "/area/areaChoice";
+    public static final String AREA_OPTION = "/area/areaOption";
 
-    public static final String CHINTAI_CITY_CHOICE = "/choice/chintai/chintaiCityChoice";
+    public static final String CHINTAI_PREFECTURE_CHOICE = "/chintai/chintaiPrefectureChoice";
+    public static final String CHINTAI_ENSEN_CHOICE = "/chintai/chintaiEnsenChoice";
+    public static final String CHINTAI_METRO_CHOICE = "/chintai/chintaiMetroChoice";
+
+    public static final String CHINTAI_CITY_CHOICE = "/chintai/chintaiCityChoice";
 //    public static final String CHINTAI_OPTION = "/option/chintaiOption";
 
 }

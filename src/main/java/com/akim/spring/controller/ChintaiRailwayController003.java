@@ -67,7 +67,8 @@ public class ChintaiRailwayController003 extends SuumoCommonController {
     @RequestMapping(value = "/jj/chintai/kensaku/FR301FB003/", method = RequestMethod.GET)
     public ModelAndView sub(ModelAndView mv, HttpServletRequest rq) {
         String paramOfPrefectureNo = rq.getParameter("ra");
-        AreaPrefectureDTO prefecture = transportationInfoService.getAreaPrefectureInfoByPrefectureNo(paramOfPrefectureNo);
+        AreaPrefectureDTO prefecture = transportationInfoService
+                .getAreaPrefectureInfoByPrefectureNo(paramOfPrefectureNo);
         return common(mv, rq, prefecture.getPrefecture());
     }
 

@@ -27,16 +27,28 @@ public class ChintaiMetroController004 extends SuumoCommonController {
     public ModelAndView main(ModelAndView mv, HttpServletRequest rq, SuumoHissuParameter hissu) {
         System.out.println("ChintaiMetroController004.main()");
         mv.addObject(HISSU, hissu);
-        List<MetroDTO> metroList = transportationInfoService.getMetroListByHissu(hissu);
-        Map<String, List<MetroDTO>> metroInfoList = new LinkedHashMap<>();
-//      修正必要
-        for (MetroDTO metro : metroList) {
-            List<MetroDTO> subMetroList = metroList.stream()
-                    .filter(t -> t.getRailwayNo().equals(metro.getRailwayNo()))
-                    .collect(Collectors.toList());
-            metroInfoList.put(metro.getRailwayName(), subMetroList);
+        Map<RailwayDTO, List<MetroDTO>> metroInfoList = new LinkedHashMap<>();
+        for (String rn : hissu.getRn()) {
+            SuumoHissuParameter subHissu = new SuumoHissuParameter();
+            subHissu.setAr(hissu.getAr());
+            subHissu.setRa(hissu.getRa());
+            subHissu.setSubRn(rn);
+            List<MetroDTO> metroList = transportationInfoService.getMetroListByHissu(subHissu);
+            MetroDTO metro = metroList.get(0);
+            String railwayName = metro.getRailwayName();
+            String railwayNo = metro.getRailwayNo();
+            RailwayDTO railwayDTO = RailwayDTO.builder().railwayNo(railwayNo)
+                    .railwayName(railwayName).build();
+            metroInfoList.put(railwayDTO, metroList);
         }
-
+////      修正必要
+//        for (MetroDTO metro : metroList) {
+//            List<MetroDTO> subMetroList = metroList.stream()
+//                    .filter(t -> t.getRailwayNo().equals(metro.getRailwayNo()))
+//                    .collect(Collectors.toList());
+//        }
+//        metroInfoList.put("no", subMetroList);
+//        System.out.println(metroInfoList);
         mv.addObject(METRO_LIST, metroInfoList);
         mv.setViewName(CHINTAI_METRO_CHOICE);
         return mv;

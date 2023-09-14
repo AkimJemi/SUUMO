@@ -18,6 +18,7 @@ public class TransportationInfoServiceImpl implements TransportationInfoService 
     @Autowired
     private TransportationInfoDAO transportationInfoDAO;
 
+    @Override
     public List<MetroDTO> getTransportationInfo(String prefectureInfoValue) {
         return transportationInfoDAO.getTransportationInfo(prefectureInfoValue);
     }

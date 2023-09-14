@@ -1,8 +1,5 @@
 package com.akim.spring.interceptor;
 
-import java.util.Map;
-import java.util.Map.Entry;
-
 import org.springframework.util.StringUtils;
 
 import com.akim.spring.util.SuumoEnum.PrefectureInfo;

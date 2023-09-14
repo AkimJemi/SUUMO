@@ -100,10 +100,7 @@
             WHERE
                 area.area_no = '${hissu.ar}'
                 AND area.prefecture_no = '${hissu.ra}'
-                AND railway.railway_no in
-                <foreach collection="hissu.rn" open="(" close=")" separator="," item="rn" >
-                    '${rn}'
-                </foreach>
+                AND railway.railway_no = '${hissu.subRn}'
         )
         SELECT
              sub.railway_name

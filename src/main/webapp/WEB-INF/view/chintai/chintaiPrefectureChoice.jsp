@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
 <head>
 <meta charset="UTF-8">
 <style type="text/css">

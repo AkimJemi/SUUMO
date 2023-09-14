@@ -87,6 +87,7 @@ $('#js-contents-mainPanel')
     })
     .delegate('#js-areatabPanel .js-areatabClickLink', 'click', function() {
         // ヒストリーバックの保存処理
+        alert("test");
         suumo.frSearch.setHistory({
             targetId: '#js-contents-mainPanel'
         });
@@ -107,4 +108,44 @@ $('#js-contents-mainPanel')
         }
         return false;
     })
-    ;
+    .delegate('.js-ensenSearchBtn', 'click', function() {
+        // 検索ボタン
+        if ($('.js-checkSingle:checked').length === 0) {
+            // エラーメッセージを表示
+            $('#js-gotoEkiErrorPanel').show();
+            // マイバーがエラー表示に重ならないようにスクロール
+            var adjustVal = -56;
+            if ($('#js-mylist').length === 0) {
+                // マイバーが無い場合、マイバー分値を減らす
+                adjustVal = -10;
+            }
+            suumo.headerfooter.goScroll({
+                'targetID': '#js-areaSelectPanel',
+                'adjustVal': adjustVal
+            });
+            return false;
+        }
+        var param = '';
+        $('.js-checkall').each(function() {
+            if (this.checked) {
+                param += '&rn=' + this.value;
+            } else {
+                var ensenFlag = false;
+                $('#js-' + $(this).attr('id') + '-panel .js-checkSingle:checked').each(function() {
+                    param += '&ek=' + this.value;
+                    ensenFlag = true;
+                });
+                if (ensenFlag) {
+                    param += '&rn=' + this.value;
+                }
+            }
+        });
+        var sdFlg = $('#js-sdFlg').attr('rel');
+        if (sdFlg === '1') {
+            if ($('.js-ts:checked').length === 1) {
+                $('#js-sdParam').removeAttr('disabled');
+            }
+        }
+        window.location.href = $('#js-shiborikomiPanel-searchBtnForm').attr('action') + '&' + $('#js-shiborikomiForm').serialize() + param;
+        return false;
+    });

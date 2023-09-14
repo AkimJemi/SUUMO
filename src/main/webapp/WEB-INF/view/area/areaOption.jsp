@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
 <head>
 <style type="text/css">
 .areabox {

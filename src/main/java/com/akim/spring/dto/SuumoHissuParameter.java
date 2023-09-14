@@ -16,4 +16,5 @@ public class SuumoHissuParameter {
     private String bs;
     private String pageId;
     private List<String> rn;
+    private String subRn;
 }

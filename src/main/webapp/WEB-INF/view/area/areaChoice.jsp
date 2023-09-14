@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
 <meta charset="UTF-8">
 <title>SUUMO不動産</title>
 <style type="text/css">
