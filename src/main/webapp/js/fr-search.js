@@ -4,6 +4,26 @@
 var suumo = suumo || {};
 suumo.frSearch = function() {
 };
+/**
+ * [ua User Agent]
+ */
+suumo.frSearch.ua = navigator.userAgent;
+
+/**
+ * [isPc PCかどうか判定]
+ * @return {Boolean} PCかどうか.
+ */
+suumo.frSearch.isPc = function() {
+    var ua = suumo.frSearch.ua;
+    console.log(ua);
+    var flag = true;
+    if ((ua.indexOf('iPhone') > 0 || ua.indexOf('iPad') > 0) || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 || ua.indexOf('Windows Phone') > 0) {
+        flag = false;
+
+    }
+    return flag;
+};
+
 suumo.headerfooter = function() {
 };
 suumo.headerfooter.goScroll = function(options) {
@@ -61,6 +81,33 @@ suumo.frSearch.setHistory = function(options) {
     sessionStorage.setItem(location.href, $target.html());
 };
 
+//検索パネル＆【条件を追加する】ボタン表示判断
+suumo.frSearch.setpanelDisplay = function() {
+    //PC以外のUAはフロートパーツが非表示
+    if (suumo.frSearch.isPc()=== true){
+        var $searchpanel = $('#js-searchpanel');
+        var jyoukenCheckFlg = false;
+        if($('#js-shiborikomiForm').length > 0){
+            //他の検索条件選択否を判断
+            jyoukenCheckFlg = suumo.frSearch.jyoukenChecked();
+        }
+        //検索パネル表示・非表示を判断
+        if ($('.js-fr-checkSingle:checked').length > 0 || jyoukenCheckFlg){
+            //パネル：表示
+            $searchpanel.fadeIn(250);
+            if ($('.js-fr-checkSingle:checked').length > 0 && !jyoukenCheckFlg){
+                $searchpanel.removeClass('searchpanel--noaction');
+                $('#js-searchpanel-action').removeClass('is-hidden');
+            }else{
+                $searchpanel.addClass('searchpanel--noaction');
+                $('#js-searchpanel-action').addClass('is-hidden');
+            }
+        } else {
+            //条件チェックなし場合非表示
+            $searchpanel.fadeOut(250);
+        }
+    }
+};
 
 
 $('#js-contents-mainPanel')
@@ -147,4 +194,48 @@ $('#js-contents-mainPanel')
         }
         window.location.href = $('#js-shiborikomiPanel-searchBtnForm').attr('action') + '&' + $('#js-shiborikomiForm').serialize() + param;
         return false;
+    }).delegate('.js-checkall', 'click', function() {
+        // 対象のチェックボックスにチェックを付ける
+        console.log($(this).attr('checked'));
+        $('#js-' + $(this).attr('id') + '-panel .js-checkSingle:enabled').attr('checked', $(this).attr('checked'));
+    })
+    .delegate('.js-fr-checkSingle, .js-fr-checkall', 'click', function() {
+        //検索パネルの表示判定
+        suumo.frSearch.setpanelDisplay();
     });
+//他の検索条件選択否を判断
+suumo.frSearch.jyoukenChecked = function() {
+    var $checkedCondition = $('.js-checkCondition:checked');
+    var $radiocheckedCondition = $('.js-checkCondition:radio:checked');
+    var $selectedCondition = $('#js-shiborikomiForm select');
+
+    //ドロップダウンのdefalt値の判定
+    var selectedFlg = false;
+    //賃料、専有面積と周辺環境と駅徒歩
+    for (var j = 0, len2 = $selectedCondition.length; j < len2; j++){
+        var thisVal2 = $selectedCondition.eq(j).val();
+        if(0 < thisVal2 && thisVal2 < 9999999 && thisVal2 !== '03'){
+            selectedFlg = true;
+            break;
+        }
+    }
+
+    //ラジオボタンのdefalt値の個数
+    var radioCount = 0;
+    //築後年数と駅徒歩
+    for (var k = 0, len3 = $radiocheckedCondition.length; k < len3; k++){
+        var thisVal3 = $radiocheckedCondition.eq(k).next().html();
+        if(thisVal3.indexOf('指定しない') !== -1){
+            radioCount++;
+        }
+    }
+
+    //その他検索条件が判定
+    if($checkedCondition.length > 0&& $checkedCondition.length !== radioCount || selectedFlg ){
+        //他の検索条件選択済み
+        return true;
+    } else {
+        //他の検索条件未選択
+        return false;
+    }
+};
