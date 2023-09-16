@@ -3,14 +3,8 @@
 <!DOCTYPE html>
 <html>
 <%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
+<link rel="stylesheet" href="/css/ou-top.css" media="screen" />
 <head>
-<style type="text/css">
-.areabox {
-    display: inline-block;
-    height: 100px;
-    width: 130px;
-}
-</style>
 <meta charset="UTF-8">
 <title>【SUUMO】${areaValue}の不動産情報・不動産売買・住宅情報</title>
 </head>
@@ -25,6 +19,247 @@
                 <a href="/chintai/${area}/">賃貸物件</a>
             </div>
         </div>
+    </div>
+    <div class="menubox">
+        <div class="menubox-container">
+            <!-- ↓===================================================================================================================↓ -->
+            <!-- ↓/top/CM_000_010_CL_menu01.html↓ -->
+            <div class="menubox-left">
+                <dl class="areamenu areamenu--ex">
+                    <dt class="ui-sprite--menu_rent">借りる</dt>
+                    <dd>
+                        <div class="areamenu-title1">
+                            <i class="ui-icon--loupe2"></i>マンション・アパート・一戸建て
+                        </div>
+                        <a href="/chintai/${area}/"
+                            class="ui-btn ui-btn--base areamenu-btn">賃貸物件</a>
+                    </dd>
+                </dl>
+                <div class="menubox-object">
+                    <i class="ui-icon--suumo01"></i>
+                </div>
+            </div>
+            <div class="menubox-right">
+                <div>
+                    <dl class="areamenu areamenu--han">
+                        <dt class="ui-sprite--menu_buy">買う</dt>
+                        <dd>
+                            <div class="areamenu_item_group">
+                                <div class="areamenu_item">
+                                    <div class="areamenu-title2">
+                                        <i class="ui-icon--building2"></i><a
+                                            href="/ms/${area}/">マンション</a>
+                                    </div>
+                                    <ul>
+                                        <li><a
+                                            href="/ms/shinchiku/${area}/"
+                                            class="ui-btn ui-btn--base areamenu-btn"
+                                            title="築1年以上の未入居物件を含む">新築マンション</a></li>
+                                        <li><a
+                                            href="/ms/chuko/${area}/"
+                                            class="ui-btn ui-btn--base areamenu-btn">中古マンション</a></li>
+                                    </ul>
+                                </div>
+                                <div class="areamenu_item">
+                                    <div class="areamenu-title2">
+                                        <i class="ui-icon--house2"></i>一戸建て
+                                    </div>
+                                    <ul>
+                                        <li><a
+                                            href="/ikkodate/${area}/"
+                                            class="ui-btn ui-btn--base areamenu-btn_line2"
+                                            title="建築条件付き土地・築1年以上の未入居物件を含む">新築一戸建て
+                                                <div
+                                                    class="areamenu-btn_line2-sub">（建築条件付き土地含む）</div>
+                                        </a></li>
+                                        <li><a
+                                            href="/chukoikkodate/${area}/"
+                                            class="ui-btn ui-btn--base areamenu-btn">中古一戸建て</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- ↑/top/CM_000_010_CL_menu01.html↑ -->
+            <!-- ↑===================================================================================================================↑ -->
+        </div>
+        <div class="menubox-container">
+            <!-- ↓===================================================================================================================↓ -->
+            <!-- ↓/top/CM_000_010_CL_menu02.html↓ -->
+            <div class="menubox-right">
+                <div>
+                    <div class="menubox-items">
+                        <dl class="areamenu areamenu--han menubox-item">
+                            <dt class="ui-sprite--menu_build">建てる</dt>
+                            <dd>
+                                <ul class="areamenu-list">
+                                    <li><a href="/chumon/${area}/"
+                                        class="ui-btn ui-btn--base areamenu-btn">注文住宅</a></li>
+                                    <li><a href="/tochi/${area}/"
+                                        class="ui-btn ui-btn--base areamenu-btn">土地</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="areamenu areamenu--han menubox-item">
+                            <dt class="ui-sprite--menu_reform">リフォームする</dt>
+                            <dd>
+                                <ul class="areamenu-list">
+                                    <li><a
+                                        href="/remodel/${area}/"
+                                        class="ui-btn ui-btn--base areamenu-btn">リフォーム</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- ↑/top/CM_000_010_CL_menu02.html↑ -->
+            <!-- ↑===================================================================================================================↑ -->
+            <!-- OyakudachiLinkDisp02 start -->
+            <div class="menubox-left">
+                <div class="menubox-links ui-section--simple">
+                    <div class="ui-section-header">
+                        <div class="menubox-links-title">
+                            <a
+                                href="http://suumo.jp/article/oyakudachi/">編集部オススメ！知っトク情報</a>
+                        </div>
+                    </div>
+                    <div class="ui-section-body">
+                        <ul class="pickups">
+                            <li>
+                                <div class="pickup">
+                                    <div class="pickup-icon">
+                                        <i class="ui-icon--arrow02"></i>
+                                    </div>
+                                    <div class="pickup-link">
+                                        <a
+                                            href="https://suumo.jp/article/oyakudachi/oyaku/sumai_nyumon/data/sumitai-sapporo2023/">住みたい街ランキング2023
+                                            札幌版 ～札幌市民に聞いた、住み…</a>
+                                    </div>
+                                    <div class="pickup-label">
+                                        <span
+                                            class="ui-label ui-label--cta2">NEW</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pickup">
+                                    <div class="pickup-icon">
+                                        <i class="ui-icon--arrow02"></i>
+                                    </div>
+                                    <div class="pickup-link">
+                                        <a
+                                            href="https://suumo.jp/article/oyakudachi/oyaku/chumon/c_plan/fix_window/">FIX窓（フィックス窓）・はめ殺し窓で外観をおしゃれに！
+                                            カー…</a>
+                                    </div>
+                                    <div class="pickup-label"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pickup">
+                                    <div class="pickup-icon">
+                                        <i class="ui-icon--arrow02"></i>
+                                    </div>
+                                    <div class="pickup-link">
+                                        <a
+                                            href="https://suumo.jp/article/oyakudachi/oyaku/chumon/c_knowhow/senmenjo_kabegami_osyare/">洗面所を壁紙でオシャレな空間に
+                                            5つのコツと12の施工例</a>
+                                    </div>
+                                    <div class="pickup-label"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- OyakudachiLinkDisp02 end -->
+        </div>
+        <!-- ↓===================================================================================================================↓ -->
+        <!-- ↓/top/CM_000_010_CL_menu03.html↓ -->
+        <div class="areamap_assist areamap_assist--large">
+            <dl class="areamap_assist-1g">
+                <dt>不動産会社を探す</dt>
+                <dd>
+                    <a href="/fudousankaisha/${area}/"
+                        class="ui-btn ui-btn--base areamap_assist-btn2">不動産会社ガイド<br>
+                        <span>(分譲・仲介会社)</span></a>
+                </dd>
+            </dl>
+            <dl class="areamap_assist-2g">
+                <dt>売る・貸す</dt>
+                <dd>
+                    <ul class="ui-list--hz areamap_assist-btns">
+                        <li><a href="/baikyaku/"
+                            class="ui-btn ui-btn--base areamap_assist-btn1">不動産売却</a></li>
+                        <li><a href="/kasu/${area}/"
+                            class="ui-btn ui-btn--base areamap_assist-btn3">部屋を貸す・賃貸経営</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="mtmsch">
+            <div class="mtmsch-title">
+                <div class="mtmsch-title-txt">借りる？買う？ どんな物件もまとめて検索</div>
+                <div id="js-mtmsch-back" class="mtmsch-title-link dn">
+                    <a href="javascript:void(0);">戻る</a><i
+                        class="ui-icon--enter"></i>
+                </div>
+            </div>
+            <ul id="js-mtmsch" class="mtmsch-btn">
+                <li id="js-mtmschArea" class="mtmsch-area"><i
+                    class="ui-icon--japan"></i><a
+                    href="javascript:void(0);"
+                    class="ui-btn ui-btn--base area-btn">エリアから探す</a></li>
+                <li id="js-mtmschEnsen" class="mtmsch-line"><i
+                    class="ui-icon--train"></i><a
+                    href="javascript:void(0);"
+                    class="ui-btn ui-btn--base line-btn">沿線・駅から探す</a></li>
+                <li id="js-mtmschMap" class="mtmsch-map"><i
+                    class="ui-icon--normal"></i><a
+                    href="javascript:void(0);"
+                    class="ui-btn ui-btn--base map-btn">地図から探す</a></li>
+            </ul>
+            <div id="js-mtmschAreaPanel" class="mtmsch-detail dn">
+                <div class="mtmsch-detail-title">
+                    <i class="ui-icon--japan"></i>
+                    <div>
+                        <span>エリア</span><br>から探す
+                    </div>
+                </div>
+                <ul class="mtmsch-detail-links">
+                    <li><a href="/${area}_/city/"
+                        class="ui-btn ui-btn--base ui-btn--small">北海道</a></li>
+                </ul>
+            </div>
+            <div id="js-mtmschEnsenPanel" class="mtmsch-detail dn">
+                <div class="mtmsch-detail-title">
+                    <i class="ui-icon--train"></i>
+                    <div>
+                        <span>沿線・駅</span><br>から探す
+                    </div>
+                </div>
+                <ul class="mtmsch-detail-links">
+                    <li><a href="/${area}_/ensen/"
+                        class="ui-btn ui-btn--base ui-btn--small">北海道</a></li>
+                </ul>
+            </div>
+            <div id="js-mtmschMapPanel" class="mtmsch-detail dn">
+                <div class="mtmsch-detail-title">
+                    <i class="ui-icon--normal"></i>
+                    <div>
+                        <span>地図</span><br>から探す
+                    </div>
+                </div>
+                <ul class="mtmsch-detail-links">
+                    <li><a href="/map/${area}_/"
+                        class="ui-btn ui-btn--base ui-btn--small">北海道</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ↑/top/CM_000_010_CL_menu03.html↑ -->
+        <!-- ↑===================================================================================================================↑ -->
     </div>
 </body>
 </html>

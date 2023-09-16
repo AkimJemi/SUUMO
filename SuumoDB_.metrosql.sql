@@ -1,16 +1,12 @@
 --create schema transportation_info;
-drop table if exists transportation_info.area_prefecture; 
-
-drop table if exists transportation_info.railway; 
-
-drop table if exists transportation_info.metro; 
-
-truncate transportation_info.area_prefecture; 
-
-truncate transportation_info.railway; 
-
-truncate transportation_info.metro; 
-
+--drop table if exists transportation_info.area_prefecture; 
+--drop table if exists transportation_info.railway; 
+--drop table if exists transportation_info.metro; 
+--drop table if exists transportation_info.prefecture_city; 
+--truncate transportation_info.area_prefecture; 
+--truncate transportation_info.railway; 
+--truncate transportation_info.metro; 
+--truncate transportation_info.prefecture_city;
 create table if not exists transportation_info.area_prefecture( 
     area_no character varying (10) not null
     , area character varying (15) not null
@@ -56,6 +52,20 @@ UPDATE transportation_info.area_prefecture
 set area = 'kyushu'
 where area_name = 'Îúñ¶?õø?';
 
+create table if not exists transportation_info.prefecture_city( 
+    prefecture_no character varying (15) not null
+    , prefecture character varying (15) not null
+    , prefecture_name character varying (15) not null
+    , city_no character varying (15) not null
+    , city_name character varying (15) not null    
+    , primary key ( 
+        prefecture_no
+        , prefecture
+        , prefecture_name
+        , city_no
+        , city_name
+    )
+); 
 
 create table if not exists transportation_info.railway( 
     prefecture_no character varying (10) not null

@@ -5,7 +5,7 @@
 <%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/css/fr-search.css" media="screen" />
+
 <title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
 </head>
 <body>

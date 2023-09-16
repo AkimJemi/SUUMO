@@ -6,7 +6,11 @@ const list = [];
 fs.readdir("./csv", (err, files) => {
   files.forEach((file) => {
     console.log(file);
+    if (file == "bk") {
+      return;
+    }
     var schema_table_name = file.replace("." + file.split(".")[2], "");
+    console.log(schema_table_name);
     var truncate = "TRUNCATE " + schema_table_name + ";";
     var query_execute =
       "COPY " + schema_table_name + " FROM " + url + file + "';";
