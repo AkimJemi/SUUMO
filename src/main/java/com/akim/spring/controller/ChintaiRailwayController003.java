@@ -26,7 +26,7 @@ public class ChintaiRailwayController003 extends SuumoCommonController {
     private TransportationInfoService transportationInfoService;
 
     private ModelAndView common(ModelAndView mv, HttpServletRequest rq, String prefecture) {
-        System.out.println("ChintaiPrefectureEnsenController004.common()");
+        System.out.println("ChintaiRailwayController003.common()");
 
 //        HttpSession session = rq.getSession();
 //        Map<String, String> prefectureInfo = PrefectureInfo.getPrefectureByPrefectureMap(prefecture,

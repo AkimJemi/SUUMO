@@ -1,4 +1,229 @@
 @charset "UTF-8";
+.fr_top-icon--sprite, .fr_top-icon--close, .modalpage .modalpage-window .modalpage-window-close, .fr_top-icon--loading56, .modalpage .modalpage-window.is-load:before, .fr_top-icon--rank01, .fr_top-icon--rank02, .fr_top-icon--rank03, .fr_top-icon--rank1_area, .fr_top-icon--rank1_station, .fr_top-icon--rank2_area, .fr_top-icon--rank2_station, .fr_top-icon--rank3_area, .fr_top-icon--rank3_station, .fr_top-icon--rankmore, .fr_top-icon--ranksmall01, .fr_top-icon--ranksmall02, .fr_top-icon--ranksmall03, .fr_top-icon--ranksmall04, .fr_top-icon--ranksmall05, .fr_top-icon--ranksmall06, .fr_top-icon--ranksmall07, .fr_top-icon--ranksmall08, .fr_top-icon--searchassist_map, .searchassist .searchassist-title:before {
+  background-image: url('/img/sprite/fr_top-icon-.png?8f8916b606');
+  background-repeat: no-repeat;
+}
+
+.fr_top-icon--close, .modalpage .modalpage-window .modalpage-window-close {
+  background-position: 0 0;
+  height: 17px;
+  width: 17px;
+}
+
+.fr_top-icon--loading56, .modalpage .modalpage-window.is-load:before {
+  background-position: 0 -17px;
+  height: 56px;
+  width: 56px;
+}
+
+.fr_top-icon--rank01 {
+  background-position: 0 -73px;
+  height: 18px;
+  width: 20px;
+}
+
+.fr_top-icon--rank02 {
+  background-position: 0 -91px;
+  height: 18px;
+  width: 20px;
+}
+
+.fr_top-icon--rank03 {
+  background-position: 0 -109px;
+  height: 18px;
+  width: 20px;
+}
+
+.fr_top-icon--rank1_area {
+  background-position: 0 -127px;
+  height: 33px;
+  width: 58px;
+}
+
+.fr_top-icon--rank1_station {
+  background-position: 0 -160px;
+  height: 40px;
+  width: 58px;
+}
+
+.fr_top-icon--rank2_area {
+  background-position: 0 -200px;
+  height: 33px;
+  width: 58px;
+}
+
+.fr_top-icon--rank2_station {
+  background-position: 0 -233px;
+  height: 40px;
+  width: 58px;
+}
+
+.fr_top-icon--rank3_area {
+  background-position: 0 -273px;
+  height: 33px;
+  width: 58px;
+}
+
+.fr_top-icon--rank3_station {
+  background-position: 0 -306px;
+  height: 40px;
+  width: 58px;
+}
+
+.fr_top-icon--rankmore {
+  background-position: 0 -346px;
+  height: 18px;
+  width: 21px;
+}
+
+.fr_top-icon--ranksmall01 {
+  background-position: 0 -364px;
+  height: 11px;
+  width: 18px;
+}
+
+.fr_top-icon--ranksmall02 {
+  background-position: 0 -375px;
+  height: 11px;
+  width: 18px;
+}
+
+.fr_top-icon--ranksmall03 {
+  background-position: 0 -386px;
+  height: 11px;
+  width: 18px;
+}
+
+.fr_top-icon--ranksmall04 {
+  background-position: 0 -397px;
+  height: 11px;
+  width: 19px;
+}
+
+.fr_top-icon--ranksmall05 {
+  background-position: 0 -408px;
+  height: 11px;
+  width: 18px;
+}
+
+.fr_top-icon--ranksmall06 {
+  background-position: 0 -419px;
+  height: 11px;
+  width: 18px;
+}
+
+.fr_top-icon--ranksmall07 {
+  background-position: 0 -430px;
+  height: 11px;
+  width: 18px;
+}
+
+.fr_top-icon--ranksmall08 {
+  background-position: 0 -441px;
+  height: 11px;
+  width: 19px;
+}
+
+.fr_top-icon--searchassist_map, .searchassist .searchassist-title:before {
+  background-position: 0 -452px;
+  height: 36px;
+  width: 36px;
+}
+
+.fr_top-statebtn--sprite, .fr_top-statebtn--area, .fr_top-statebtn--area_soba, .fr_top-statebtn--commuting_time, .fr_top-statebtn--company, .fr_top-statebtn--map, .fr_top-statebtn--new_property, .fr_top-statebtn--rent_market, .fr_top-statebtn--route_map, .fr_top-statebtn--wayside, .fr_top-statebtn--wayside_soba {
+  background-image: url('/img/sprite/fr_top-statebtn-.png?1699b0b568');
+  background-repeat: no-repeat;
+}
+
+.fr_top-statebtn--area {
+  background-position: 0 0;
+  height: 70px;
+  width: 360px;
+}
+
+.fr_top-statebtn--area_soba {
+  background-position: 0 -70px;
+  height: 70px;
+  width: 360px;
+}
+
+.fr_top-statebtn--commuting_time {
+  background-position: 0 -140px;
+  height: 47px;
+  width: 234px;
+}
+
+.fr_top-statebtn--company {
+  background-position: 0 -187px;
+  height: 47px;
+  width: 234px;
+}
+
+.fr_top-statebtn--map {
+  background-position: 0 -234px;
+  height: 47px;
+  width: 234px;
+}
+
+.fr_top-statebtn--new_property {
+  background-position: 0 -281px;
+  height: 47px;
+  width: 234px;
+}
+
+.fr_top-statebtn--rent_market {
+  background-position: 0 -328px;
+  height: 47px;
+  width: 234px;
+}
+
+.fr_top-statebtn--route_map {
+  background-position: 0 -375px;
+  height: 47px;
+  width: 234px;
+}
+
+.fr_top-statebtn--wayside {
+  background-position: 0 -422px;
+  height: 70px;
+  width: 360px;
+}
+
+.fr_top-statebtn--wayside_soba {
+  background-position: 0 -492px;
+  height: 70px;
+  width: 360px;
+}
+
+.fr_top-soubasort--sprite, .fr_top-soubasort--close, .market_more .market_more-close:before, .fr_top-soubasort--open, .market_more .market_more-open:before, .fr_top-soubasort--sort_down, .market_sort .market_sort-down .market_sort-down-item:before, .fr_top-soubasort--sort_up, .market_sort .market_sort-up .market_sort-up-item:before {
+  background-image: url('/img/sprite/fr_top-soubasort-.png?d33ff5c47c');
+  background-repeat: no-repeat;
+}
+
+.fr_top-soubasort--close, .market_more .market_more-close:before {
+  background-position: 0 0;
+  height: 16px;
+  width: 16px;
+}
+
+.fr_top-soubasort--open, .market_more .market_more-open:before {
+  background-position: 0 -16px;
+  height: 16px;
+  width: 16px;
+}
+
+.fr_top-soubasort--sort_down, .market_sort .market_sort-down .market_sort-down-item:before {
+  background-position: 0 -32px;
+  height: 16px;
+  width: 16px;
+}
+
+.fr_top-soubasort--sort_up, .market_sort .market_sort-up .market_sort-up-item:before {
+  background-position: 0 -48px;
+  height: 16px;
+  width: 16px;
+}
+
 /************************************************************
  * reset
  ************************************************************/
@@ -110,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* clearfix */
-.ui-media:after, .ui-list--hz:after, .ui-list--hz3:after, .ui-list--hz4:after, .ui-tab--base:after, .visual:after, .contents:after, .contents_zen:after, .contents_han:after, .mylist .mylist-inner:after, .mylist .mylist-list:after, .mylist .mylist-member:after, .mylistbarbox:after, .mylistbar .mylistbar-inbar:after, .mylistbar .mylistbar-inbar .mylistbar-inbar-item:after, .mylistbar .mylistbar-inbar .mylistbar-inbar-item a:after, .mylistbar.mylistbar--nb .mylistbar-inbar .mylistbar-inbar-item a:after, .loginbox .loginbox-links:after, .browselist:after, .browselist .titlearea:after, .browselist .listarea--article:after, .browselist .historyarea:after, .siteheader .siteheader-inner:after, .desc:after, .logo:after, .gnav_list:after, .footbnr .footbnr-list:after, .navbox_group:after, .navbox.navbox--large .navbox-body:after, .navbox.navbox--hz:after, .linkbox_group:after, .linkbox.linkbox--route:after, .linkbox.linkbox--search:after, .linkbox.linkbox--hz:after, .linkbox.linkbox--zentop:after, .ppbox_group:after, .ppbox:after, .footlogo:after, .lightbox .lightbox-link:after, .lightbox .lightbox-areabtn:after, .lightboxitem:after, .lightboxitem .lightboxitem-amounttime:after, .breadcrumb .breadcrumb-list:after, .breadcrumb2:after, .breadcrumb2 dl:after, .sectionmore:after, .subsectionmore:after, .itemlinklisth:after, .itemlisth_singleline:after, .itemlisth:after, .itemlisth2:after, .itemlisthbox > ul:after, .subsmalllistbox > ul:after, .itemlisth3:after, .featuresearchlist:after, .bgbox:after, .seminarbox .seminarbox-link .seminarbox-linklist:after, .counter.counter--inner:after, .counter.counter--inner2:after, .counter .counter-header:after, .counterlink.counterlink--type1 > .counterlink-list:after, .counterlink.counterlink--type2:after, .searchareabox.searchareabox--itembox:after, .searchareabox.searchareabox--itembox dl:after, .searchareabox.searchareabox--itembox .searchareabox-title:after, .searchbox:after, .areabtnlist:after, .bglinkbox .bglinkbox-inner:after, .mobilebox:after, .simplesubbannerbox .simplesubbannerbox-list:after, .subitemlisth:after, .subitemlisth2:after, .addbox.addbox--pr:after, .prreadbox:after, .prlistbox > ul:after, .propertydata .propertydata-txt:after, .pickupbox .pickupbox-inner:after, .areamap:after, .areamap_assist:after, .areamenu_detail .areamenu_detail-title:after, .inputlist.inputlist--col2:after, .inputlist.inputlist--madori:after, .stripe_lists .stripe_lists-line:after, .areamap--kaisha:after {
+.ui-media:after, .ui-list--hz:after, .ui-list--hz3:after, .ui-list--hz4:after, .ui-tab--base:after, .visual:after, .contents:after, .contents_zen:after, .contents_han:after, .mylist .mylist-inner:after, .mylist .mylist-list:after, .mylist .mylist-member:after, .mylistbarbox:after, .mylistbar .mylistbar-inbar:after, .mylistbar .mylistbar-inbar .mylistbar-inbar-item:after, .mylistbar .mylistbar-inbar .mylistbar-inbar-item a:after, .mylistbar.mylistbar--nb .mylistbar-inbar .mylistbar-inbar-item a:after, .loginbox .loginbox-links:after, .browselist:after, .browselist .titlearea:after, .browselist .listarea--article:after, .browselist .historyarea:after, .siteheader .siteheader-inner:after, .desc:after, .logo:after, .gnav_list:after, .footbnr .footbnr-list:after, .navbox_group:after, .navbox.navbox--large .navbox-body:after, .navbox.navbox--hz:after, .linkbox_group:after, .linkbox.linkbox--route:after, .linkbox.linkbox--search:after, .linkbox.linkbox--hz:after, .linkbox.linkbox--zentop:after, .ppbox_group:after, .ppbox:after, .footlogo:after, .l-itemranking .l-itemranking-body:after, .l-statebtn_item:after, .lightbox .lightbox-link:after, .lightbox .lightbox-areabtn:after, .lightboxitem:after, .lightboxitem .lightboxitem-amounttime:after, .breadcrumb .breadcrumb-list:after, .breadcrumb2:after, .breadcrumb2 dl:after, .sectionmore:after, .subsectionmore:after, .itemlinklisth:after, .itemlisth_singleline:after, .itemlisth:after, .itemlisth2:after, .itemlisthbox > ul:after, .subsmalllistbox > ul:after, .itemlisth3:after, .featuresearchlist:after, .bgbox:after, .seminarbox .seminarbox-link .seminarbox-linklist:after, .counter.counter--inner:after, .counter.counter--inner2:after, .counter .counter-header:after, .counterlink.counterlink--type1 > .counterlink-list:after, .counterlink.counterlink--type2:after, .searchareabox.searchareabox--itembox:after, .searchareabox.searchareabox--itembox dl:after, .searchareabox.searchareabox--itembox .searchareabox-title:after, .searchbox:after, .areabtnlist:after, .bglinkbox .bglinkbox-inner:after, .mobilebox:after, .simplesubbannerbox .simplesubbannerbox-list:after, .subitemlisth:after, .subitemlisth2:after, .addbox.addbox--pr:after, .prreadbox:after, .prlistbox > ul:after, .propertydata .propertydata-txt:after, .itemlistbox:after, .pickupbox .pickupbox-inner:after, .basicpage .basicpage-body:after, .flatbox .flatbox-search dl:after, .areamap_company .areamap_company-body:after, .areamap:after, .areamap .areamap-container:after, .areamap_assist:after, .searchassist.searchassist--keywordsearch dl:after, .searchassist.searchassist--keywordsearch dl dd:after, .areamap-header:after, .areamap-header .areamap-header-title:after, .areamap-header .areamap-header-new:after, .areamenu_detail .areamenu_detail-title:after, .itemlist_group:after, .market_info .market_info-list:after, .market_info .market_info-list .market_info-list-kind:after, .itemrank_soba .itemrank_soba-property:after, .itemtabledouble:after, .itemtoplist:after {
   content: "";
   display: block;
   clear: both;
@@ -118,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
-.ui-media, .ui-list--hz, .ui-list--hz3, .ui-list--hz4, .ui-tab--base, .visual, .contents, .contents_zen, .contents_han, .mylist .mylist-inner, .mylist .mylist-list, .mylist .mylist-member, .mylistbarbox, .mylistbar .mylistbar-inbar, .mylistbar .mylistbar-inbar .mylistbar-inbar-item, .mylistbar .mylistbar-inbar .mylistbar-inbar-item a, .mylistbar.mylistbar--nb .mylistbar-inbar .mylistbar-inbar-item a, .loginbox .loginbox-links, .browselist, .browselist .titlearea, .browselist .listarea--article, .browselist .historyarea, .siteheader .siteheader-inner, .desc, .logo, .gnav_list, .footbnr .footbnr-list, .navbox_group, .navbox.navbox--large .navbox-body, .navbox.navbox--hz, .linkbox_group, .linkbox.linkbox--route, .linkbox.linkbox--search, .linkbox.linkbox--hz, .linkbox.linkbox--zentop, .ppbox_group, .ppbox, .footlogo, .lightbox .lightbox-link, .lightbox .lightbox-areabtn, .lightboxitem, .lightboxitem .lightboxitem-amounttime, .breadcrumb .breadcrumb-list, .breadcrumb2, .breadcrumb2 dl, .sectionmore, .subsectionmore, .itemlinklisth, .itemlisth_singleline, .itemlisth, .itemlisth2, .itemlisthbox > ul, .subsmalllistbox > ul, .itemlisth3, .featuresearchlist, .bgbox, .seminarbox .seminarbox-link .seminarbox-linklist, .counter.counter--inner, .counter.counter--inner2, .counter .counter-header, .counterlink.counterlink--type1 > .counterlink-list, .counterlink.counterlink--type2, .searchareabox.searchareabox--itembox, .searchareabox.searchareabox--itembox dl, .searchareabox.searchareabox--itembox .searchareabox-title, .searchbox, .areabtnlist, .bglinkbox .bglinkbox-inner, .mobilebox, .simplesubbannerbox .simplesubbannerbox-list, .subitemlisth, .subitemlisth2, .addbox.addbox--pr, .prreadbox, .prlistbox > ul, .propertydata .propertydata-txt, .pickupbox .pickupbox-inner, .areamap, .areamap_assist, .areamenu_detail .areamenu_detail-title, .inputlist.inputlist--col2, .inputlist.inputlist--madori, .stripe_lists .stripe_lists-line, .areamap--kaisha {
+.ui-media, .ui-list--hz, .ui-list--hz3, .ui-list--hz4, .ui-tab--base, .visual, .contents, .contents_zen, .contents_han, .mylist .mylist-inner, .mylist .mylist-list, .mylist .mylist-member, .mylistbarbox, .mylistbar .mylistbar-inbar, .mylistbar .mylistbar-inbar .mylistbar-inbar-item, .mylistbar .mylistbar-inbar .mylistbar-inbar-item a, .mylistbar.mylistbar--nb .mylistbar-inbar .mylistbar-inbar-item a, .loginbox .loginbox-links, .browselist, .browselist .titlearea, .browselist .listarea--article, .browselist .historyarea, .siteheader .siteheader-inner, .desc, .logo, .gnav_list, .footbnr .footbnr-list, .navbox_group, .navbox.navbox--large .navbox-body, .navbox.navbox--hz, .linkbox_group, .linkbox.linkbox--route, .linkbox.linkbox--search, .linkbox.linkbox--hz, .linkbox.linkbox--zentop, .ppbox_group, .ppbox, .footlogo, .l-itemranking .l-itemranking-body, .l-statebtn_item, .lightbox .lightbox-link, .lightbox .lightbox-areabtn, .lightboxitem, .lightboxitem .lightboxitem-amounttime, .breadcrumb .breadcrumb-list, .breadcrumb2, .breadcrumb2 dl, .sectionmore, .subsectionmore, .itemlinklisth, .itemlisth_singleline, .itemlisth, .itemlisth2, .itemlisthbox > ul, .subsmalllistbox > ul, .itemlisth3, .featuresearchlist, .bgbox, .seminarbox .seminarbox-link .seminarbox-linklist, .counter.counter--inner, .counter.counter--inner2, .counter .counter-header, .counterlink.counterlink--type1 > .counterlink-list, .counterlink.counterlink--type2, .searchareabox.searchareabox--itembox, .searchareabox.searchareabox--itembox dl, .searchareabox.searchareabox--itembox .searchareabox-title, .searchbox, .areabtnlist, .bglinkbox .bglinkbox-inner, .mobilebox, .simplesubbannerbox .simplesubbannerbox-list, .subitemlisth, .subitemlisth2, .addbox.addbox--pr, .prreadbox, .prlistbox > ul, .propertydata .propertydata-txt, .itemlistbox, .pickupbox .pickupbox-inner, .basicpage .basicpage-body, .flatbox .flatbox-search dl, .areamap_company .areamap_company-body, .areamap, .areamap .areamap-container, .areamap_assist, .searchassist.searchassist--keywordsearch dl, .searchassist.searchassist--keywordsearch dl dd, .areamap-header, .areamap-header .areamap-header-title, .areamap-header .areamap-header-new, .areamenu_detail .areamenu_detail-title, .itemlist_group, .market_info .market_info-list, .market_info .market_info-list .market_info-list-kind, .itemrank_soba .itemrank_soba-property, .itemtabledouble, .itemtoplist {
   min-height: 1px;
   _height: 1px;
 }
@@ -128,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-.bnr--library, .bnr--eco, .bnr--pet, .bnr--pre, .bnr--ren, .bnr--bessou, .bnr--inaka, .bnr--homepro {
+.bnr--library, .bnr--eco, .bnr--pet, .bnr--pre, .bnr--ren, .bnr--bessou, .bnr--inaka {
   background-image: url(/img/sprite/bnr.png);
   background-repeat: no-repeat;
 }
@@ -158,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-.ui-icon--dot, .ui-icon--arrow01, .ui-icon--arrow04, .ui-icon--external, .ui-icon--cherry, .ui-icon--arrow02, .ui-icon--car, .ui-icon--jobs, .ui-icon--time, .ui-icon--loupe3, .ui-icon--external02, .ui-icon--building, .ui-icon--house, .ui-icon--house_active, .ui-icon--arrow07, .ui-icon--hotpepper, .ui-icon--twitter, .ui-icon--yahoo, .ui-icon--facebook, .ui-icon--google, .ui-icon--tabphotoview, .ui-icon--tabview, .ui-icon--tabcompanyview, .ui-icon--tabmapview, .ui-icon--tabshowview, .ui-icon--movie, .ui-icon--train, .ui-icon--normal, .ui-icon--building2, .ui-icon--japan, .ui-icon--theme01, .ui-icon--theme02, .ui-icon--theme03, .ui-icon--theme04, .ui-icon--house2, .ui-icon--loupe2, .ui-icon--loupe5, .ui-icon--loupel1, .ui-icon--loupe8, .ui-icon--loupe1a, .ui-icon--loupe7, .ui-icon--exclamation1, .ui-icon--addplus, .ui-icon--arrow05, .ui-icon--square, .ui-icon--recruitid, .ui-icon--question, .ui-icon--arrow06, .ui-icon--camera_s, .ui-icon--loupe4, .ui-icon--exclamation2, .ui-icon--rss, .ui-icon--rss2, .ui-icon--train2, .ui-icon--logo, .ui-icon--suumo, .ui-icon--suumo2, .ui-icon--counterms, .ui-icon--counterchumon, .ui-icon--ranklarge01, .ui-icon--ranklarge02, .ui-icon--ranklarge03, .ui-icon--ranksmall01, .ui-icon--ranksmall02, .ui-icon--ranksmall03, .ui-icon--ranksmall04, .ui-icon--ranksmall05, .ui-icon--ranksmall06, .ui-icon--ranksmall07, .ui-icon--ranksmall08, .ui-icon--rankmiddle04, .ui-icon--rankmiddle05, .ui-icon--rankmiddle06 {
+.ui-icon--dot, .ui-icon--arrow01, .ui-icon--arrow04, .ui-icon--external, .ui-icon--cherry, .ui-icon--arrow02, .market_info .market_info-morelink .market_info-morelink-item:before, .ui-icon--car, .ui-icon--jobs, .ui-icon--time, .ui-icon--loupe3, .ui-icon--external02, .ui-icon--building, .ui-icon--house, .ui-icon--house_active, .ui-icon--arrow07, .ui-icon--hotpepper, .ui-icon--twitter, .ui-icon--yahoo, .ui-icon--facebook, .ui-icon--google, .ui-icon--tabphotoview, .ui-icon--tabview, .ui-icon--tabcompanyview, .ui-icon--tabmapview, .ui-icon--tabshowview, .ui-icon--movie, .ui-icon--train, .ui-icon--normal, .ui-icon--building2, .ui-icon--japan, .ui-icon--theme01, .ui-icon--theme02, .ui-icon--theme03, .ui-icon--theme04, .ui-icon--house2, .ui-icon--loupe2, .ui-icon--loupe5, .ui-icon--loupel1, .ui-icon--loupe8, .ui-icon--loupe1a, .ui-icon--loupe7, .ui-icon--exclamation1, .ui-icon--addplus, .ui-icon--arrow05, .ui-icon--square, .ui-icon--recruitid, .ui-icon--question, .ui-icon--arrow06, .ui-icon--camera_s, .ui-icon--loupe4, .ui-icon--exclamation2, .ui-icon--rss, .ui-icon--rss2, .ui-icon--train2, .ui-icon--logo, .ui-icon--suumo, .ui-icon--suumo2, .ui-icon--counterms, .ui-icon--counterchumon, .ui-icon--ranklarge01, .ui-icon--ranklarge02, .ui-icon--ranklarge03, .ui-icon--ranksmall01, .ui-icon--ranksmall02, .ui-icon--ranksmall03, .ui-icon--ranksmall04, .ui-icon--ranksmall05, .ui-icon--ranksmall06, .ui-icon--ranksmall07, .ui-icon--ranksmall08, .ui-icon--rankmiddle04, .ui-icon--rankmiddle05, .ui-icon--rankmiddle06 {
   background-image: url(/img/sprite/icon.png);
   background-repeat: no-repeat;
 }
@@ -178,12 +403,12 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-.btn_counterms, .btn_counterchumon {
-  background-image: url(/img/sprite/btn_ou_counter.png);
+.btn_topsearch01, .btn_topsearch02, .btn_topsearch03, .btn_topsearch04, .btn_topsearch05, .btn_topsearch06, .btn_topsearch07, .btn_topsearch08, .btn_topsearch09, .btn_topsearch14, .btn_topsearch15 {
+  background-image: url(/img/sprite/btn_fr_hantop.png);
   background-repeat: no-repeat;
 }
 
-.ui-icon--suumo00, .ui-icon--suumo01, .ui-icon--suumo02, .ui-icon--suumo03, .ui-icon--suumo04, .ui-icon--suumo05, .ui-icon--suumo06, .ui-icon--suumo07, .ui-icon--suumo08, .ui-icon--suumo09, .ui-icon--suumo10, .ui-icon--suumo11, .ui-icon--suumo12, .ui-icon--suumo13, .ui-icon--suumo14, .ui-subtheme--theme04, .ui-subtheme--theme05, .ui-sprite--menu_buy, .ui-sprite--menu_rent, .ui-sprite--menu_build, .ui-sprite--menu_reform, .ui-sprite--menu_buy_s, .ui-sprite--menu_rent_s, .ui-sprite--menu_reform_s, .ui-sprite--menu_build_s, .ui-sprite--removebtn, .ui-sprite--actionbtn_addmylist, .ui-sprite--actionbtn_registmail, .ui-sprite--actionbtn_save, .ui-sprite--actionbtn_registmylist, .ui-sprite--actionbtn_rss, .ui-sprite--actionbtn_savemiddle, .ui-sprite--actionbtn_registmailmiddle, .ui-sprite--actionbtn_requestmiddle, .ui-sprite--actionbtn_savesmall, .ui-sprite--actionbtn_registmailsmall, .ui-sprite--actionbtn_requestsmall, .ui-sprite--mark_check, .ui-sprite--mark_require, .mylist .mylist-logo a, .mylist .mylist-list .mylist-link, .mylist .mylist-member span, .mylistbar .mylistbar-title, .mylistbarlink .mylistbarlink-title, .mylisticon, .bnr--library, .bnr--eco, .bnr--pet, .bnr--pre, .bnr--ren, .bnr--bessou, .bnr--inaka, .bnr--homepro, .btn_counterms, .btn_counterchumon {
+.ui-icon--suumo00, .ui-icon--suumo01, .ui-icon--suumo02, .ui-icon--suumo03, .ui-icon--suumo04, .ui-icon--suumo05, .ui-icon--suumo06, .ui-icon--suumo07, .ui-icon--suumo08, .ui-icon--suumo09, .ui-icon--suumo10, .ui-icon--suumo11, .ui-icon--suumo12, .ui-icon--suumo13, .ui-icon--suumo14, .ui-subtheme--theme04, .ui-subtheme--theme05, .ui-sprite--menu_buy, .ui-sprite--menu_rent, .ui-sprite--menu_build, .ui-sprite--menu_reform, .ui-sprite--menu_buy_s, .ui-sprite--menu_rent_s, .ui-sprite--menu_reform_s, .ui-sprite--menu_build_s, .ui-sprite--removebtn, .ui-sprite--actionbtn_addmylist, .ui-sprite--actionbtn_registmail, .ui-sprite--actionbtn_save, .ui-sprite--actionbtn_registmylist, .ui-sprite--actionbtn_rss, .ui-sprite--actionbtn_savemiddle, .ui-sprite--actionbtn_registmailmiddle, .ui-sprite--actionbtn_requestmiddle, .ui-sprite--actionbtn_savesmall, .ui-sprite--actionbtn_registmailsmall, .ui-sprite--actionbtn_requestsmall, .ui-sprite--mark_check, .ui-sprite--mark_require, .mylist .mylist-logo a, .mylist .mylist-list .mylist-link, .mylist .mylist-member span, .mylistbar .mylistbar-title, .mylistbarlink .mylistbarlink-title, .mylisticon, .bnr--library, .bnr--eco, .bnr--pet, .bnr--pre, .bnr--ren, .bnr--bessou, .bnr--inaka, .btn_topsearch01, .btn_topsearch02, .btn_topsearch03, .btn_topsearch04, .btn_topsearch05, .btn_topsearch06, .btn_topsearch07, .btn_topsearch08, .btn_topsearch09, .btn_topsearch14, .btn_topsearch15, .fr_top-statebtn, .btn_ensensearch, .btn_areasearch {
   text-indent: -9999px;
   overflow: hidden;
   display: block;
@@ -239,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 15px;
 }
 
-.ui-icon--arrow02 {
+.ui-icon--arrow02, .market_info .market_info-morelink .market_info-morelink-item:before {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -1715,7 +1940,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 74px;
   position: absolute;
   top: 36px;
-  right: 181px;
+  right: 210px;
 }
 
 .ui-icon--suumo01 {
@@ -2314,7 +2539,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 25%;
 }
 
-.ui-list--arrow02 .ui-icon--arrow02 {
+.ui-list--arrow02 .ui-icon--arrow02, .ui-list--arrow02 .market_info .market_info-morelink .market_info-morelink-item:before, .market_info .market_info-morelink .ui-list--arrow02 .market_info-morelink-item:before {
   margin-right: 5px;
 }
 
@@ -4165,16 +4390,6 @@ select {
   filter: alpha(opacity=80);
 }
 
-.bnr--homepro {
-  background-position: -690px -54px;
-  width: 230px;
-  height: 54px;
-}
-.bnr--homepro:hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-
 .globalnav-link a:link {
   color: #333333;
   text-decoration: none;
@@ -4667,6 +4882,48 @@ select {
 
 .footer input {
   font-family: 'メイリオ','meiryo','ＭＳ Ｐゴシック','MS P Gothic','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ヒラギノ丸ゴシック Pro W3','Hiragino maru Gothic Pro','Helvetica','sans-serif';
+}
+
+.l-itemranking .l-itemranking-body .l-itemranking-body-left {
+  width: 449px;
+  float: left;
+}
+.l-itemranking .l-itemranking-body .l-itemranking-body-right {
+  width: 449px;
+  float: left;
+  margin-left: 52px;
+}
+.l-itemranking .l-itemranking-foot {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.l-statebtn {
+  margin-top: 30px;
+}
+.l-statebtn > li {
+  margin-top: 20px;
+}
+.l-statebtn > li:first-child {
+  margin-top: 0;
+}
+
+.l-statebtn_item > li {
+  float: left;
+  margin-left: 20px;
+}
+.l-statebtn_item > li:first-child {
+  margin-left: 0;
+}
+
+.l-include_adjust_top {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.l-include_adjust_bottom {
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .mylist_pop_wrap {
@@ -5263,6 +5520,10 @@ select {
 .itemlinklisth {
   margin-top: 10px;
 }
+.itemlinklisth.itemlinklisth--themerank > li {
+  width: 185px;
+  margin-right: 10px;
+}
 .itemlinklisth > li {
   float: left;
   margin-right: 20px;
@@ -5549,6 +5810,9 @@ select {
 .mediabox.mediabox--link .mediabox-desc:visited {
   color: #6219DB;
 }
+.mediabox.mediabox--action {
+  font-size: 14px;
+}
 
 .daytime {
   margin-right: 10px;
@@ -5675,6 +5939,14 @@ select {
 
 .normalvlink {
   margin-top: 10px;
+}
+.normalvlink.normalvlink--underline .normalvlink-list li {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.normalvlink.normalvlink--underline .normalvlink-list li:first-child {
+  margin-top: 0;
 }
 .normalvlink .normalvlink-list li {
   margin-top: 10px;
@@ -5901,14 +6173,6 @@ select {
   font-weight: bold;
   font-size: 16px;
 }
-.counter .counter-title2 {
-  float: left;
-  margin-top: 5px;
-  margin-left: 55px;
-  color: #37660E;
-  font-weight: bold;
-  font-size: 14px;
-}
 .counter .counter-object {
   float: right;
 }
@@ -6098,6 +6362,21 @@ select {
   font-size: 14px;
   font-weight: bold;
   vertical-align: middle;
+}
+
+/* itemline */
+.itemline {
+  margin-top: 10px;
+}
+.itemline .itemline-title {
+  width: 56px;
+  margin-right: 20px;
+  color: #333333;
+  font-size: 14px;
+  float: left;
+}
+.itemline.itemline--type02 {
+  margin-top: 0;
 }
 
 /* anchorbox */
@@ -6605,7 +6884,7 @@ select {
 .ui-iconbox--arrow02 {
   padding-left: 20px;
 }
-.ui-iconbox--arrow02 .ui-icon--arrow02 {
+.ui-iconbox--arrow02 .ui-icon--arrow02, .ui-iconbox--arrow02 .market_info .market_info-morelink .market_info-morelink-item:before, .market_info .market_info-morelink .ui-iconbox--arrow02 .market_info-morelink-item:before {
   top: 3px;
   left: 0;
 }
@@ -6613,7 +6892,7 @@ select {
 .ui-iconbox--arrow03 {
   padding-left: 17px;
 }
-.ui-iconbox--arrow03 .ui-icon--arrow02 {
+.ui-iconbox--arrow03 .ui-icon--arrow02, .ui-iconbox--arrow03 .market_info .market_info-morelink .market_info-morelink-item:before, .market_info .market_info-morelink .ui-iconbox--arrow03 .market_info-morelink-item:before {
   top: 3px;
   left: 0;
 }
@@ -6945,6 +7224,16 @@ body, body * {
 .itemlistbox .itemlistbox-vline:first-child {
   margin-top: 0;
 }
+.itemlistbox .itemlistbox-oject {
+  width: 311px;
+  float: left;
+}
+.itemlistbox li {
+  margin-left: 20px;
+}
+.itemlistbox li:first-child {
+  margin-left: 0;
+}
 
 .ranklinkbox {
   text-decoration: none;
@@ -6996,510 +7285,865 @@ body, body * {
   display: none;
 }
 
-.mainitembox {
-  margin-top: 30px;
-}
-
-/* logoarea */
-.logoarea {
-  margin: 5px 0 10px;
+.basicpage .basicpage-header {
   position: relative;
 }
-
-/* subtop */
-.subtop {
-  margin-bottom: 20px;
+.basicpage .basicpage-body {
+  margin-top: 20px;
 }
 
-/* zentitle */
-.zentitle {
-  margin-bottom: 10px;
+.flatbox {
+  margin-top: 30px;
 }
-.zentitle span {
+.flatbox .flatbox-body {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #EEEEEE;
+  padding: 10px;
+  color: #D9D9D9;
+}
+.flatbox .flatbox-search {
+  margin-top: 30px;
+}
+.flatbox .flatbox-search dl {
+  margin-top: 15px;
+}
+.flatbox .flatbox-search dl:first-child {
+  margin-top: 0;
+}
+.flatbox .flatbox-search dt {
+  float: left;
+  width: 120px;
+  color: #666666;
   font-weight: bold;
 }
-.zentitle a {
-  color: #333;
-  text-decoration: underline;
+.flatbox .flatbox-search dd {
+  overflow: hidden;
+  text-indent: -27px;
+  padding-left: 27px;
+}
+.flatbox .flatbox-search span {
+  color: #666666;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.titlebeginner {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.titlebeginner span {
+  margin-right: 5px;
+}
+
+.ui-icon--rank01, .ui-icon--rank02, .ui-icon--rank03, .ui-icon--rank04,
+.ui-icon--rank05, .ui-icon--rank06, .ui-icon--rank07, .ui-icon--rank08 {
+  background-image: url(/img/sprite/icon_ranking.png);
+  background-repeat: no-repeat;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 20px;
+  height: 18px;
+}
+
+.ui-icon--rank01 {
+  background-position: -140px 0;
+}
+
+.ui-icon--rank02 {
+  background-position: -120px 0;
+}
+
+.ui-icon--rank03 {
+  background-position: -100px 0;
+}
+
+.ui-icon--rank04 {
+  background-position: -80px 0;
+}
+
+.ui-icon--rank05 {
+  background-position: -60px 0;
+}
+
+.ui-icon--rank06 {
+  background-position: -40px 0;
+}
+
+.ui-icon--rank07 {
+  background-position: -20px 0;
+}
+
+.ui-icon--rank08 {
+  background-position: 0 0;
+}
+
+.ranktop3 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn--large {
+  width: 260px;
+  padding: 12px 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.sidebanner li {
+  margin-top: 20px;
+}
+.sidebanner li:first-child {
+  margin-top: 0;
+}
+
+.sublease {
+  margin-top: 20px;
+}
+.sublease li {
+  padding: 10px;
+}
+.sublease .sublease-title {
+  font-size: 12px;
+  font-weight: normal;
+}
+.sublease .sublease-list i {
+  margin-right: 5px;
+}
+
+.sublease-label {
+  margin-right: 10px;
+}
+
+/* areamap_company */
+.areamap_company {
+  border: 1px solid #DDDDDD;
+}
+.areamap_company .areamap_company-header {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5AAE08;
+}
+.areamap_company .areamap_company-header span {
+  font-size: 14px;
+}
+.areamap_company .areamap_company-body {
+  padding: 0 0 7px 1px;
+}
+.areamap_company .areamap_company-map {
+  position: relative;
+  float: left;
+  width: 432px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px dotted #CCCCCC;
+}
+.areamap_company .areamap_company-field .areamap_company-field-hokkaido {
+  background: url(/img/sprite/inc_FR_top_010_map.png) left top no-repeat;
+  height: 411px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-tohoku {
+  background: url(/img/sprite/inc_FR_top_020_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-kanto {
+  background: url(/img/sprite/inc_FR_top_030_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-koshinetsu {
+  background: url(/img/sprite/inc_FR_top_040_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-tokai {
+  background: url(/img/sprite/inc_FR_top_050_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-kansai {
+  background: url(/img/sprite/inc_FR_top_060_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-shikoku {
+  background: url(/img/sprite/inc_FR_top_070_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-chugoku {
+  background: url(/img/sprite/inc_FR_top_080_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-field .areamap_company-field-kyushu {
+  background: url(/img/sprite/inc_FR_top_090_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap_company .areamap_company-searchassist {
+  float: left;
+  width: 234px;
+}
+.areamap_company .areamap_company-searchassist .areamap_company-searchassist-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5AAE08;
+}
+.areamap_company .areamap_company-searchassist .areamap_company-searchassist-title span {
+  font-size: 14px;
+}
+.areamap_company .areamap_company-searchassist .areamap_company-searchassist-input {
+  margin-top: 20px;
+}
+.areamap_company .areamap_company-searchassist .areamap_company-searchassist-input input {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 100%;
+  width: 212px;
+  padding: 10px;
+  border: 1px solid #E6EDE0;
+}
+.areamap_company .areamap_company-searchassist .areamap_company-searchassist-action {
+  margin-top: 10px;
+  text-align: center;
+}
+.areamap_company .areamap_company-searchassist .areamap_company-searchassist-action a {
+  width: 120px;
+  font-size: 14px;
 }
 
 /* areamap */
-.areamap .areamap-map {
+.areamap {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  float: left;
-  width: 465px;
+  background: #D0D4CE;
   padding: 5px;
-  background-color: #6FBA2C;
 }
-.areamap .areamap-map .areamap-map-inner {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  padding: 8px;
+.areamap .areamap-map {
+  position: relative;
+  float: left;
+  margin-right: 5px;
+}
+.areamap .areamap-map .areamap-map-icon {
+  position: absolute;
+  top: 352px;
+  left: 346px;
+}
+.areamap .areamap-map .areamap-map-icon.areamap-map-icon--koshinetsu {
+  top: 324px;
+  left: 10px;
+}
+.areamap .areamap-nav {
+  width: 203px;
+  height: 487px;
+  overflow: hidden;
+  float: left;
   background-color: #FFFFFF;
 }
 .areamap .areamap-field {
-  margin-top: -32px;
-  background: url(/img/sprite/inc_top_areamap.png) left top no-repeat;
+  width: 432px;
+  background-color: #FFFFFF;
 }
-.areamap .areamap-nav {
-  position: relative;
-  width: 165px;
-  float: right;
+.areamap .areamap-field .areamap-field-hokkaido {
+  background: url(/img/sprite/inc_FR_top_010_map.png) left top no-repeat;
+  height: 416px;
 }
-.areamap .ui-icon--loupe8 {
-  margin-right: 5px;
+.areamap .areamap-field .areamap-field-tohoku {
+  background: url(/img/sprite/inc_FR_top_020_map.png) left top no-repeat;
+  height: 416px;
 }
-.areamap .ui-icon--building2,
-.areamap .ui-icon--house2 {
-  margin-right: 5px;
+.areamap .areamap-field .areamap-field-kanto {
+  background: url(/img/sprite/inc_FR_top_030_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap .areamap-field .areamap-field-koshinetsu {
+  background: url(/img/sprite/inc_FR_top_040_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap .areamap-field .areamap-field-tokai {
+  background: url(/img/sprite/inc_FR_top_050_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap .areamap-field .areamap-field-kansai {
+  background: url(/img/sprite/inc_FR_top_060_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap .areamap-field .areamap-field-shikoku {
+  background: url(/img/sprite/inc_FR_top_070_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap .areamap-field .areamap-field-chugoku {
+  background: url(/img/sprite/inc_FR_top_080_map.png) left top no-repeat;
+  height: 416px;
+}
+.areamap .areamap-field .areamap-field-kyushu {
+  background: url(/img/sprite/inc_FR_top_090_map.png) left top no-repeat;
+  height: 416px;
 }
 
 /* areamap_assist */
-.areamap_assist dl {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  float: left;
-  padding: 10px 5px 5px 5px;
-  background: #DDE5D7;
+.areamap_assist {
+  padding: 11px 10px;
+  background: #FFFFFF;
+  border-top: 5px solid #D0D4CE;
 }
-.areamap_assist dd {
-  margin-top: 5px;
-}
-.areamap_assist .areamap_assist-btns li {
-  width: 200px;
+.areamap_assist li {
   margin-left: 5px;
 }
-.areamap_assist .areamap_assist-btns li:first-child {
+.areamap_assist li:first-child {
   margin-left: 0;
-}
-.areamap_assist .areamap_assist-title {
-  font-weight: bold;
-  color: #519C00;
 }
 .areamap_assist .areamap_assist-btn1 {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: #dddddd 0 -4px 0 inset;
-  -webkit-box-shadow: #dddddd 0 -4px 0 inset;
-  box-shadow: #dddddd 0 -4px 0 inset;
-  background-image: none;
-  border: 1px solid #999999;
-  padding-top: 5px;
-  height: 37px;
-  font-weight: bold;
-  color: #263C2A;
-}
-.areamap_assist .areamap_assist-btn1 span {
-  font-size: 10px;
-  font-weight: normal;
-}
-.areamap_assist .areamap_assist-btn2 {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: #dddddd 0 -4px 0 inset;
-  -webkit-box-shadow: #dddddd 0 -4px 0 inset;
-  box-shadow: #dddddd 0 -4px 0 inset;
-  background-image: none;
-  border: 1px solid #999999;
   padding-top: 12px;
-  height: 30px;
-  width: 149px;
+  height: 29px;
   font-weight: bold;
-  color: #263C2A;
-}
-.areamap_assist .areamap_assist-btn2 span {
-  font-size: 10px;
-  font-weight: normal;
-}
-.areamap_assist .areamap_assist-btn3 {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: #dddddd 0 -4px 0 inset;
-  -webkit-box-shadow: #dddddd 0 -4px 0 inset;
-  box-shadow: #dddddd 0 -4px 0 inset;
-  background-image: none;
-  border: 1px solid #999999;
-  padding-top: 12px;
-  width: 127px;
-  height: 30px;
-  font-weight: bold;
-  color: #263C2A;
-}
-.areamap_assist.areamap_assist--small .areamap_assist-1g {
-  float: left;
-  width: 136px;
-}
-.areamap_assist.areamap_assist--small .areamap_assist-2g {
-  width: 285px;
-  float: right;
-}
-.areamap_assist.areamap_assist--small .ui-btn {
-  font-size: 12px;
-  display: block;
-}
-.areamap_assist.areamap_assist--small li {
-  margin-left: 5px;
-}
-.areamap_assist.areamap_assist--small li:first-child {
-  margin-left: 0;
-}
-.areamap_assist.areamap_assist--large {
-  padding: 10px;
-}
-.areamap_assist.areamap_assist--large .areamap_assist-1g {
-  width: 200px;
-}
-.areamap_assist.areamap_assist--large .areamap_assist-2g {
-  width: 405px;
-}
-
-/* areamap_monthly_background */
-.areamap_monthly_background {
-  position: relative;
-  height: 503px;
-}
-.areamap_monthly_background.js-areamap_monthly_background--01 {
-  background: url(/img/sprite/inc_top_areamap_01.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--02 {
-  background: url(/img/sprite/inc_top_areamap_02.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--03 {
-  background: url(/img/sprite/inc_top_areamap_03.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--04 {
-  background: url(/img/sprite/inc_top_areamap_04.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--05 {
-  background: url(/img/sprite/inc_top_areamap_05.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--06 {
-  background: url(/img/sprite/inc_top_areamap_06.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--07 {
-  background: url(/img/sprite/inc_top_areamap_07.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--08 {
-  background: url(/img/sprite/inc_top_areamap_08.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--09 {
-  background: url(/img/sprite/inc_top_areamap_09.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--10 {
-  background: url(/img/sprite/inc_top_areamap_10.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--11 {
-  background: url(/img/sprite/inc_top_areamap_11.png) left top no-repeat;
-}
-.areamap_monthly_background.js-areamap_monthly_background--12 {
-  background: url(/img/sprite/inc_top_areamap_12.png) left top no-repeat;
 }
 
 /* areabox */
 .areabox {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -moz-box-shadow: rgba(2, 128, 46, 0.5) 1px 2px 3px;
+  -webkit-box-shadow: rgba(2, 128, 46, 0.5) 1px 2px 3px;
+  box-shadow: rgba(2, 128, 46, 0.5) 1px 2px 3px;
   position: absolute;
   text-align: center;
+  padding: 4px 3px;
+  background-color: #198C2C;
 }
-.areabox:hover {
+.areabox dd {
+  margin-top: 3px;
+}
+.areabox li {
+  margin-left: 3px;
+}
+.areabox li:first-child {
+  margin-left: 0;
+}
+.areabox .areabox-link {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #cccccc 0 -3px 0 inset;
+  -webkit-box-shadow: #cccccc 0 -3px 0 inset;
+  box-shadow: #cccccc 0 -3px 0 inset;
+  background-color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  height: 30px;
+  width: 62px;
+  padding-top: 14px;
+  font-size: 16px;
+}
+.areabox .areabox-link:hover {
   opacity: .8;
   filter: alpha(opacity=80);
 }
-.areabox .areabox-link {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  -moz-box-shadow: #cccccc 0 -4px 0 inset;
-  -webkit-box-shadow: #cccccc 0 -4px 0 inset;
-  box-shadow: #cccccc 0 -4px 0 inset;
-  background-color: #FFFFFF;
-  display: block;
-  border: 2px solid #02802E;
+.areabox .areabox-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.areabox .areabox-title a {
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
   text-decoration: none;
 }
-.areabox .areabox-title {
+.areabox .areabox-txt {
   font-weight: bold;
   color: #263C2A;
   line-height: 1;
 }
-.areabox .areabox-list {
-  margin-top: 5px;
-  color: #999999;
-  font-size: 10px;
+.areabox.areabox--gumma {
+  left: 12px;
+  top: 19px;
 }
-.areabox .areabox-list li {
-  display: inline;
+.areabox.areabox--tochigi {
+  left: 186px;
+  top: 19px;
+}
+.areabox.areabox--ibaraki {
+  left: 269px;
+  top: 111px;
+}
+.areabox.areabox--saitama {
+  left: 82px;
+  top: 111px;
+}
+.areabox.areabox--tokyo {
+  left: 82px;
+  top: 195px;
+}
+.areabox.areabox--chiba {
+  left: 269px;
+  top: 227px;
+}
+.areabox.areabox--kanagawa {
+  left: 30px;
+  top: 298px;
+}
+.areabox.areabox--aomori {
+  left: 254px;
+  top: 52px;
+}
+.areabox.areabox--akita {
+  left: 58px;
+  top: 122px;
+}
+.areabox.areabox--iwate {
+  left: 210px;
+  top: 143px;
+}
+.areabox.areabox--yamagata {
+  left: 58px;
+  top: 217px;
+}
+.areabox.areabox--miyagi {
+  left: 210px;
+  top: 237px;
+}
+.areabox.areabox--fukushima {
+  left: 33px;
+  top: 311px;
+}
+.areabox.areabox--ishikawa {
+  left: 20px;
+  top: 36px;
+}
+.areabox.areabox--nigata {
+  left: 279px;
+  top: 52px;
+}
+.areabox.areabox--toyama {
+  left: 105px;
+  top: 176px;
+}
+.areabox.areabox--nagano {
+  left: 255px;
+  top: 185px;
+}
+.areabox.areabox--fukui {
+  left: 61px;
+  top: 280px;
+}
+.areabox.areabox--yamanashi {
+  left: 277px;
+  top: 267px;
+}
+.areabox.areabox--gifu {
+  left: 150px;
+  top: 71px;
+}
+.areabox.areabox--aichi {
+  left: 107px;
+  top: 174px;
+}
+.areabox.areabox--shizuoka {
+  left: 276px;
+  top: 174px;
+}
+.areabox.areabox--mie {
+  left: 20px;
+  top: 276px;
+}
+.areabox.areabox--kyoto {
+  left: 150px;
+  top: 61px;
+}
+.areabox.areabox--hyogo {
+  left: 12px;
+  top: 96px;
+}
+.areabox.areabox--shiga {
+  left: 286px;
+  top: 29px;
+}
+.areabox.areabox--osaka {
+  left: 122px;
+  top: 197px;
+}
+.areabox.areabox--nara {
+  left: 267px;
+  top: 219px;
+}
+.areabox.areabox--wakayama {
+  left: 122px;
+  top: 319px;
+}
+.areabox.areabox--kagawa {
+  left: 270px;
+  top: 71px;
+}
+.areabox.areabox--ehime {
+  left: 56px;
+  top: 101px;
+}
+.areabox.areabox--tokushima {
+  left: 270px;
+  top: 173px;
+}
+.areabox.areabox--kochi {
+  left: 91px;
+  top: 210px;
+}
+.areabox.areabox--shimane {
+  left: 98px;
+  top: 48px;
+}
+.areabox.areabox--tottori {
+  left: 277px;
+  top: 58px;
+}
+.areabox.areabox--yamaguchi {
+  left: 21px;
+  top: 276px;
+}
+.areabox.areabox--hiroshima {
+  left: 132px;
+  top: 164px;
+}
+.areabox.areabox--okayama {
+  left: 283px;
+  top: 196px;
+}
+.areabox.areabox--saga {
+  left: 49px;
+  top: 38px;
+}
+.areabox.areabox--fukuoka {
+  left: 222px;
+  top: 20px;
+}
+.areabox.areabox--nagasaki {
+  left: 28px;
+  top: 120px;
+}
+.areabox.areabox--oita {
+  left: 268px;
+  top: 105px;
+}
+.areabox.areabox--kumamoto {
+  left: 136px;
+  top: 200px;
+}
+.areabox.areabox--miyazaki {
+  left: 278px;
+  top: 194px;
+}
+.areabox.areabox--okinawa {
+  left: 19px;
+  top: 324px;
+}
+.areabox.areabox--kagoshima {
+  left: 179px;
+  top: 303px;
 }
 .areabox.areabox--hokkaido {
-  left: 246px;
-  top: 24px;
-  background: url(/img/sprite/areabox1.png) right 39px no-repeat;
-  padding-right: 10px;
+  left: 154px;
+  top: 175px;
 }
-.areabox.areabox--hokkaido .areabox-link {
-  width: 98px;
-  height: 53px;
+.areabox.areabox--soba {
+  position: static;
+}
+
+.areabox_hokkaido {
+  position: absolute;
+  text-align: center;
+}
+.areabox_hokkaido:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+.areabox_hokkaido .areabox_hokkaido-link {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: #cccccc 0 -4px 0 inset, rgba(164, 209, 180, 0.8) 3px 3px 3px;
+  -webkit-box-shadow: #cccccc 0 -4px 0 inset, rgba(164, 209, 180, 0.8) 3px 3px 3px;
+  box-shadow: #cccccc 0 -4px 0 inset, rgba(164, 209, 180, 0.8) 3px 3px 3px;
+  background-color: #FFFFFF;
+  display: block;
+  border: 3px solid #02802E;
+  text-decoration: none;
+  width: 96px;
+  height: 35px;
+  padding-top: 20px;
+  font-size: 16px;
+}
+.areabox_hokkaido .areabox_hokkaido-link.areabox_hokkaido-link--hokkaido {
+  width: 108px;
+  height: 40px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.areabox_hokkaido .areabox_hokkaido-link.areabox_hokkaido-link--small {
+  width: 96px;
+  height: 30px;
   padding-top: 15px;
   font-size: 16px;
 }
-.areabox.areabox--tohoku {
-  right: 0;
-  top: 107px;
-  background: url(/img/sprite/areabox2.png) 14px bottom no-repeat;
-  padding-bottom: 10px;
-}
-.areabox.areabox--tohoku .areabox-link {
-  width: 98px;
-  height: 66px;
-  padding-top: 9px;
-  font-size: 16px;
-}
-.areabox.areabox--hokuriku {
-  left: 221px;
-  top: 157px;
-  background: url(/img/sprite/areabox2.png) 67px bottom no-repeat;
-  padding-bottom: 10px;
-}
-.areabox.areabox--hokuriku .areabox-link {
-  width: 110px;
-  height: 66px;
-  padding-top: 9px;
-  font-size: 15px;
-}
-.areabox.areabox--kanto {
-  right: 0;
-  top: 259px;
-  background: url(/img/sprite/areabox3.png) 15px top no-repeat;
-  padding-top: 10px;
-}
-.areabox.areabox--kanto .areabox-link {
-  width: 98px;
-  height: 79px;
-  padding-top: 9px;
-  font-size: 16px;
-}
-.areabox.areabox--tokai {
-  left: 238px;
-  top: 320px;
-  background: url(/img/sprite/areabox3.png) 13px top no-repeat;
-  padding-top: 10px;
-}
-.areabox.areabox--tokai .areabox-link {
-  width: 93px;
-  height: 64px;
-  padding-top: 10px;
-  font-size: 16px;
-}
-.areabox.areabox--chugoku {
-  top: 196px;
-  left: 114px;
-  background: url(/img/sprite/areabox2.png) 12px bottom no-repeat;
-  padding-bottom: 10px;
-}
-.areabox.areabox--chugoku .areabox-link {
-  width: 94px;
-  height: 77px;
-  padding-top: 10px;
-  font-size: 16px;
-}
-.areabox.areabox--kansai {
-  top: 353px;
-  left: 125px;
-  background: url(/img/sprite/areabox3.png) 73px top no-repeat;
-  padding-top: 10px;
-}
-.areabox.areabox--kansai .areabox-link {
-  width: 99px;
-  height: 64px;
-  padding-top: 10px;
-  font-size: 16px;
-}
-.areabox.areabox--sikoku {
-  top: 353px;
-  left: 12px;
-  background: url(/img/sprite/areabox3.png) 73px top no-repeat;
-  padding-top: 10px;
-}
-.areabox.areabox--sikoku .areabox-link {
-  width: 99px;
-  height: 64px;
-  padding-top: 10px;
-  font-size: 16px;
-}
-.areabox.areabox--kyushu {
-  top: 196px;
-  left: 0;
-  background: url(/img/sprite/areabox2.png) 63px bottom no-repeat;
-  padding-bottom: 10px;
-}
-.areabox.areabox--kyushu .areabox-link {
-  width: 99px;
-  height: 77px;
-  padding-top: 10px;
-  font-size: 15px;
-}
-
-/* areamenu_group */
-.areamenu_group .areamenu {
-  margin-top: 7px;
-}
-.areamenu_group .areamenu:first-child {
-  margin-top: 0;
-}
-
-/* areamenu */
-.areamenu .areamenu-title {
-  font-size: 12px;
+.areabox_hokkaido .areabox_hokkaido-title {
   font-weight: bold;
-  color: #519C00;
-  margin-bottom: 4px;
+  color: #263C2A;
+  line-height: 1;
 }
-.areamenu .areamenu-title span {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: middle;
-  margin-top: 3px;
+.areabox_hokkaido.areabox--hokkaido {
+  left: 35px;
+  top: 55px;
 }
-.areamenu .areamenu-title1 {
-  font-size: 13px;
-  color: #37660E;
-  margin-top: 6px;
-  margin-bottom: 5px;
+.areabox_hokkaido.areabox--asahikawa {
+  left: 190px;
+  top: 120px;
 }
-.areamenu.areamenu--han li {
+.areabox_hokkaido.areabox--sapporo {
+  left: 120px;
+  top: 190px;
+}
+.areabox_hokkaido.areabox--obihiro {
+  left: 240px;
+  top: 240px;
+}
+.areabox_hokkaido.areabox--hakodate {
+  left: 95px;
+  top: 290px;
+}
+
+.areatitle {
+  color: #68AF29;
+  font-size: 18px;
+  font-weight: bold;
+}
+.areatitle .areatitle-icon {
+  margin-right: 5px;
+}
+
+/* searchassist */
+.searchassist {
   margin-top: 5px;
 }
-.areamenu.areamenu--han li:first-child {
-  margin-top: 0;
+.searchassist.searchassist--keywordsearch {
+  position: relative;
+  z-index: 90;
 }
-.areamenu.areamenu--han .areameue-title {
-  margin-top: 6px;
+.searchassist.searchassist--keywordsearch dl {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  padding: 10px 7px;
 }
-.areamenu.areamenu--han .areameue-title:first-child {
-  margin-top: 0;
+.searchassist.searchassist--keywordsearch dl dt {
+  float: left;
+  color: #09881F;
+  font-size: 14px;
+  margin-top: 3px;
+  font-weight: bold;
 }
-.areamenu.areamenu--zen li {
-  margin-top: 8px;
+.searchassist.searchassist--keywordsearch dl dt span {
+  float: left;
 }
-.areamenu.areamenu--zen li:first-child {
-  margin-top: 0;
+.searchassist.searchassist--keywordsearch dl dt .searchassist--keywordsearch-strong {
+  font-size: 18px;
+  line-height: 1;
 }
-.areamenu.areamenu--zen .areamenu-title {
-  margin-top: 8px;
+.searchassist.searchassist--keywordsearch dl dt .ui-icon--loupe7 {
+  margin-right: 5px;
 }
-.areamenu.areamenu--zen .areamenu-title:first-child {
-  margin-top: 0;
+.searchassist.searchassist--keywordsearch dl dd {
+  float: right;
 }
-.areamenu.areamenu--zen .areamenu-title a:link,
-.areamenu.areamenu--zen .areamenu-title a:visited,
-.areamenu.areamenu--zen .areamenu-title a:active {
-  color: #519C00;
-  text-decoration: none;
+.searchassist.searchassist--keywordsearch dl dd select {
+  margin-right: 5px;
 }
-.areamenu.areamenu--zen .areamenu-title a:hover {
-  text-decoration: underline;
+.searchassist.searchassist--keywordsearch dl dd input {
+  float: left;
+  width: 352px;
+  margin-right: 10px;
+  padding: 10px 5px;
 }
-.areamenu dt {
+.searchassist.searchassist--keywordsearch dl dd a {
+  float: left;
+  width: 80px;
+  font-size: 14px;
+}
+.searchassist.searchassist--keywordsearch .searchassist-balloon {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 5;
+  position: absolute;
+  top: 62px;
+  left: 161px;
+  width: 442px;
+  padding: 10px;
+  border: 1px solid #DDE4D8;
+  background-color: #EEEEEE;
+}
+.searchassist.searchassist--keywordsearch .searchassist-balloon .searchassist-balloon-inner {
   position: relative;
 }
-.areamenu dd {
-  padding: 8px 5px;
-  background: #DDE5D7;
-  -moz-border-radius: 0 0 5px 5px;
-  -webkit-border-radius: 0;
-  border-radius: 0 0 5px 5px;
+.searchassist.searchassist--keywordsearch .searchassist-balloon .searchassist-balloon-object {
+  position: absolute;
+  top: -20px;
+  left: 27px;
 }
-.areamenu.areamenu--ex dd {
-  padding-bottom: 40px;
+.searchassist.searchassist--keywordsearch .searchassist-balloon .searchassist-balloon-title {
+  font-weight: bold;
 }
-.areamenu.areamenu--ex .ui-btn {
-  padding: 33px 0;
-  font-size: 24px;
+.searchassist.searchassist--keywordsearch .searchassist-balloon .searchassist-balloon-body li {
+  margin: 5px 10px 0 0;
 }
-.areamenu .areamenu-label1 {
+.searchassist .searchassist-inner {
+  background: #fff;
+  display: flex;
+  padding: 12px 0 12px 10px;
+}
+.searchassist .searchassist-title {
+  color: #09881F;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  width: 149px;
+}
+.searchassist .searchassist-title:before {
+  content: '';
+  display: block;
+  margin-right: 5px;
+}
+.searchassist .searchassist-title_emphasis {
+  font-size: 18px;
+  line-height: 1;
+}
+.searchassist .searchassist-body {
+  flex: 1;
+}
+.searchassist .searchassist-list {
+  font-size: 14px;
+  display: flex;
+}
+.searchassist .searchassist-list > li:not(:first-child) {
+  margin-left: 5px;
+}
+
+/* areamap-header */
+.areamap-header {
+  position: relative;
+  margin-bottom: -5px;
+}
+.areamap-header .areamap-header-title {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  background: #D0D4CE;
+  padding: 5px 5px 0;
+  float: left;
+  /* areatitle */
+}
+.areamap-header .areamap-header-title .areatitle {
+  color: #09881F;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  padding: 10px 10px 12px 5px;
+  float: left;
+}
+.areamap-header .areamap-header-title .areatitle .areatitle-label {
+  font-size: 16px;
+}
+.areamap-header .areamap-header-title .areatitle .ui-icon--loupe5 {
+  margin-right: 5px;
+}
+.areamap-header .areamap-header-new {
+  min-width: 185px;
+  float: left;
+  height: 45px;
+  margin-left: 10px;
+}
+.areamap-header .areamap-header-new dt {
+  font-size: 10px;
+}
+.areamap-header .areamap-header-new dd {
+  margin-top: 15px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.areamap-header .areamap-header-new dd a {
+  vertical-align: bottom;
+}
+.areamap-header .areamap-header-new .areamap-header-menu {
+  position: relative;
+}
+.areamap-header .areamap-header-new .areamap-header-menu li {
+  display: inline;
+  margin-left: 5px;
+}
+.areamap-header .areamap-header-new .areamap-header-menu li:first-child {
+  margin-left: 0;
+}
+.areamap-header .areamap-header-new .areamap-header-menu .ui-icon--rss2-position {
+  position: absolute;
+  top: -29px;
+  right: 0;
+}
+.areamap-header .areamap-header-new .areamap-header-menu-value span {
+  font-size: 16px;
+  line-height: 1;
+}
+.areamap-header .areamap-header-new .areamap-header-menu-value a:link,
+.areamap-header .areamap-header-new .areamap-header-menu-value a:visited,
+.areamap-header .areamap-header-new .areamap-header-menu-value a:active {
+  color: #666666;
+}
+.areamap-header .areamap-header-new .areamap-header-past {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+.areamap-header .areamap-header-new .areamap-header-past.is-inactive {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #CAD0C6;
+  color: #999999;
+}
+.areamap-header .areamap-header-btn1 {
+  width: 170px;
+  height: 25px;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1;
+}
+.areamap-header .areamap-header-label1 {
   font-size: 10px;
   font-weight: normal;
   color: #999999;
 }
-.areamenu .areamenu-label2 {
-  font-size: 10px;
-  display: block;
+
+/* areamenu */
+.areamenu {
+  padding: 15px 10px;
+  background: #FFFFFF;
 }
-.areamenu .areamenu-btn1 {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: #dddddd 0 -4px 0 inset;
-  -webkit-box-shadow: #dddddd 0 -4px 0 inset;
-  box-shadow: #dddddd 0 -4px 0 inset;
-  box-sizing: border-box;
-  background-image: none;
-  border: 1px solid #999999;
-  padding-top: 9px;
-  display: block;
-  height: 42px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #263C2A;
+.areamenu.areamenu-strong {
+  background: #E7ECD9;
 }
-.areamenu .areamenu-btn1.is-active {
-  -moz-box-shadow: rgba(76, 147, 0, 0.7) 0 2px 0 inset;
-  -webkit-box-shadow: rgba(76, 147, 0, 0.7) 0 2px 0 inset;
-  box-shadow: rgba(76, 147, 0, 0.7) 0 2px 0 inset;
-  background-image: none;
-  background-color: #5BAE08;
-  border: 1px solid #5BAE08;
-  color: #FFFFFF;
+.areamenu li {
+  margin-top: 10px;
 }
-.areamenu .areamenu-btn1.is-active span {
-  color: #FFFFFF;
-}
-.areamenu .areamenu-btn2 {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: #dddddd 0 -4px 0 inset;
-  -webkit-box-shadow: #dddddd 0 -4px 0 inset;
-  box-shadow: #dddddd 0 -4px 0 inset;
-  background-image: none;
-  border: 1px solid #999999;
-  padding-top: 7px;
-  display: block;
-  height: 46px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  color: #263C2A;
-}
-.areamenu .areamenu-btn2.is-active {
-  -moz-box-shadow: rgba(76, 147, 0, 0.7) 0 2px 0 inset;
-  -webkit-box-shadow: rgba(76, 147, 0, 0.7) 0 2px 0 inset;
-  box-shadow: rgba(76, 147, 0, 0.7) 0 2px 0 inset;
-  background-image: none;
-  background-color: #5BAE08;
-  border: 1px solid #5BAE08;
-  color: #FFFFFF;
-}
-.areamenu .areamenu-btn2.is-active span {
-  color: #FFFFFF;
-}
-.areamenu .areamenu-btn4 {
-  padding: 20px 0;
-  font-size: 18px;
-}
-.areamenu .icon--mansion a {
-  color: #37660E;
-  text-decoration: none;
+.areamenu li:first-child {
+  margin-top: 0;
 }
 
-/* areamenu_detail */
 .areamenu_detail {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -7507,7 +8151,7 @@ body, body * {
   -moz-box-shadow: #b4b4b4 0 0 10px;
   -webkit-box-shadow: #b4b4b4 0 0 10px;
   box-shadow: #b4b4b4 0 0 10px;
-  z-index: 110;
+  display: none;
   width: 370px;
   padding: 3px;
   background-color: #F5F8F3;
@@ -7520,11 +8164,12 @@ body, body * {
   background-color: #6FBA2C;
 }
 .areamenu_detail .areamenu_detail-title {
-  -moz-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0px 0px/5px 5px 0px 0px;
   -webkit-border-radius: 5px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0px 0px/5px 5px 0px 0px;
   padding: 10px;
   background-color: #E8EFE2;
+  overflow: hidden;
 }
 .areamenu_detail .areamenu_detail-title .areamenu_detail-title-txt {
   float: left;
@@ -7585,74 +8230,10 @@ body, body * {
   font-size: 14px;
   color: #263C2A;
 }
-.areamenu_detail .areamenu_detail-body .areamenu_detail-btn.is-disabled {
-  color: #ccc;
-  cursor: default;
-}
-.areamenu_detail .areamenu_detail-body .areamenu_detail-btn.is-disabled:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-.areamenu_detail.areamenu_detail--fr {
-  position: absolute;
-  top: 45px;
-  right: 16px;
-}
-.areamenu_detail.areamenu_detail--ms {
-  position: absolute;
-  top: 169px;
-  right: 16px;
-}
-.areamenu_detail.areamenu_detail--chukoms {
-  position: absolute;
-  top: 214px;
-  right: 16px;
-}
-.areamenu_detail.areamenu_detail--ikkodate {
-  position: absolute;
-  top: 284px;
-  right: 16px;
-}
-.areamenu_detail.areamenu_detail--chukoikkodate {
-  position: absolute;
-  top: 329px;
-  right: 16px;
-}
-.areamenu_detail.areamenu_detail--chumon {
-  position: absolute;
-  top: 416px;
-  right: 16px;
-}
-.areamenu_detail.areamenu_detail--tochi {
-  position: absolute;
-  top: 461px;
-  right: 16px;
-}
-.areamenu_detail.areamenu_detail--reform {
-  position: absolute;
-  top: 547px;
-  right: 16px;
+.areamenu_detail.is-active {
+  display: block;
 }
 
-/* areatitle */
-.areatitle {
-  color: #68AF29;
-  font-size: 23px;
-  font-weight: bold;
-}
-.areatitle .areatitle-label {
-  font-size: 18px;
-}
-
-.ui-section--map > .ui-section-header {
-  border-bottom: 3px solid #E8EFE2;
-}
-.ui-section--map > .ui-section-header h2 {
-  padding: 5px 0 10px 2px;
-  background-color: #FFFFFF;
-}
-
-/* backLayer */
 .areamenu_backlayer {
   position: fixed;
   top: 0;
@@ -7660,113 +8241,712 @@ body, body * {
   bottom: 0;
   left: 0;
   z-index: 105;
+  display: none;
   background-color: #FFFFFF;
   opacity: 0;
   filter: alpha(opacity=0);
 }
-
-/* inputlist */
-.inputlist {
-  font-size: 14px;
-}
-.inputlist li {
-  padding-left: 0;
-  text-indent: 0;
-}
-.inputlist.inputlist--vt li {
-  margin-top: 20px;
-}
-.inputlist.inputlist--vt li:first-child {
-  margin-top: 0;
-}
-.inputlist.inputlist--min {
-  font-size: 12px;
-}
-.inputlist.inputlist--min li {
-  margin-top: 10px;
-}
-.inputlist.inputlist--min li:first-child {
-  margin-top: 0;
-}
-.inputlist.inputlist--col2 li {
-  float: left;
-  width: 88px;
-}
-.inputlist.inputlist--col2 li:first-child {
-  width: auto;
-  float: none;
-}
-.inputlist.inputlist--madori li {
-  float: left;
-  width: 88px;
-  margin-top: 20px;
-}
-.inputlist.inputlist--detail {
-  font-size: 12px;
-}
-.inputlist.inputlist--detail li {
-  padding-left: 10px;
-  text-indent: 0;
-}
-.inputlist.inputlist--detail li:first-child {
-  padding-left: 0;
+.areamenu_backlayer.is-active {
+  display: block;
 }
 
-/* search_condition */
-.search_condition {
-  margin-top: 15px;
-}
-.search_condition:first-child {
-  margin-top: 0;
+.topbanner {
+  margin-bottom: 30px;
 }
 
-/* btn_counter */
-.btn_counterms {
+/* hantop btn_topsearch */
+.btn_topsearch01 {
   background-position: 0 0;
-  width: 210px;
-  height: 60px;
+  width: 183px;
+  height: 59px;
 }
-.btn_counterms:hover {
+.btn_topsearch01:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
 
-.btn_counterchumon {
-  background-position: -210px 0;
-  width: 210px;
-  height: 60px;
+.btn_topsearch02 {
+  background-position: -183px 0;
+  width: 183px;
+  height: 59px;
 }
-.btn_counterchumon:hover {
+.btn_topsearch02:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
 
-/* examination */
-.text_item {
-  margin-top: 10px;
+.btn_topsearch03 {
+  background-position: -366px 0;
+  width: 183px;
+  height: 59px;
+}
+.btn_topsearch03:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
-.stripe_lists.hidden-area {
-  display: none;
+.btn_topsearch04 {
+  background-position: -549px 0;
+  width: 183px;
+  height: 50px;
 }
-.stripe_lists .stripe_lists-line {
+.btn_topsearch04:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_topsearch05 {
+  background-position: -732px 0;
+  width: 183px;
+  height: 50px;
+}
+.btn_topsearch05:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_topsearch06 {
+  background-position: -915px 0;
+  width: 183px;
+  height: 50px;
+}
+.btn_topsearch06:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_topsearch07 {
+  background-position: -1098px 0;
+  width: 183px;
+  height: 50px;
+}
+.btn_topsearch07:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_topsearch08 {
+  background-position: -1281px 0;
+  width: 144px;
+  height: 44px;
+}
+.btn_topsearch08:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_topsearch09 {
+  background-position: -1425px 0;
+  width: 144px;
+  height: 44px;
+}
+.btn_topsearch09:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_topsearch14 {
+  background-position: -1569px 0;
+  width: 129px;
+  height: 44px;
+}
+.btn_topsearch14:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_topsearch15 {
+  background-position: -1698px 0;
+  width: 129px;
+  height: 44px;
+}
+.btn_topsearch15:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+/* iconbox */
+.iconbox {
+  position: relative;
+  zoom: 1;
+}
+.iconbox .iconbox-icon {
+  position: absolute;
+}
+.iconbox.iconbox--ranklarge {
+  padding-left: 28px;
+}
+.iconbox.iconbox--ranklarge .iconbox-icon {
+  top: 0px;
+  left: 0;
+}
+.iconbox.iconbox--ranksmall {
+  padding-left: 28px;
+}
+.iconbox.iconbox--ranksmall .iconbox-icon {
+  top: 2px;
+  left: 0;
+}
+.iconbox.iconbox--rankmore {
+  padding-left: 28px;
+}
+.iconbox.iconbox--rankmore .iconbox-icon {
+  top: -2px;
+  left: 0;
+}
+
+.pagenationhit span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.itembox {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 5px #D0D4CE;
+  padding: 30px 0 30px 100px;
+}
+
+.itemlist_group {
+  margin-top: 30px;
+}
+.itemlist_group:first-child {
+  margin-top: 0;
+}
+.itemlist_group li {
+  float: left;
+  margin-left: 21px;
+}
+.itemlist_group li:first-child {
+  margin-left: 0;
+}
+.itemlist_group.itemlist_group--col3 li {
+  margin-left: 15px;
+}
+.itemlist_group.itemlist_group--col3 li:first-child {
+  margin-left: 0;
+}
+
+.fr_kentop-btnsearch01 {
+  display: block;
+  background-position: 0px 0px;
+  width: 360px;
+  height: 70px;
+  text-indent: -9999px;
+}
+.fr_kentop-btnsearch01:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.fr_kentop-btnsearch02 {
+  display: block;
+  background-position: -360px 0px;
+  width: 360px;
+  height: 70px;
+  text-indent: -9999px;
+}
+.fr_kentop-btnsearch02:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.fr_kentop-btnsearch03 {
+  display: block;
+  background-position: -720px -11px;
+  width: 174px;
+  height: 58px;
+  text-indent: -9999px;
+}
+.fr_kentop-btnsearch03:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.fr_kentop-btnsearch04 {
+  display: block;
+  background-position: -894px -11px;
+  width: 174px;
+  height: 58px;
+  text-indent: -9999px;
+}
+.fr_kentop-btnsearch04:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.fr_kentop-btnsearch05 {
+  display: block;
+  background-position: -1067px -11px;
+  width: 174px;
+  height: 58px;
+  text-indent: -9999px;
+}
+.fr_kentop-btnsearch05:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.fr_kentop-btnsearch06 {
+  display: block;
+  background-position: -1241px -11px;
+  width: 174px;
+  height: 58px;
+  text-indent: -9999px;
+}
+.fr_kentop-btnsearch06:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.fr_kentop-btnsearch01, .fr_kentop-btnsearch02, .fr_kentop-btnsearch03, .fr_kentop-btnsearch04, .fr_kentop-btnsearch05, .fr_kentop-btnsearch06 {
+  background-image: url(/img/sprite/btn_fr_kentop.png);
+  background-repeat: no-repeat;
+}
+
+.fr_top-icon--rank01,
+.fr_top-icon--rank02,
+.fr_top-icon--rank03,
+.fr_top-icon--ranksmall01,
+.fr_top-icon--ranksmall02,
+.fr_top-icon--ranksmall03,
+.fr_top-icon--ranksmall04,
+.fr_top-icon--ranksmall05,
+.fr_top-icon--ranksmall06,
+.fr_top-icon--ranksmall07,
+.fr_top-icon--ranksmall08,
+.fr_top-icon--rankmore {
+  display: inline-block;
+}
+
+/* itembgbox */
+.itembgbox {
+  background-color: #EEEEEE;
+}
+.itembgbox .itembgbox-title {
+  padding: 15px 15px 0;
+  font-weight: bold;
+  font-size: 13px;
+}
+.itembgbox .itembgbox-body {
+  padding: 20px 30px 25px 40px;
+}
+
+.itemranking .itemranking-body {
+  border: 1px solid #CCCCCC;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.itemranking .itemranking-body .itemranking-body-higherrank {
+  margin-top: 5px;
+}
+.itemranking .itemranking-body .itemranking-body-middlerank {
+  margin-top: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.itemranking .itemranking-body .itemranking-body-lowerrank {
+  margin-top: 3px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.itemrank {
+  padding-top: 3px;
+  padding-bottom: 5px;
+}
+.itemrank.itemrank--areayel {
+  background-color: #FFF9CD;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.itemrank.itemrank--areagray {
+  background-color: #EEEEEE;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.itemrank.itemrank--areared {
+  background-color: #F6E7DD;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.itemrank.itemrank--stationyel {
+  background-color: #FFF9CD;
+}
+.itemrank.itemrank--stationgray {
+  background-color: #EEEEEE;
+}
+.itemrank.itemrank--stationred {
+  background-color: #F6E7DD;
+}
+.itemrank .itemrank-text {
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.pictrank {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 58px;
+  padding: 6px 0;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1;
+  background-color: #EEEEEE;
+  font-weight: bold;
+}
+
+.itemrank_other {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.itemrank_other.itemrank_other--last {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.itemrank_other .itemrank_other-text {
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.top-ranking {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  background-image: url(/img/sprite/top-rankingicon-.png);
+  background-repeat: no-repeat;
+  margin-left: 25px;
+}
+
+.top-ranking--staion1 {
+  background-position: 0px 0px;
+  width: 58px;
+  height: 41px;
+}
+
+.top-ranking--staion2 {
+  background-position: 0px -41px;
+  width: 58px;
+  height: 41px;
+}
+
+.top-ranking--staion3 {
+  background-position: 0px -82px;
+  width: 58px;
+  height: 41px;
+}
+
+.top-ranking--area1 {
+  background-position: -60px 0px;
+  width: 58px;
+  height: 34px;
+}
+
+.top-ranking--area2 {
+  background-position: -60px -34px;
+  width: 58px;
+  height: 34px;
+}
+
+.top-ranking--area3 {
+  background-position: -60px -68px;
+  width: 58px;
+  height: 34px;
+}
+
+/* imgheader */
+.imgheader {
+  height: 73px;
+}
+.imgheader .imgheader-txtbox {
+  padding: 0 10px;
+}
+.imgheader .imgheader-txtbox .imgheader-txtbox-ttl {
+  margin-top: 5px;
+  padding-left: 0;
+  font-size: 28px;
+}
+.imgheader .imgheader-txtbox .imgheader-txtbox-read {
+  font-size: 12px;
+}
+.imgheader.imgheader--new_ttl {
+  background: url(/img/sprite/inc_FR_ztop_000_new_tit.png) top right no-repeat;
+}
+
+/* pagecaption */
+.pagecaption {
+  color: #666666;
+  padding: 0 20px;
+  word-break: normal;
+}
+.pagecaption.pagecaption--soba {
+  margin: 0 10px 0;
+  padding: 10px 0 0;
+}
+
+/* stripe_line */
+.stripe_line {
   padding: 10px;
   border-bottom: 1px dotted #D1D1D1;
 }
-.stripe_lists .stripe_lists-line.stripe_lists-odd {
+.stripe_line.stripe_line--odd {
   background-color: #FFFFFF;
 }
-.stripe_lists .stripe_lists-line.stripe_lists-even {
+.stripe_line.stripe_line--even {
   background-color: #EEEEEE;
 }
-.stripe_lists .stripe_lists-line ul {
-  margin-top: 10px;
+
+/* anyrankbox */
+.anyrankbox {
+  display: block;
 }
-.stripe_lists .stripe_lists-line ul:first-child {
+.anyrankbox .anyrankbox-object {
+  margin-right: 10px;
+}
+.anyrankbox .anyrankbox-time {
+  margin-bottom: 10px;
+  color: #333333;
+}
+.anyrankbox .anyrankbox-title {
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+}
+.anyrankbox .anyrankbox-title.mediabox-title--plain {
+  text-decoration: none;
+}
+.anyrankbox .anyrankbox-desc {
+  margin-top: 10px;
+  color: #333333;
+}
+.anyrankbox .anyrankbox-desc .anyrankbox-desc-link {
+  text-decoration: underline;
+  color: #6219DB;
+}
+.anyrankbox:link {
+  text-decoration: none;
+}
+.anyrankbox:hover .anyrankbox-desc .anyrankbox-desc-link {
+  color: #048ADE;
+}
+
+.daytime {
+  margin-right: 10px;
+}
+
+/* itemlinklist */
+.itemlinklist li {
+  margin-top: 30px;
+}
+.itemlinklist li:first-child {
   margin-top: 0;
 }
-.stripe_lists .is-disabled {
-  color: #ccc;
+
+.fr_top-statebtn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+.fr_top-statebtn:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.market_info .market_info-list .market_info-list-kind {
+  float: right;
+}
+.market_info .market_info-list .market_info-list-kind li {
+  float: left;
+}
+.market_info .market_info-list .market_info-list-kind li a.is-active {
+  color: #333;
+  text-decoration: none;
+  pointer-events: none;
+}
+.market_info .market_info-data {
+  margin-top: 5px;
+}
+.market_info .market_info-morelink {
+  margin-top: 10px;
+  text-align: right;
+}
+.market_info .market_info-morelink .market_info-morelink-item {
+  position: relative;
+}
+.market_info .market_info-morelink .market_info-morelink-item:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -20px;
+}
+.market_info .market_info-subtext {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.market_data .market_data-container {
+  max-height: 506px;
+  height: auto;
+  width: 1010px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.market_data .market_data-container.is-active {
+  max-height: none;
+}
+.market_data .market_data-action {
+  display: table;
+}
+
+.market_table {
+  width: 950px;
+  table-layout: fixed;
+}
+.market_table th {
+  background-color: #f0f0f0;
+}
+.market_table td {
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  width: 171px;
+  box-sizing: border-box;
+}
+.market_table td:first-child {
+  border-left: none;
+}
+.market_table td:hover {
+  background-color: #f0f8e9;
+}
+.market_table td.is-hover {
+  background-color: #f8fbf4;
+}
+.market_table tr:hover td {
+  background-color: #f8fbf4;
+}
+.market_table tr td:hover {
+  background-color: #f8fbf4;
+}
+.market_table tr td:hover span {
+  position: relative;
+}
+.market_table tr td:hover span:after {
+  content: attr(title);
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  right: -110px;
+  top: -30px;
+  z-index: 100;
+}
+.market_table .market_table-sort {
+  width: 171px;
+  height: 46px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-left: 1px solid #dbdbdb;
+  padding: 0 15px 0 24px;
+}
+.market_table .market_table-head {
+  height: 46px;
+  width: 95px;
+  box-sizing: border-box;
+  border-top: 1px solid #dbdbdb;
+  text-align: center;
+  vertical-align: middle;
+}
+.market_table .market_table-head a.is-inactive {
+  color: #333;
+  text-decoration: none;
+  cursor: default;
+}
+
+.market_more {
+  display: table-cell;
+  width: 950px;
+  height: 42px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #e6ede0;
+}
+.market_more.is-active .market_more-open {
+  display: none;
+}
+.market_more.is-active .market_more-close {
+  display: inline-block;
+}
+.market_more .market_more-close {
+  position: relative;
+  display: none;
+}
+.market_more .market_more-close:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+  left: -20px;
+}
+.market_more .market_more-open {
+  position: relative;
+}
+.market_more .market_more-open:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+  left: -20px;
+}
+
+.market_sort {
+  display: table;
+  width: 100%;
+}
+.market_sort .market_sort-title {
+  display: table-cell;
+  vertical-align: middle;
+}
+.market_sort .market_sort-up {
+  display: table-cell;
+  vertical-align: middle;
+  width: 20px;
+  box-sizing: border-box;
+  text-align: right;
+  padding-right: 4px;
+}
+.market_sort .market_sort-up .market_sort-up-item:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.market_sort .market_sort-down {
+  display: table-cell;
+  vertical-align: middle;
+  width: 16px;
+  text-align: right;
+}
+.market_sort .market_sort-down .market_sort-down-item:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .kurashi_media {
@@ -7784,248 +8964,734 @@ body, body * {
   font-size: 12px;
 }
 
-.pagecaption {
-  margin: 20px 10px 0;
-  padding: 0;
-  color: #666666;
-}
-
-.areamap--kaisha .areamap-map {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  position: relative;
-  float: left;
-  width: 630px;
-  margin-right: 5px;
+.stripe_lists .stripe_lists-line {
   padding: 10px;
-  background-color: #E4ECDD;
+  border-bottom: 1px dotted #D1D1D1;
 }
-.areamap--kaisha .areamap-map-inner {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  margin-top: 10px;
-  padding: 8px;
-  background-color: #fff;
-}
-.areamap--kaisha .areamap-traffic dl {
-  font-size: 14px;
-}
-.areamap--kaisha .areamap-traffic dl dt {
-  float: left;
-  font-weight: bold;
-}
-.areamap--kaisha .areamap-traffic dl dd span {
-  color: #F77C00;
-  font-weight: bold;
-}
-.areamap--kaisha .areatitle {
-  font-size: 18px;
-}
-.areamap--kaisha .areatitle .ui-icon--loupe8 {
-  margin-right: 5px;
-}
-.areamap--kaisha .areamap-field {
-  position: relative;
-  height: 425px;
-  margin-top: -50px;
-  background: url(/img/sprite/ou_zen-top_areamap.png) left top no-repeat;
-}
-.areamap--kaisha .ui-section--map > .ui-section-header {
-  border-bottom: none;
-}
-.areamap--kaisha .ui-section--map > .ui-section-header h2 {
-  padding: 5px 0 10px 2px;
+.stripe_lists .stripe_lists-line:nth-child(odd) {
   background-color: #FFFFFF;
 }
-.areamap--kaisha .areabox {
-  background-image: url(/img/sprite/areaboxarrow.png);
-  background-repeat: no-repeat;
+.stripe_lists .stripe_lists-line:nth-child(even) {
+  background-color: #EEEEEE;
 }
-.areamap--kaisha .areabox .areabox-link {
-  font-size: 16px;
+.stripe_lists .stripe_lists-line ul {
+  margin-top: 10px;
 }
-.areamap--kaisha .areabox.areabox--hokkaido {
-  left: 371px;
-  top: 32px;
-  padding-right: 10px;
-  background-position: right 28px;
+.stripe_lists .stripe_lists-line ul:first-child {
+  margin-top: 0;
 }
-.areamap--kaisha .areabox.areabox--hokkaido .areabox-link {
-  width: 102px;
-  height: 47px;
-  padding-top: 15px;
-}
-.areamap--kaisha .areabox.areabox--tohoku {
-  right: 14px;
-  top: 128px;
-  padding-left: 10px;
-  background-position: left 34px;
-}
-.areamap--kaisha .areabox.areabox--tohoku .areabox-link {
-  width: 114px;
-  height: 61px;
-  padding-top: 9px;
-}
-.areamap--kaisha .areabox.areabox--hokuriku {
-  left: 321px;
-  top: 147px;
-  padding-bottom: 10px;
-  background-position: 53px bottom;
-}
-.areamap--kaisha .areabox.areabox--hokuriku .areabox-link {
-  width: 114px;
-  height: 60px;
-  padding-top: 9px;
-  font-size: 15px;
-}
-.areamap--kaisha .areabox.areabox--kanto {
-  right: 14px;
-  top: 225px;
-  padding-left: 10px;
-  background-position: left 10px;
-}
-.areamap--kaisha .areabox.areabox--kanto .areabox-link {
-  width: 114px;
-  height: 75px;
-  padding-top: 9px;
-}
-.areamap--kaisha .areabox.areabox--tokai {
-  left: 348px;
-  top: 290px;
-  padding-top: 10px;
-  background-position: 2px top;
-}
-.areamap--kaisha .areabox.areabox--tokai .areabox-link {
-  width: 114px;
-  height: 63px;
-  padding-top: 10px;
-}
-.areamap--kaisha .areabox.areabox--chugoku {
-  top: 185px;
-  left: 168px;
-  padding-bottom: 10px;
-  background-position: 2px bottom;
-}
-.areamap--kaisha .areabox.areabox--chugoku .areabox-link {
-  width: 114px;
-  height: 60px;
-  padding-top: 10px;
-}
-.areamap--kaisha .areabox.areabox--kansai {
-  top: 316px;
-  left: 220px;
-  padding-top: 10px;
-  background-position: 59px top;
-}
-.areamap--kaisha .areabox.areabox--kansai .areabox-link {
-  width: 114px;
-  height: 63px;
-  padding-top: 10px;
-}
-.areamap--kaisha .areabox.areabox--sikoku {
-  top: 316px;
-  left: 83px;
-  padding-top: 10px;
-  background-position: 62px top;
-}
-.areamap--kaisha .areabox.areabox--sikoku .areabox-link {
-  width: 114px;
-  height: 64px;
-  padding-top: 10px;
-}
-.areamap--kaisha .areabox.areabox--kyushu {
-  top: 185px;
-  left: 24px;
-  padding-bottom: 10px;
-  background-position: 69px bottom;
-}
-.areamap--kaisha .areabox.areabox--kyushu .areabox-link {
-  width: 114px;
-  height: 77px;
-  padding-top: 10px;
-  font-size: 15px;
-}
-.areamap--kaisha .areamenu_detail {
-  position: absolute;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--hokkaido {
-  top: 146px;
-  right: 153px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--tohoku {
-  top: 250px;
-  right: 33px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--hokuriku {
-  top: 269px;
-  right: 49px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--kanto {
-  top: 212px;
-  right: 160px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--tokai {
-  top: 156px;
-  right: 163px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--chugoku {
-  top: 53px;
-  left: 61px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--shikoku {
-  bottom: 130px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--kansai {
-  bottom: 130px;
-  left: 110px;
-}
-.areamap--kaisha .areamenu_detail.areamenu_detail--kyushu {
-  bottom: 262px;
-  left: 42px;
+.stripe_lists.is-inactive {
+  display: none;
 }
 
-.searcharea-link {
-  margin-top: 20px;
+.itemrank_soba {
+  padding-top: 3px;
+  padding-left: 25px;
+  padding-bottom: 5px;
 }
-
-.company_article {
-  display: flex;
+.itemrank_soba .itemrank_soba-property {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
 }
-.company_article:link, .company_article:hover, .company_article:active, .company_article:visited {
-  text-decoration: none;
-}
-.company_article .company_article-object {
-  width: 100px;
-  flex-shrink: 0;
-  margin-right: 10px;
-  box-sizing: border-box;
-}
-.company_article .company_article-object .company_article-object-img {
-  width: 100%;
-}
-.company_article .company_article-body .company_article-body-title {
+.itemrank_soba .itemrank_soba-property .itemrank_soba-property-text {
+  width: 200px;
+  float: left;
+  padding-top: 4px;
   font-size: 14px;
   font-weight: bold;
-  text-decoration: underline;
-  line-height: 1.3;
 }
-.company_article .company_article-body .company_article-body-text {
+.itemrank_soba .itemrank_soba-property .itemrank_soba-property-point {
+  float: left;
+  width: 85px;
+  margin-left: 20px;
+  padding-top: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+}
+.itemrank_soba .itemrank_soba-property .itemrank_soba-property-point span {
   font-size: 12px;
-  color: #333;
-  line-height: 1.4;
+}
+.itemrank_soba.itemrank_soba--areayel {
+  background-color: #FFF9CD;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.itemrank_soba.itemrank_soba--areagray {
+  background-color: #EEEEEE;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.itemrank_soba.itemrank_soba--areared {
+  background-color: #F6E7DD;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.itemrank_soba.itemrank_soba--stationyel {
+  background-color: #FFF9CD;
+}
+.itemrank_soba.itemrank_soba--stationgray {
+  background-color: #EEEEEE;
+}
+.itemrank_soba.itemrank_soba--stationred {
+  background-color: #F6E7DD;
+}
+.itemrank_soba.itemrank_soba--other {
+  padding-bottom: 3px;
+  padding-left: 0;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 14px;
+}
+.itemrank_soba.itemrank_soba--other .itemrank_soba-property .itemrank_soba-property-text {
+  font-weight: normal;
+}
+.itemrank_soba.itemrank_soba--last {
+  padding-bottom: 3px;
+  padding-left: 0;
+  font-size: 14px;
+}
+.itemrank_soba.itemrank_soba--last .itemrank_soba-property .itemrank_soba-property-text {
+  font-weight: normal;
+}
+
+.caption {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fr_top-icon, .modalpage .modalpage-window .modalpage-window-close, .modalpage .modalpage-window.is-load:before {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+.onr_banner {
+  display: block;
+  background: url(/img/sprite/inc_FR_top_000_checker_bunner.jpg) left top no-repeat;
+  width: 950px;
+  height: 120px;
+}
+
+.modalpage {
+  position: relative;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+.modalpage .modalpage-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 103;
+  transform: translate(-50%, -50%);
+  width: 910px;
+  height: 500px;
+  background: #FFFFFF;
+}
+.modalpage .modalpage-window .modalpage-window-close {
+  position: absolute;
+  top: -26px;
+  right: 5px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.modalpage .modalpage-window .modalpage-window-close:hover {
+  opacity: 0.7;
+}
+.modalpage .modalpage-window .modalpage-window-iframe {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.modalpage .modalpage-window.is-load:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 0 0;
+  animation: modalpage_spin 1s linear 0s infinite;
+}
+.modalpage .modalpage-window.is-load .modalpage-window-iframe {
+  opacity: 0;
+}
+.modalpage .modalpage-backlayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 102;
+  background: #000000;
+  opacity: 0.7;
+}
+.modalpage.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+@keyframes modalpage_spin {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+.btn_ensensearch, .btn_areasearch {
+  background-image: url(/img/sprite/btn_top.png);
+  background-repeat: no-repeat;
+}
+
+/* listgroup */
+.listgroup .listgroup-line {
+  border-bottom: 1px dotted #D1D1D1;
+  padding: 10px;
+}
+
+.stripeline_odd {
+  background-color: #FFFFFF;
+}
+
+.stripeline_even {
+  background-color: #EEEEEE;
+}
+
+/* spacebox */
+.spacebox .spacebox-list {
+  margin-top: 10px;
+}
+.spacebox .spacebox-list:first-child {
+  margin-top: 0;
+}
+
+/* tdfk-top */
+.topbtnarea {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #D0D4CE;
+  padding: 5px;
+}
+.topbtnarea .topbtnarea-inner {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 30px 20px;
+}
+.topbtnarea .topbtnarea-inner .topbtnarea-icon {
+  position: absolute;
+  top: 64px;
+  left: 843px;
+}
+
+.btn_ensensearch {
+  background-position: 0 0;
+  width: 350px;
+  height: 70px;
+}
+.btn_ensensearch:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.btn_areasearch {
+  background-position: -350px 0;
+  width: 350px;
+  height: 70px;
+}
+.btn_areasearch:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.itemtabledouble {
+  width: 100%;
+  table-layout: fixed;
+}
+.itemtabledouble .itemtabledouble-inner {
+  float: left;
+  margin-left: 20px;
+  width: 465px;
+}
+.itemtabledouble .itemtabledouble-inner:first-child {
+  margin-left: 0;
+}
+.itemtabledouble th {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+}
+.itemtabledouble td {
+  width: 224px;
+}
+
+.chizen-subinfo--2 .infobox-title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.chizen-subinfo--2 .infobox-txt {
+  margin-top: 10px;
+  color: #666666;
+}
+.chizen-subinfo--2 .infobox-date {
+  margin-top: 10px;
+  color: #666666;
+}
+.chizen-subinfo--2 .chizen-subinfo-inner {
+  border-top: 1px solid #efefef;
+  padding: 10px;
+}
+.chizen-subinfo--2 .chizen-subinfo-inner:first-child {
+  border: 0;
+  padding-top: 0;
+}
+.chizen-subinfo--2 .chizen-subinfo-arrow01 {
+  padding-left: 11px;
+  text-indent: -11px;
+}
+.chizen-subinfo--2 .chizen-subinfo-arrow01 .ui-icon--arrow01 {
+  margin-right: 5px;
+}
+.chizen-subinfo--2 .chizen-subinfo-arrow02 {
+  padding-left: 20px;
+  text-indent: -20px;
+}
+.chizen-subinfo--2 .chizen-subinfo-arrow02 .ui-icon--arrow02, .chizen-subinfo--2 .chizen-subinfo-arrow02 .market_info .market_info-morelink .market_info-morelink-item:before, .market_info .market_info-morelink .chizen-subinfo--2 .chizen-subinfo-arrow02 .market_info-morelink-item:before {
+  margin-right: 8px;
+}
+.chizen-subinfo--2 .chizen-subinfo-arrow04 {
+  padding-left: 11px;
+  text-indent: -11px;
+}
+.chizen-subinfo--2 .chizen-subinfo-arrow04 .ui-icon--arrow04 {
+  margin-right: 5px;
+}
+
+.itemtoplist li {
+  float: left;
+  width: 110px;
+}
+
+.itemtoplistclose {
+  margin-top: 10px;
+  text-align: right;
+}
+.itemtoplistclose span {
+  margin-right: 5px;
+}
+
+/*============================================================*
+* 20120806
+*  賃貸SEO改修対応分
+*============================================================*/
+/* --------------------------------------------
+ *  賃貸都道府県トップ（エリア選択）
+ * -------------------------------------------- */
+/* ----- clear ----- */
+.cFix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.cFix {
+  min-height: 1px;
+  _height: 1px;
+}
+
+.clr {
+  clear: both;
+}
+
+/* ----- margin ----- */
+.mHA {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.m15 {
+  margin: 15px;
+}
+
+.mT5 {
+  margin-top: 5px;
+}
+
+.mT10 {
   margin-top: 10px;
 }
 
-/* サブ告知枠用 */
-.sub_notice {
-  padding: 10px;
-}
-.sub_notice .sub_notice-list:not(:first-of-type) {
+.mT15 {
   margin-top: 15px;
 }
 
+.mT20 {
+  margin-top: 20px;
+}
+
+.mT25 {
+  margin-top: 25px;
+}
+
+.mT30 {
+  margin-top: 30px;
+}
+
+#wrapper #contents .mT30 {
+  margin-top: 30px;
+}
+
+/* 物件詳細画面用 */
+.mL7 {
+  margin-left: 7px;
+}
+
+.mL10 {
+  margin-left: 10px;
+}
+
+.mL15 {
+  margin-left: 15px;
+}
+
+.mL20 {
+  margin-left: 20px;
+}
+
+.mL30 {
+  margin-left: 30px;
+}
+
+.mR15 {
+  margin-right: 15px;
+}
+
+.mB5 {
+  margin-bottom: 5px;
+}
+
+.mB10 {
+  margin-bottom: 10px;
+}
+
+.mB20 {
+  margin-bottom: 20px;
+}
+
+/* ----- padding ----- */
+.p10 {
+  padding: 10px;
+}
+
+.p15 {
+  padding: 15px;
+}
+
+.pT5 {
+  padding-top: 5px;
+}
+
+.pT10 {
+  padding-top: 10px;
+}
+
+.pT20 {
+  padding-top: 10px;
+}
+
+.pB2 {
+  padding-bottom: 2px;
+}
+
+.pB5 {
+  padding-bottom: 5px;
+}
+
+.pB10 {
+  padding-bottom: 10px;
+}
+
+.pB15 {
+  padding-bottom: 15px;
+}
+
+.pLR10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pLR15 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.pLR25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* ----- border ----- */
+.bdGrayT {
+  border-top: 1px solid #ccc;
+}
+
+.bdGrayL {
+  border-left: 1px solid #ccc;
+}
+
+.bdGrayB {
+  border-bottom: 1px solid #ccc;
+}
+
+/* ----- font ----- */
+.fs10 {
+  font-size: 10px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.bld {
+  font-weight: bold;
+}
+
+/* contents
+----------------------------------------------- */
+#wrapper #contents .info_area h2.mT30, #wrapper .info_area h2.mT30 {
+  margin-top: 30px;
+}
+
+h3 {
+  border-left: 3px solid #ccc;
+  color: #666;
+  padding-left: 7px;
+  font-weight: bold;
+}
+
+.pT10 li {
+  color: #666;
+  padding-left: 30px;
+}
+
+.pT10 li:first-child {
+  padding-left: 0;
+  margin-left: 27px;
+}
+
+.info_area .rent_souba {
+  font-size: 14px;
+}
+
+.info_area .rent_souba dl {
+  width: 176px;
+}
+
+.info_area .rent_souba dl dt {
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 3px;
+  text-align: center;
+}
+
+.info_area .rent_souba dl dd {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 3px;
+  text-align: center;
+}
+
+.info_madori dd span, .info_kakaku dd span {
+  padding-left: 30px;
+}
+
+.info_madori dd span:first-child, .info_madori dd span.first-child, .info_kakaku dd span:first-child, .info_kakaku dd span.first-child {
+  padding-left: 0;
+}
+
+.info_area ul li, .info_area dt, .info_area dd {
+  line-height: 1.6;
+}
+
+.w880 {
+  width: 880px;
+}
+
+/* ----- 物件ショートカット ----- */
+.bukken_shortcut th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 200px;
+}
+
+.bukken_shortcut td {
+  background-color: #fff;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 637px;
+}
+
+/* ----- コンテンツパーツ ----- */
+.contentsParts h3 {
+  font-size: 24px;
+  line-height: 1.3;
+  border-left: 0px;
+  padding: 0;
+  color: #000000;
+}
+
+.contentsParts img {
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+.contentsParts .conditions li {
+  display: inline;
+  background-color: #eba233;
+  color: #fff;
+  padding: 3px 2px 2px 3px;
+  margin-left: 5px;
+}
+
+#contents p {
+  margin: 0px;
+}
+
+#aDDmodalbox, #HideTxtGide {
+  display: none;
+}
+
+.aDDprefClm {
+  width: 600px;
+}
+
+.aDDclose {
+  text-align: right;
+  right: -165px;
+  position: relative;
+}
+
+.aDrillDown .icCondOpen, .aDrillDown .icCondClose {
+  padding-bottom: 2px;
+}
+
+.aDrillDown .aDDtitClm {
+  width: 120px;
+}
+
+.btDDSearch input:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+}
+
+.bdOrange4T {
+  border-top: 4px solid #ffda99;
+}
+
+#contents .wiz-link .show-allstat_ensen {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  _right: 5px;
+}
+
+.pictAreaS {
+  color: #3D9973;
+  font-size: 10px;
+  width: 60px;
+  border: 1px solid #3D9973;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #ffffff;
+  padding: 1px 0;
+  line-height: 1.3;
+}
+
+.ffM {
+  font-family: "メイリオ",Meiryo,"MS PGothic","Hiragino Kaku Gothic Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro W3","ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro W4","Helvetica","Verdana",sans-serif;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fl {
+  float: left;
+}
+
+/* JJ901FI128 */
+div.JJ901FI128 .bdDBlueB {
+  border-bottom: 1px solid #5C8599;
+}
+
+div.JJ901FI128 .bdDBlue3L {
+  border-left: 3px solid #5C8599;
+}
+
+div.JJ901FI128 .pB5 {
+  padding-bottom: 5px;
+}
+
+div.JJ901FI128 .pL5 {
+  padding-left: 5px;
+}
+
+div.JJ901FI128 .mT5 {
+  margin-top: 5px;
+}
+
+div.JJ901FI128 .mT20 {
+  margin-top: 20px;
+}
+
+/* chintai.JJ901FI128 STA*/
+div.chintaiJJ901FI128 div.JJ901FI128 div.bdDBlueB {
+  border-bottom: 1px solid #ccc;
+}
+
+div.chintaiJJ901FI128 div.JJ901FI128 div.bdDBlue3L {
+  border-left: 3px solid #ccc;
+}
+
+div.chintaiJJ901FI128 div.JJ901FI128 div.bdDBlueB div.fs14 {
+  font-size: 12px;
+  color: #666;
+}
+
+div.chintaiJJ901FI128 div.JJ901FI128 div.bdDBlueB div.pL5 {
+  padding-left: 7px;
+}
+
+div.chintaiJJ901FI128 div.JJ901FI128 div.pB5 {
+  padding-bottom: 2px;
+}
+
+div.chintaiJJ901FI128 div.JJ901FI128 div.bdDBlueB div.fs14 {
+  font-size: 14px;
+  color: #666;
+}
+
+#fr901fa003Id div.JJ901FI128 div.bdDBlueB div.fs14 {
+  font-size: 12px;
+  color: #666;
+}
+
+/* chintai.JJ901FI128 END*/
 .l-listarea_content {
   margin-top: 5px;
 }
@@ -8034,13 +9700,7 @@ body, body * {
   margin-top: 20px;
 }
 
-.l-company_article > li {
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 1px dotted #ccc;
-}
-.l-company_article > li:first-child {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: 0;
+.graph-updated {
+  margin-top: 10px;
+  text-align: right;
 }

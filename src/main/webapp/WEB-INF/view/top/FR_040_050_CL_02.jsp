@@ -1,0 +1,86 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!-- ↓/top/FR_040_050_CL_02.html↓ -->
+<div class="areamap-field-tokai">
+    <dl class="areabox areabox--gifu">
+        <dt class="areabox-title">
+            <a href="/chintai/gifu/">岐阜県</a>
+        </dt>
+        <dd>
+            <ul class="ui-list--hz">
+                <li><a href="/chintai/gifu/ensen/"
+                    class="areabox-link">
+                        <div class="areabox-txt">沿線</div>
+                </a></li>
+                <li><a href="/chintai/gifu/city/"
+                    class="areabox-link">
+                        <div class="areabox-txt">エリア</div>
+                </a></li>
+            </ul>
+        </dd>
+    </dl>
+    <dl class="areabox areabox--aichi">
+        <dt class="areabox-title">
+            <a href="/chintai/aichi/">愛知県</a>
+        </dt>
+        <dd>
+            <ul class="ui-list--hz">
+                <li><a href="/chintai/aichi/ensen/"
+                    class="areabox-link">
+                        <div class="areabox-txt">沿線</div>
+                </a></li>
+                <li><a href="/chintai/aichi/city/"
+                    class="areabox-link">
+                        <div class="areabox-txt">エリア</div>
+                </a></li>
+            </ul>
+        </dd>
+    </dl>
+    <dl class="areabox areabox--shizuoka">
+        <dt class="areabox-title">
+            <a href="/chintai/shizuoka/">静岡県</a>
+        </dt>
+        <dd>
+            <ul class="ui-list--hz">
+                <li><a href="/chintai/shizuoka/ensen/"
+                    class="areabox-link">
+                        <div class="areabox-txt">沿線</div>
+                </a></li>
+                <li><a href="/chintai/shizuoka/city/"
+                    class="areabox-link">
+                        <div class="areabox-txt">エリア</div>
+                </a></li>
+            </ul>
+        </dd>
+    </dl>
+    <dl class="areabox areabox--mie">
+        <dt class="areabox-title">
+            <a href="/chintai/mie/">三重県</a>
+        </dt>
+        <dd>
+            <ul class="ui-list--hz">
+                <li><a href="/chintai/mie/ensen/"
+                    class="areabox-link">
+                        <div class="areabox-txt">沿線</div>
+                </a></li>
+                <li><a href="/chintai/mie/city/"
+                    class="areabox-link">
+                        <div class="areabox-txt">エリア</div>
+                </a></li>
+            </ul>
+        </dd>
+    </dl>
+</div>
+<span class="ui-icon--suumo12 areamap-map-icon areamap-map-icon--tokai"></span>
+<div class="areamap_assist">
+    <div class="areamap_assist-2g">
+        <ul class="ui-list--hz">
+            <li><a
+                href="/jj/chintai/kensaku/FR301FB007/?ar=050&amp;bs=040"
+                class="btn_topsearch09">路線図から探す</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- ↑/top/FR_040_050_CL_02.html↑ -->

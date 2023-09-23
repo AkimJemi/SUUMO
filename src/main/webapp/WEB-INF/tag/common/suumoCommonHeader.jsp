@@ -1,4 +1,4 @@
- <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <link rel="stylesheet" href="/css/header-gnav.css" media="screen" />
 <header>
@@ -126,7 +126,7 @@
 </style>
 
         <script
-            src="/edit/assets/suumo/js/include/inc-common-kokuchi.js?20210818"></script>
+            src="/js/inc-common-kokuchi.js"></script>
         <!-- ↑/common/CM_000_000_HF_notice.html↑ -->
         <!-- ↑===================================================================================================================↑ -->
         <div class="siteheadercontainer">

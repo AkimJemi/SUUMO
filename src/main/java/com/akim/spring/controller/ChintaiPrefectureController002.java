@@ -20,7 +20,7 @@ public class ChintaiPrefectureController002 extends SuumoCommonController {
     private TransportationInfoService transportationInfoService;
 
     private void chintaiCommon(ModelAndView mv, HttpServletRequest rq) {
-        System.out.println("ChintaiPrefectureController003.chintaiCommon()");
+        System.out.println("ChintaiPrefectureController002.chintaiCommon()");
         HttpSession session = rq.getSession();
         List<PrefectureBasicInfoDTO> prefectureBasicInfoList = transportationInfoService
                 .getPrefectureBasicInfoListByArea(session.getAttribute(AREA).toString());

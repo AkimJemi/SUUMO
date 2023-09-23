@@ -2,35 +2,13 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
 <head>
+<%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
 <meta charset="UTF-8">
-<style type="text/css">
-.areabox-middle {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-}
-
-.areabox-middle-box-header {
-    padding: 20px 15px;
-    width: 50%;
-}
-
-.areabox-middle-box-bottom {
-    display: grid;
-    width: 50%;
-    text-align: left;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.areabox-bottom {
-    text-align: center;
-}
-</style>
 <title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
 </head>
 <body>
+
     <!-- tatemonoShubetsuSearchLink01_01 end -->
     <div id="js-contents-mainPanel" class="contents">
         <div>
