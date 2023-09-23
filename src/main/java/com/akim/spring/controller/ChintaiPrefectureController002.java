@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.akim.spring.dto.PrefectureBasicInfoDTO;
+import com.akim.spring.dto.SiteHeaderDTO;
 import com.akim.spring.service.TransportationInfoService;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -25,58 +26,61 @@ public class ChintaiPrefectureController002 extends SuumoCommonController {
         List<PrefectureBasicInfoDTO> prefectureBasicInfoList = transportationInfoService
                 .getPrefectureBasicInfoListByArea(session.getAttribute(AREA).toString());
         session.setAttribute(PREFECTURE_LIST, prefectureBasicInfoList);
+
+        String areaName = session.getAttribute(AREA_NAME).toString();
+        mv.addObject(DESC_TITLE, "SUUMO(スーモ)は、%sの住宅・不動産購入や売買をサポートする住宅情報サイトです。".formatted(areaName));
         mv.setViewName(CHINTAI_PREFECTURE);
     }
 
-    @RequestMapping("/chintai/hokkaido/")
+    @RequestMapping("/chintai/*/")
     public ModelAndView chintaiHokkaido(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/tohoku/")
+//    @RequestMapping("/chintai/tohoku/")
     public ModelAndView chintaiTohoku(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/koshinetsu/")
+//    @RequestMapping("/chintai/koshinetsu/")
     public ModelAndView chintaiKoshinetsu(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/kanto/")
+//    @RequestMapping("/chintai/kanto/")
     public ModelAndView chintaiKanto(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/tokai/")
+//    @RequestMapping("/chintai/tokai/")
     public ModelAndView chintaiTokai(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/chugoku/")
+//    @RequestMapping("/chintai/chugoku/")
     public ModelAndView chintaiChugoku(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/kansai/")
+//    @RequestMapping("/chintai/kansai/")
     public ModelAndView chintaiKansai(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/shikoku/")
+//    @RequestMapping("/chintai/shikoku/")
     public ModelAndView chintaiShikoku(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;
     }
 
-    @RequestMapping("/chintai/kyush/")
+//    @RequestMapping("/chintai/kyush/")
     public ModelAndView chintaiKyush(ModelAndView mv, HttpServletRequest rq) {
         chintaiCommon(mv, rq);
         return mv;

@@ -9,6 +9,23 @@
 <title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
 </head>
 <body>
+    <!-- Pankuzu01_01 Start -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-inner">
+            <ol class="breadcrumb-list">
+                <li><a class="js-setCookieArZenkoku" href="/">不動産・住宅サイト
+                        SUUMO</a></li>
+                <li>&nbsp;&gt;&nbsp;<a
+                    class="js-setCookieArZenkoku" href="/chintai/">賃貸</a></li>
+                <li>&nbsp;&gt;&nbsp;<a
+                    href="/chintai/${prefecture }/">${prefectureName }</a></li>
+                <li>&nbsp;&gt;&nbsp;${prefectureName }の沿線から賃貸情報を探す</li>
+            </ol>
+        </div>
+    </div>
+    <script type="application/ld+json">
+    </script>
+    <!-- Pankuzu01_01 End -->
     <div id="js-contents-mainPanel" class="contents">
         <div id="js-areaSelectPanel" class="ui-section--h2">
             <div class="ui-section-header">
@@ -77,7 +94,7 @@
                                                             class="searchitem-list-value">(*)</span></label>
                                                     </li>
                                                     <c:if
-                                                        test="<%=(i-2) % 3 == 0%>">
+                                                        test="<%=(i - 2) % 3 == 0%>">
                                                         </ul>
                                                     </c:if>
                                                     <%

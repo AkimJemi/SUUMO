@@ -12,6 +12,19 @@
 
 </script>
 <body>
+    <!-- Pankuzu01_01 Start -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-inner">
+            <ol class="breadcrumb-list">
+                <li><a class="js-setCookieArZenkoku" href="/">不動産・住宅サイト
+                        SUUMO</a>&nbsp;&gt;&nbsp;</li>
+                <li><a class="js-setCookieArZenkoku"
+                    href="/chintai/">賃貸</a>&nbsp;&gt;&nbsp;</li>
+                <li>${prefectureName }の賃貸情報</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Pankuzu01_01 End -->
     <div class="ui-section">
         <div class="ui-section-header areamap-header">
             <div class="areamap-header-title">
@@ -21,7 +34,7 @@
                 </h2>
             </div>
             <dl class="areamap-header-new">
-                <dt>今週の北海道の新着物件</dt>
+                <dt>今週の${prefectureName }の新着物件</dt>
                 <dd>
                     <ul class="areamap-header-menu">
                         <li class="areamap-header-menu-value"><span>43,732</span>
@@ -35,8 +48,8 @@
                     <a
                         href="/chintai/hokkaido_/ek_19610/?cb=0.0&amp;cn=9999999&amp;ct=9999999&amp;et=9999999&amp;fmlg=r002&amp;mb=0&amp;mt=9999999&amp;rn=4050&amp;smk=r01"
                         class="ui-btn ui-btn--base areamap-header-btn1">前回の条件で検索する<br>
-                        <span class="areamap-header-label1">北海道 |
-                            地下鉄東西線 | …</span></a>
+                        <span class="areamap-header-label1">${prefectureName }
+                            | 地下鉄東西線 | …</span></a>
                 </dd>
                 <!-- JJ901FI3131 End -->
             </dl>

@@ -9,17 +9,23 @@
 <title>【SUUMO】${areaValue}の不動産情報・不動産売買・住宅情報</title>
 </head>
 <body>
-    <div>
-        <div>
-            <h1>借りる</h1>
-        </div>
-        <div>
-            <div>マンション・アパート・一戸建て</div>
-            <div>
-                <a href="/chintai/${area}/">賃貸物件</a>
-            </div>
+    <div class="breadcrumb">
+        <div class="breadcrumb-inner">
+            <ol class="breadcrumb-list">
+                <li><a class="js-setCookieArZenkoku" href="/">不動産・住宅サイト
+                        SUUMO(スーモ)トップ</a>&nbsp;&gt;&nbsp;</li>
+                <li>${areaName }の不動産・住宅情報</li>
+            </ol>
         </div>
     </div>
+    <div class="hantitle">
+        <h1 class="hantitle-txt">東北の住宅・不動産情報探し</h1>
+        <div class="hantitle-link">
+            <i class="ui-icon--cherry"></i><a
+                href="/edit/beginner/guide/">初めての方へ（SUUMOの使い方）</a>
+        </div>
+    </div>
+
     <div class="menubox">
         <div class="menubox-container">
             <!-- ↓===================================================================================================================↓ -->
@@ -106,8 +112,7 @@
                             <dt class="ui-sprite--menu_reform">リフォームする</dt>
                             <dd>
                                 <ul class="areamenu-list">
-                                    <li><a
-                                        href="/remodel/${area}/"
+                                    <li><a href="/remodel/${area}/"
                                         class="ui-btn ui-btn--base areamenu-btn">リフォーム</a></li>
                                 </ul>
                             </dd>

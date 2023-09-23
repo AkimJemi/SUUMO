@@ -49,7 +49,6 @@ public class ChintaiRailwayController003 extends SuumoCommonController {
         HttpSession session = rq.getSession();
         PrefectureBasicInfoDTO prefectureBasicInfo = transportationInfoService
                 .getPrefectureBasicInfoByPrefecture(prefecture);
-        System.out.println(prefectureBasicInfo);
         session.setAttribute(PREFECTURE_NO, prefectureBasicInfo.getPrefectureNo());
         session.setAttribute(PREFECTURE, prefecture);
         session.setAttribute(PREFECTURE_NAME, prefectureBasicInfo.getPrefectureName());
