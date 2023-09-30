@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.akim.spring.service.TransportationInfoService;
+import com.akim.spring.util.SuumoSessionUtil;
 import com.akim.spring.util.SuumoUtil;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -23,7 +24,7 @@ public class ChintaiAreaController001 extends SuumoCommonController {
     @GetMapping("")
     public String main() {
         System.out.println("AreaChoiceController001.main()");
-        return AREA_CHOICE;
+        return Path.AREA_CHOICE;
     }
 
     private void areaMapCommon(ModelAndView mv, HttpServletRequest rq, Method method) {
@@ -31,15 +32,16 @@ public class ChintaiAreaController001 extends SuumoCommonController {
         String servletPath = rq.getServletPath();
         String areaKey = SuumoUtil.getAreaKey(servletPath);
         String areaValue = SuumoUtil.getAreaValue(servletPath);
-        mv.addObject(AREA, areaKey);
-        mv.addObject(AREA_NAME, areaValue);
+        mv.addObject(Variables.AREA, areaKey);
+        mv.addObject(Variables.AREA_NAME, areaValue);
+//        SuumoSessionUtil.setAreaInfoInSession(transportationInfoService, areaKey, rq.getsess);
         HttpSession session = rq.getSession();
         String areaNo = transportationInfoService.getAreaNoByArea(areaKey);
-        session.setAttribute(AREA, areaKey);
-        session.setAttribute(AREA_NAME, areaValue);
-        session.setAttribute(AREA_NO, areaNo);
+        session.setAttribute(Variables.AREA, areaKey);
+        session.setAttribute(Variables.AREA_NAME, areaValue);
+        session.setAttribute(Variables.AREA_NO, areaNo);
         session.setAttribute(BS, CHINTAI_VAL);
-        mv.setViewName(AREA_OPTION);
+        mv.setViewName(Path.AREA_OPTION);
     }
 
     @RequestMapping("/hokkaido/")

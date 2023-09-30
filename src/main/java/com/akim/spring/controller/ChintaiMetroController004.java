@@ -26,7 +26,7 @@ public class ChintaiMetroController004 extends SuumoCommonController {
     @GetMapping("/jj/chintai/*/FR301FB004/ekiNext/")
     public ModelAndView main(ModelAndView mv, HttpServletRequest rq, SuumoHissuParameter hissu) {
         System.out.println("ChintaiMetroController004.main()");
-        mv.addObject(HISSU, hissu);
+        mv.addObject(Variables.HISSU, hissu);
         Map<RailwayDTO, List<MetroDTO>> metroInfoList = new LinkedHashMap<>();
         for (String rn : hissu.getRn()) {
             SuumoHissuParameter subHissu = new SuumoHissuParameter();
@@ -49,9 +49,8 @@ public class ChintaiMetroController004 extends SuumoCommonController {
 //        }
 //        metroInfoList.put("no", subMetroList);
 //        System.out.println(metroInfoList);
-        mv.addObject(METRO_LIST, metroInfoList);
-        mv.setViewName(CHINTAI_METRO);
+        mv.addObject(Variables.METRO_LIST, metroInfoList);
+        mv.setViewName(Path.CHINTAI_METRO);
         return mv;
     }
-
 }

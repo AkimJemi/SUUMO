@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.akim.spring.dto.PrefectureBasicInfoDTO;
-import com.akim.spring.dto.SiteHeaderDTO;
 import com.akim.spring.service.TransportationInfoService;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -24,12 +23,12 @@ public class ChintaiPrefectureController002 extends SuumoCommonController {
         System.out.println("ChintaiPrefectureController002.chintaiCommon()");
         HttpSession session = rq.getSession();
         List<PrefectureBasicInfoDTO> prefectureBasicInfoList = transportationInfoService
-                .getPrefectureBasicInfoListByArea(session.getAttribute(AREA).toString());
-        session.setAttribute(PREFECTURE_LIST, prefectureBasicInfoList);
+                .getPrefectureBasicInfoListByArea(session.getAttribute(Variables.AREA).toString());
+        session.setAttribute(Variables.PREFECTURE_LIST, prefectureBasicInfoList);
 
-        String areaName = session.getAttribute(AREA_NAME).toString();
-        mv.addObject(DESC_TITLE, "SUUMO(スーモ)は、%sの住宅・不動産購入や売買をサポートする住宅情報サイトです。".formatted(areaName));
-        mv.setViewName(CHINTAI_PREFECTURE);
+        String areaName = session.getAttribute(Variables.AREA_NAME).toString();
+        mv.addObject(Variables.DESC_TITLE, "SUUMO(スーモ)は、%sの住宅・不動産購入や売買をサポートする住宅情報サイトです。".formatted(areaName));
+        mv.setViewName(Path.CHINTAI_PREFECTURE);
     }
 
     @RequestMapping("/chintai/*/")
