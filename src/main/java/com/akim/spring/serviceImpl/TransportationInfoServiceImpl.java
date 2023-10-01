@@ -8,9 +8,8 @@ import org.springframework.stereotype.Service;
 import com.akim.spring.dao.TransportationInfoDAO;
 import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.dto.MetroDTO;
-import com.akim.spring.dto.PrefectureBasicInfoDTO;
 import com.akim.spring.dto.RailwayDTO;
-import com.akim.spring.dto.SuumoHissuParameter;
+import com.akim.spring.dto.SuumoHissuDTO;
 import com.akim.spring.service.TransportationInfoService;
 
 @Service
@@ -24,7 +23,7 @@ public class TransportationInfoServiceImpl implements TransportationInfoService 
     }
 
     @Override
-    public List<PrefectureBasicInfoDTO> getPrefectureBasicInfoListByArea(String area) {
+    public List<AreaPrefectureDTO> getPrefectureBasicInfoListByArea(String area) {
         return transportationInfoDAO.getPrefectureBasicInfoListByArea(area);
     }
 
@@ -34,17 +33,17 @@ public class TransportationInfoServiceImpl implements TransportationInfoService 
     }
 
     @Override
-    public String getAreaNoByArea(String areaKey) {
-        return transportationInfoDAO.getAreaNoByArea(areaKey);
+    public AreaPrefectureDTO getAreaInfoByArea(String area) {
+        return transportationInfoDAO.getAreaInfoByArea(area);
     }
 
     @Override
-    public PrefectureBasicInfoDTO getPrefectureBasicInfoByPrefecture(String prefecture) {
-        return transportationInfoDAO.getPrefectureBasicInfoByPrefecture(prefecture);
+    public AreaPrefectureDTO getPrefectureInfoByPrefecture(String prefecture) {
+        return transportationInfoDAO.getPrefectureInfoByPrefecture(prefecture);
     }
 
     @Override
-    public List<MetroDTO> getMetroListByHissu(SuumoHissuParameter hissu) {
+    public List<MetroDTO> getMetroListByHissu(SuumoHissuDTO hissu) {
         return transportationInfoDAO.getMetroListByHissu(hissu);
     }
 

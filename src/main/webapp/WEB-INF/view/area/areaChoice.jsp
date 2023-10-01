@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
-<link rel="stylesheet" href="/css/ou-zen-top.css" media="screen" />
 <meta charset="UTF-8">
 <title>SUUMO不動産</title>
+<%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
+<link rel="stylesheet" href="/css/ou-zen-top.css" media="screen" />
 </head>
 <body>
     <div class="logoarea">

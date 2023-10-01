@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
-<link rel="stylesheet" href="/css/fr-top.css" media="screen" />
 <meta charset="UTF-8">
 <title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
+<%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
+<link rel="stylesheet" href="/css/fr-top.css" media="screen" />
 </head>
 <script type="text/javascript">
 

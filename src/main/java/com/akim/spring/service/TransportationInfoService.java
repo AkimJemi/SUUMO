@@ -4,23 +4,22 @@ import java.util.List;
 
 import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.dto.MetroDTO;
-import com.akim.spring.dto.PrefectureBasicInfoDTO;
 import com.akim.spring.dto.RailwayDTO;
-import com.akim.spring.dto.SuumoHissuParameter;
+import com.akim.spring.dto.SuumoHissuDTO;
 
 public interface TransportationInfoService {
 
     List<MetroDTO> getTransportationInfo(String prefectureInfo);
 
-    List<PrefectureBasicInfoDTO> getPrefectureBasicInfoListByArea(String area);
+    List<AreaPrefectureDTO> getPrefectureBasicInfoListByArea(String area);
 
     List<RailwayDTO> getRailwayInfoByPrefecture(String prefectureNo);
 
-    String getAreaNoByArea(String areaKey);
+    AreaPrefectureDTO getAreaInfoByArea(String area);
 
-    PrefectureBasicInfoDTO getPrefectureBasicInfoByPrefecture(String prefecture);
+    AreaPrefectureDTO getPrefectureInfoByPrefecture(String prefecture);
 
-    List<MetroDTO> getMetroListByHissu(SuumoHissuParameter hissu);
+    List<MetroDTO> getMetroListByHissu(SuumoHissuDTO hissu);
 
     AreaPrefectureDTO getAreaPrefectureInfoByPrefectureNo(String prefectureNo);
 

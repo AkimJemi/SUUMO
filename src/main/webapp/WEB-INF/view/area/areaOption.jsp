@@ -2,11 +2,11 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
-<link rel="stylesheet" href="/css/ou-top.css" media="screen" />
 <head>
 <meta charset="UTF-8">
-<title>【SUUMO】${areaValue}の不動産情報・不動産売買・住宅情報</title>
+<title>【SUUMO】${areaName}の不動産情報・不動産売買・住宅情報</title>
+<%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
+<link rel="stylesheet" href="/css/ou-top.css" media="screen" />
 </head>
 <body>
     <div class="breadcrumb">

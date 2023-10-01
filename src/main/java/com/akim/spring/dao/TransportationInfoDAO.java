@@ -7,26 +7,25 @@ import org.apache.ibatis.annotations.Param;
 
 import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.dto.MetroDTO;
-import com.akim.spring.dto.PrefectureBasicInfoDTO;
 import com.akim.spring.dto.RailwayDTO;
-import com.akim.spring.dto.SuumoHissuParameter;
+import com.akim.spring.dto.SuumoHissuDTO;
 
 @Mapper
 public interface TransportationInfoDAO {
 
     List<MetroDTO> getTransportationInfo(String prefectureNo);
 
-    List<PrefectureBasicInfoDTO> getPrefectureBasicInfoListByArea(String area);
+    List<AreaPrefectureDTO> getPrefectureBasicInfoListByArea(String area);
 
     List<RailwayDTO> getRailwayInfoByPrefecture(String prefectureNo);
 
     String getPrefectureNoByPrefecture(String prefecture);
 
-    String getAreaNoByArea(String areaKey);
+    AreaPrefectureDTO getAreaInfoByArea(String area);
 
-    PrefectureBasicInfoDTO getPrefectureBasicInfoByPrefecture(String prefecture);
+    AreaPrefectureDTO getPrefectureInfoByPrefecture(String prefecture);
 
-    List<MetroDTO> getMetroListByHissu(@Param("hissu") SuumoHissuParameter hissu);
+    List<MetroDTO> getMetroListByHissu(@Param("hissu") SuumoHissuDTO hissu);
 
     AreaPrefectureDTO getAreaPrefectureInfoByPrefectureNo(String prefectureNo);
 

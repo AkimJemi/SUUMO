@@ -109,7 +109,6 @@ suumo.frSearch.setpanelDisplay = function() {
     }
 };
 
-
 $('#js-contents-mainPanel')
     .delegate('#js-gotoEkiBtn', 'click', function() {
         // チェックした沿線の駅を絞込むボタン
@@ -128,7 +127,6 @@ $('#js-contents-mainPanel')
             });
             return false;
         }
-
         window.location.href = $('#js-gotoEkiForm').attr('action') + '?' + $('#js-gotoEkiForm').serialize();
         return false;
     })

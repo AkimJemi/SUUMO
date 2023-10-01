@@ -36,7 +36,8 @@ kokuchi.judgeDay = function(start, end){
 kokuchi.init = function(options){
     var url = options.url;
     var successfunc = options.successfunc;
-
+    console.log(url);
+    console.log(successfunc);
     kokuchi.ajax({
         url: url,
         successfunc: successfunc
@@ -48,7 +49,6 @@ kokuchi.init = function(options){
  */
 kokuchi.ajax = function(options){
     var xhr = new XMLHttpRequest();
-
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
             if (xhr.status == 200) {
@@ -233,7 +233,7 @@ kokuchi.setTemplate = function(elem, area){
 
 // controller
 kokuchi.init({
-    url: '/edit/assets/suumo/js/include/data/inc-common-kokuchi.json',
+    url: '/js/inc-common-kokuchi.json',
     successfunc: function(data){
         kokuchi.controlDom({
             targetID: 'js-notice',

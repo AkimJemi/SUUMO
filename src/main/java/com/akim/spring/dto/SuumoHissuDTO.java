@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class SuumoHissuParameter {
+public class SuumoHissuDTO {
 
     private String ar;
     private String ra;
@@ -17,4 +17,6 @@ public class SuumoHissuParameter {
     private String pageId;
     private List<String> rn;
     private String subRn;
+    private List<String> ek;
+    private String subEk;
 }

@@ -2,13 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.akim.spring.dao.TransportationInfoDAO">
 
-    <resultMap id="prefectureBasicInfoDTO"
-        type="com.akim.spring.dto.PrefectureBasicInfoDTO">
-        <result column="prefecture_no" property="prefectureNo" />
-        <result column="prefecture" property="prefecture" />
-        <result column="prefecture_name" property="prefectureName" />
-    </resultMap>
-
     <resultMap id="railwayDTO"
         type="com.akim.spring.dto.RailwayDTO">
         <result column="prefecture_no" property="prefectureNo" />
@@ -36,7 +29,7 @@
         <result column="prefecture_name" property="prefectureName" />
     </resultMap>
 
-    <select id="getPrefectureBasicInfoListByArea" resultMap="prefectureBasicInfoDTO">
+    <select id="getPrefectureBasicInfoListByArea" resultMap="areaPrefectureDTO">
         SELECT
             prefecture_no
             , prefecture
@@ -66,17 +59,18 @@
             INNER JOIN sub
                 ON railway.prefecture_no = sub.prefecture_no;
     </select>
-    <select id="getAreaNoByArea" resultType="String">
+    <select id="getAreaInfoByArea" resultMap="areaPrefectureDTO">
         SELECT
+            DISTINCT ON (area_no, area, area_name)
             area_no
+            , area
+            , area_name
         FROM
             transportation_info.area_prefecture
         WHERE
-            area_prefecture.area ='${areaKey}'
-        GROUP BY
-            area_no
+            area_prefecture.area ='${area}'
     </select>
-    <select id="getPrefectureBasicInfoByPrefecture" resultMap="prefectureBasicInfoDTO">
+    <select id="getPrefectureInfoByPrefecture" resultMap="areaPrefectureDTO">
         SELECT
             prefecture_no
             , prefecture

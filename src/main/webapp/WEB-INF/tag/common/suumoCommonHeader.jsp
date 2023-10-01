@@ -122,8 +122,7 @@
 -->
 </style>
 
-    <script
-        src="/edit/assets/suumo/js/include/inc-common-kokuchi.js?20210818"></script>
+    <!-- <script src="/js/inc-common-kokuchi.js"></script> -->
     <!-- ↑/common/CM_000_000_HF_notice.html↑ -->
     <!-- ↑===================================================================================================================↑ -->
     <div class="siteheadercontainer">
@@ -309,4 +308,5 @@
         </div>
     </div>
 </div>
+${controller }
 <!-- GlobalHeader01_01 End -->
