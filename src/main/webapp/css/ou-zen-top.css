@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mylist .mylist-logo a, .mylist .mylist-login, .mylist .mylist-logout, .mylist .mylist-entry, .mylist .member-entry, .mylistbar .mylistbar-title, .mylistbarlink .mylistbarlink-title, .mylisticon {
-  background-image: url(/img/icon/mylist.png);
+  background-image: url(/img/mylist.png);
   background-repeat: no-repeat;
 }
 
