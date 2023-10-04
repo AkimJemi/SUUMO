@@ -309,4 +309,6 @@
     </div>
 </div>
 ${controller }
+<br>
+${view }
 <!-- GlobalHeader01_01 End -->

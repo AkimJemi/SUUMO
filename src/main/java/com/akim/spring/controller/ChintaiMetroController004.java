@@ -21,11 +21,12 @@ import lombok.RequiredArgsConstructor;
 public class ChintaiMetroController004 extends SuumoCommonController {
 
     private final SuumoRequestUtil ut;
+    private String view = Path.CHINTAI_METRO;
 
     private final TransportationInfoService transportationInfoService;
 
     public ModelAndView common(ModelAndView mv, SuumoHissuDTO hissu) {
-        ut.setController(this.getClass().getName());
+        ut.setControllerAndView(this.getClass().getName(), view);
         mv.addObject(Variables.HISSU, hissu);
         Map<RailwayDTO, List<MetroDTO>> metroInfoList = new LinkedHashMap<>();
         for (String rn : hissu.getRn()) {
@@ -65,5 +66,4 @@ public class ChintaiMetroController004 extends SuumoCommonController {
     public ModelAndView FR301FB004(ModelAndView mv, SuumoHissuDTO hissu) {
         return common(mv, hissu);
     }
-
 }

@@ -8,7 +8,8 @@ public class SuumoCommon {
         public static final String DESC_TITLE = "descTitle";
 
         // Session Info
-        public final String CONTROLLER = "controller";
+        public static final String CONTROLLER = "controller";
+        public static final String VIEW = "view";
         public static final String AREA_NAME = "areaName";
         public static final String AREA = "area";
         public static final String AREA_NO = "areaNo";

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.akim.spring.common.SuumoCommon.Path;
 import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.util.SuumoRequestUtil;
 
@@ -16,9 +17,10 @@ import lombok.RequiredArgsConstructor;
 public class ChintaiPrefectureController002 extends SuumoCommonController {
 
     private final SuumoRequestUtil ut;
+    private String view = Path.CHINTAI_PREFECTURE;
 
     private void chintaiCommon(ModelAndView mv) {
-        ut.setController(this.getClass().getName());
+        ut.setControllerAndView(this.getClass().getName(), view);
         List<AreaPrefectureDTO> prefectureBasicInfoList = ut.getTransportationInfoService()
                 .getPrefectureBasicInfoListByArea(ut.getAttribute(Variables.AREA));
         ut.setAttribute(Variables.PREFECTURE_LIST, prefectureBasicInfoList);

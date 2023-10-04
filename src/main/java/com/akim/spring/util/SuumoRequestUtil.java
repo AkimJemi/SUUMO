@@ -57,11 +57,11 @@ public class SuumoRequestUtil extends SuumoCommon.Variables {
         session.setAttribute(key, value);
     }
 
-    public void setController(String classname) {
-        System.out.println(classname);
+    public void setControllerAndView(String classname, String view) {
         String[] controller = classname.split("[.]");
         session.setAttribute(CONTROLLER,
                 controller.length != 0 ? controller[controller.length - 1] : null);
+        session.setAttribute(VIEW, view);
     }
 
     public String getAllCookieValuesAsString() {
@@ -89,7 +89,6 @@ public class SuumoRequestUtil extends SuumoCommon.Variables {
 
         return sb.toString();
     }
-
 
     // 세션 관련 함수
     public void setSession(String name, Object value) {

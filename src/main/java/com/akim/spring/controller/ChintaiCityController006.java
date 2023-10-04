@@ -12,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequiredArgsConstructor
-public class ChintaiCityController extends SuumoCommonController {
+public class ChintaiCityController006 extends SuumoCommonController {
 
     private final SuumoRequestUtil util;
 

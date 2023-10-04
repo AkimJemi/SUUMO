@@ -4,11 +4,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
+
+<br>
+<%=request.getContextPath() %>
+<br>
+<%=request.getServletPath() %>
+<br>
+<%=request.getRequestURI() %>
+
     <%
     ArrayList<String> list = new ArrayList<String>();
     list.add("22");

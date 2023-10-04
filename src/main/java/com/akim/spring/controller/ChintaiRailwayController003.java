@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.akim.spring.common.SuumoCommon.Path;
 import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.dto.RailwayDTO;
 import com.akim.spring.util.SuumoRequestUtil;
@@ -21,10 +22,10 @@ import lombok.RequiredArgsConstructor;
 public class ChintaiRailwayController003 extends SuumoCommonController {
 
     private final SuumoRequestUtil ut;
+    private String view = Path.CHINTAI_ENSEN;
 
     private ModelAndView common(ModelAndView mv, String prefecture) {
-        ut.setController(this.getClass().getName());
-
+        ut.setControllerAndView(this.getClass().getName(), view);
         List<RailwayDTO> railwayList = ut.getTransportationInfoService()
                 .getRailwayInfoByPrefecture(prefecture);
 

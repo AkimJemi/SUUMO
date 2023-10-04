@@ -10,6 +10,8 @@
 </head>
 <body>
     <div id="js-contents-mainPanel" class="contents">
+        <span id="js-areatabOnClickUrl"
+            rel="/jj/chintai/kensaku/FR301FB003/?ar=${areaNo }&amp;bs=040"></span>
         <ul id="js-areatabPanel"
             class="ui-tab--base ui-tab--base03 areatab">
             <c:forEach items="${prefectureList }" var="prefecture">
