@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.akim.spring.common.SuumoCommon.Path;
 import com.akim.spring.dto.AreaPrefectureDTO;
 import com.akim.spring.util.SuumoRequestUtil;
 
@@ -17,16 +16,17 @@ import lombok.RequiredArgsConstructor;
 public class ChintaiPrefectureController002 extends SuumoCommonController {
 
     private final SuumoRequestUtil ut;
-    private String view = Path.CHINTAI_PREFECTURE;
+    private final String VIEW = CHINTAI_PREFECTURE;
 
     private void chintaiCommon(ModelAndView mv) {
-        ut.setControllerAndView(this.getClass().getName(), view);
-        List<AreaPrefectureDTO> prefectureBasicInfoList = ut.getTransportationInfoService()
-                .getPrefectureBasicInfoListByArea(ut.getAttribute(Variables.AREA));
-        ut.setAttribute(Variables.PREFECTURE_LIST, prefectureBasicInfoList);
-        String areaName = ut.getAttribute(Variables.AREA_NAME);
-        mv.addObject(Variables.DESC_TITLE, "SUUMO(スーモ)は、%sの住宅・不動産購入や売買をサポートする住宅情報サイトです。".formatted(areaName));
-        mv.setViewName(Path.CHINTAI_PREFECTURE);
+        ut.setControllerAndView(this.getClass().getName(), mv, VIEW);
+        List<AreaPrefectureDTO> prefectureBasicInfoList = ut.getService()
+                .getTransportationInfoService()
+                .getPrefectureBasicInfoListByArea(ut.getAttribute(AREA));
+        ut.setAttribute(PREFECTURE_LIST, prefectureBasicInfoList);
+        String areaName = ut.getAttribute(AREA_NAME);
+        mv.addObject(DESC_TITLE,
+                "SUUMO(スーモ)は、%sの住宅・不動産購入や売買をサポートする住宅情報サイトです。".formatted(areaName));
     }
 
     @RequestMapping("/chintai/*/")

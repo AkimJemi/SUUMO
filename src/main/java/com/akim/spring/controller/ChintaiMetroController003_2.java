@@ -11,30 +11,29 @@ import org.springframework.web.servlet.ModelAndView;
 import com.akim.spring.dto.MetroDTO;
 import com.akim.spring.dto.RailwayDTO;
 import com.akim.spring.dto.SuumoHissuDTO;
-import com.akim.spring.service.TransportationInfoService;
+import com.akim.spring.util.SuumoCommonService;
 import com.akim.spring.util.SuumoRequestUtil;
 
 import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequiredArgsConstructor
-public class ChintaiMetroController004 extends SuumoCommonController {
+public class ChintaiMetroController003_2 extends SuumoCommonController {
 
     private final SuumoRequestUtil ut;
-    private String view = Path.CHINTAI_METRO;
-
-    private final TransportationInfoService transportationInfoService;
+    private final SuumoCommonService service;
+    private final String VIEW = CHINTAI_METRO;
 
     public ModelAndView common(ModelAndView mv, SuumoHissuDTO hissu) {
-        ut.setControllerAndView(this.getClass().getName(), view);
-        mv.addObject(Variables.HISSU, hissu);
+        ut.setControllerAndView(this.getClass().getName(),mv,  VIEW);
+        mv.addObject(HISSU, hissu);
         Map<RailwayDTO, List<MetroDTO>> metroInfoList = new LinkedHashMap<>();
         for (String rn : hissu.getRn()) {
             SuumoHissuDTO subHissu = new SuumoHissuDTO();
             subHissu.setAr(hissu.getAr());
             subHissu.setRa(hissu.getRa());
             subHissu.setSubRn(rn);
-            List<MetroDTO> metroList = transportationInfoService.getMetroListByHissu(subHissu);
+            List<MetroDTO> metroList = service.getTransportationInfoService().getMetroListByHissu(subHissu);
             if (metroList.size() != 0) {
                 MetroDTO metro = metroList.get(0);
                 String railwayName = metro.getRailwayName();
@@ -44,8 +43,7 @@ public class ChintaiMetroController004 extends SuumoCommonController {
                 metroInfoList.put(railwayDTO, metroList);
             }
         }
-        mv.addObject(Variables.METRO_LIST, metroInfoList);
-        mv.setViewName(Path.CHINTAI_METRO);
+        mv.addObject(METRO_LIST, metroInfoList);
         return mv;
     }
 

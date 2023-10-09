@@ -1,12 +1,12 @@
 package com.akim.spring.util;
 
+import java.util.Enumeration;
+
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
+import org.springframework.web.servlet.ModelAndView;
 
-import com.akim.spring.common.SuumoCommon;
-import com.akim.spring.common.SuumoCommon.Variables;
 import com.akim.spring.dto.AreaPrefectureDTO;
-import com.akim.spring.service.TransportationInfoService;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -17,35 +17,26 @@ import lombok.Getter;
 @Component
 @RequestScope
 @Getter
-public class SuumoRequestUtil extends SuumoCommon.Variables {
+public class SuumoRequestUtil extends SuumoCommonUtil {
 
-    private final TransportationInfoService transportationInfoService;
-
-    private final HttpSession session;
-    private final HttpServletRequest rq;
-    private final HttpServletResponse rs;
-
-    public SuumoRequestUtil(HttpSession session, HttpServletRequest rq, HttpServletResponse rs,
-            TransportationInfoService transportationInfoService) {
-        this.transportationInfoService = transportationInfoService;
-        this.session = session;
-        this.rq = rq;
-        this.rs = rs;
+    public SuumoRequestUtil(SuumoCommonService service, SuumoAreaUtil areaUtil, HttpSession session,
+            HttpServletRequest rq, HttpServletResponse rs) {
+        super(service, areaUtil, session, rq, rs);
     }
 
     public void setPrefectureInfoInSession(String prefecture) {
-        AreaPrefectureDTO prefectureInfo = transportationInfoService
+        AreaPrefectureDTO prefectureInfo = service.getTransportationInfoService()
                 .getPrefectureInfoByPrefecture(prefecture);
-        session.setAttribute(Variables.PREFECTURE_NO, prefectureInfo.getPrefectureNo());
-        session.setAttribute(Variables.PREFECTURE, prefecture);
-        session.setAttribute(Variables.PREFECTURE_NAME, prefectureInfo.getPrefectureName());
+        session.setAttribute(PREFECTURE_NO, prefectureInfo.getPrefectureNo());
+        session.setAttribute(PREFECTURE, prefecture);
+        session.setAttribute(PREFECTURE_NAME, prefectureInfo.getPrefectureName());
     }
 
     public void setAreaInfoInSession(String area) {
-        AreaPrefectureDTO areaInfo = transportationInfoService.getAreaInfoByArea(area);
-        session.setAttribute(Variables.AREA, areaInfo.getArea());
-        session.setAttribute(Variables.AREA_NAME, areaInfo.getAreaName());
-        session.setAttribute(Variables.AREA_NO, areaInfo.getAreaNo());
+        AreaPrefectureDTO areaInfo = service.getTransportationInfoService().getAreaInfoByArea(area);
+        session.setAttribute(AREA, areaInfo.getArea());
+        session.setAttribute(AREA_NAME, areaInfo.getAreaName());
+        session.setAttribute(AREA_NO, areaInfo.getAreaNo());
         session.setAttribute(BS, CHINTAI_VAL);
     }
 
@@ -57,11 +48,12 @@ public class SuumoRequestUtil extends SuumoCommon.Variables {
         session.setAttribute(key, value);
     }
 
-    public void setControllerAndView(String classname, String view) {
+    public void setControllerAndView(String classname, ModelAndView mv, String view) {
         String[] controller = classname.split("[.]");
         session.setAttribute(CONTROLLER,
                 controller.length != 0 ? controller[controller.length - 1] : null);
         session.setAttribute(VIEW, view);
+        mv.setViewName(view);
     }
 
     public String getAllCookieValuesAsString() {
@@ -79,8 +71,7 @@ public class SuumoRequestUtil extends SuumoCommon.Variables {
 
     public String getAllSessionValuesAsString() {
         StringBuilder sb = new StringBuilder();
-
-        java.util.Enumeration<String> attributeNames = session.getAttributeNames();
+        Enumeration<String> attributeNames = session.getAttributeNames();
         while (attributeNames.hasMoreElements()) {
             String attributeName = attributeNames.nextElement();
             sb.append(attributeName).append(": ").append(session.getAttribute(attributeName))

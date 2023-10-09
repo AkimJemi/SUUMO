@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.areabox {
+	display: inline-block;
+	height: 100px;
+	width: 130px;
+}

@@ -12,19 +12,16 @@ import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequiredArgsConstructor
-public class ChintaiCityController006 extends SuumoCommonController {
+public class ChintaiCityController004_1 extends SuumoCommonController {
 
-    private final SuumoRequestUtil util;
+    private final SuumoRequestUtil ut;
+    private final String VIEW = CHINTAI_CITY;
 
     @RequestMapping(value = "/chintai/*/city/", method = RequestMethod.GET)
     public ModelAndView common(ModelAndView mv, HttpServletRequest rq) {
-        System.out.println("ChintaiCityController.common()");
+        ut.setControllerAndView(this.getClass().getName(), mv, VIEW);
         String prefecture = rq.getServletPath().split("/")[2];
-        util.setPrefectureInfoInSession(prefecture);
-//        Map<String, String> prefectureInfo = PrefectureInfo.getPrefectureByPrefectureMap(prefecture,
-//                (Map<String, String>) session.getAttribute(PREFECTURE_LIST));
-//        mv.addObject(PREFECTURE_INFO, prefectureInfo);
-        mv.setViewName(Path.CHINTAI_CITY);
+        ut.setPrefectureInfoInSession(prefecture);
         return mv;
     }
 

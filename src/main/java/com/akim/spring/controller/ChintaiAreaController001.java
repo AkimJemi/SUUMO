@@ -6,11 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.akim.spring.common.SuumoCommon.Path;
-import com.akim.spring.common.SuumoCommon.Variables;
-import com.akim.spring.dto.AreaPrefectureDTO;
+import com.akim.spring.util.SuumoAreaUtil;
 import com.akim.spring.util.SuumoRequestUtil;
-import com.akim.spring.util.SuumoUtil;
 
 import lombok.RequiredArgsConstructor;
 
@@ -19,21 +16,20 @@ import lombok.RequiredArgsConstructor;
 public class ChintaiAreaController001 extends SuumoCommonController {
 
     private final SuumoRequestUtil ut;
-    private String view = Path.AREA_OPTION;
+    private final String VIEW = AREA_OPTION +".jsp";
 
     @GetMapping("")
-    public String main() {
-        ut.setControllerAndView(this.getClass().getName(), view);
-        return Path.AREA_CHOICE;
+    public ModelAndView main(ModelAndView mv) {
+        ut.setControllerAndView(this.getClass().getName(), mv, AREA_CHOICE);
+        return mv;
     }
 
     private void areaMapCommon(ModelAndView mv) {
-        System.out.println("AreaOptionController002.areaMapCommon()");
+        ut.setControllerAndView(this.getClass().getName(), mv, VIEW);
         String servletPath = ut.getRq().getServletPath();
-        String area = SuumoUtil.getAreaKey(servletPath);
+        String area = SuumoAreaUtil.getAreaKey(servletPath);
         ut.setAreaInfoInSession(area);
-        mv.addObject(Variables.AREA, area);
-        mv.setViewName(Path.AREA_OPTION);
+        mv.addObject(AREA, area);
     }
 
     @RequestMapping("/*/")

@@ -4,14 +4,22 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
+
 import com.akim.spring.util.SuumoEnum.AreaInfo;
 
-public class SuumoUtil {
+import lombok.Getter;
+
+@Component
+@RequestScope
+@Getter
+public class SuumoAreaUtil {
 
 //    private static Pattern areaPattern = Pattern.compile("(.*?)[/]+");
-    private static Pattern chintaiPattern = Pattern.compile("[/](.*?)[/]");
+    protected Pattern chintaiPattern = Pattern.compile("[/](.*?)[/]");
 
-    public static String getAreaValue(String contextPath) {
+    public String getAreaValue(String contextPath) {
         String[] areaArray = contextPath.split("/");
         String result = null;
         for (String area : areaArray) {
@@ -27,10 +35,9 @@ public class SuumoUtil {
 
     public static String getAreaKey(String contextPath) {
         String[] areaArray = contextPath.split("/");
-        String result = null;
         for (String area : areaArray) {
             if (area != "") {
-                result = AreaInfo.key(area);
+                String result = AreaInfo.key(area);
                 if (result != null) {
                     return result;
                 }
@@ -39,7 +46,7 @@ public class SuumoUtil {
         return SuumoMessage.NOTFOUND;
     }
 
-    public static String getChintaiValue(String contextPath) {
+    public String getChintaiValue(String contextPath) {
         Matcher matcher = chintaiPattern.matcher(contextPath);
         if (matcher.find()) {
             String area = AreaInfo.value(matcher.group(0));
@@ -48,7 +55,7 @@ public class SuumoUtil {
         return SuumoMessage.NOTFOUND;
     }
 
-    public static String getChintaiKey(String contextPath) {
+    public String getChintaiKey(String contextPath) {
         Matcher matcher = chintaiPattern.matcher(contextPath);
         if (matcher.find()) {
             return matcher.group(1);

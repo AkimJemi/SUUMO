@@ -10,13 +10,14 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
 @Configuration
-@RequiredArgsConstructor
 public class SuumoMainInterceptor implements HandlerInterceptor {
+    SuumoMainInterceptor() {
+        System.out.println("SuumoMainInterceptor.init()");
+    }
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
             Object handler) throws Exception {
-        System.out.println("SuumoMainInterceptor.preHandle()");
         System.out.println(request.getServletPath());
         if (StringUtils.pathEquals("/error", request.getServletPath())) {
             System.out.println("error");
