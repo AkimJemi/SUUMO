@@ -1,17 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
+<html layout:decorate="~{view/layout/area_layout}">
 <meta charset="UTF-8">
-<title>【SUUMO】${areaName }の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
-<%@ include file="/WEB-INF/tag/chintai/suumoChintaiHeader.tag"%>
-<link rel="stylesheet" href="/css/fr-top.css" media="screen" />
-</head>
-<script type="text/javascript">
-
-</script>
-<body>
+<div class="flex-1 flex items-center justify-center"
+    layout:fragment="content">
+    <title>【SUUMO】[[${session.areaName }]]の賃貸(賃貸マンション・アパート)住宅のお部屋探し物件情報</title>
+    <link rel="stylesheet" href="/css/fr-top.css" media="screen" />
     <!-- Pankuzu01_01 Start -->
     <div class="breadcrumb">
         <div class="breadcrumb-inner">
@@ -20,7 +13,7 @@
                         SUUMO</a>&nbsp;&gt;&nbsp;</li>
                 <li><a class="js-setCookieArZenkoku"
                     href="/chintai/">賃貸</a>&nbsp;&gt;&nbsp;</li>
-                <li>${prefectureName }の賃貸情報</li>
+                <li>[[${session.prefectureName }]]の賃貸情報</li>
             </ol>
         </div>
     </div>
@@ -34,10 +27,10 @@
                 </h2>
             </div>
             <dl class="areamap-header-new">
-                <dt>今週の${prefectureName }の新着物件</dt>
+                <dt>今週の[[${session.prefectureName}]]の新着物件</dt>
                 <dd>
                     <ul class="areamap-header-menu">
-                        <li class="areamap-header-menu-value"><span>43,732</span>
+                        <li class="areamap-header-menu-value"><span>?,?</span>
                             件</li>
                         <li><a
                             href="/chintai/__JJ_FR301FC001_arz1010z2bsz1040z2tcz10401303z2tcz10401304.html">新着物件を見る</a></li>
@@ -48,8 +41,7 @@
                     <a
                         href="/chintai/hokkaido_/ek_19610/?cb=0.0&amp;cn=9999999&amp;ct=9999999&amp;et=9999999&amp;fmlg=r002&amp;mb=0&amp;mt=9999999&amp;rn=4050&amp;smk=r01"
                         class="ui-btn ui-btn--base areamap-header-btn1">前回の条件で検索する<br>
-                        <span class="areamap-header-label1">${prefectureName }
-                            | 地下鉄東西線 | …</span></a>
+                        <span class="areamap-header-label1">[[${session.prefectureName}]] | 地下鉄東西線 | …</span></a>
                 </dd>
                 <!-- JJ901FI3131 End -->
             </dl>
@@ -58,46 +50,27 @@
             <div class="areamap">
                 <div class="areamap-container">
                     <div class="areamap-map">
-                        <div class="areamap-field">
-                            <c:choose>
-                                <c:when test="${area eq 'hokkaido'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_020_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'tohoku'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_020_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'kanto'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_030_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'koshinetsu'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_040_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'tokai'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_050_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'kansai'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_060_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'shikoku'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_070_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'chugoku'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_080_CL_02.jsp"></jsp:include>
-                                </c:when>
-                                <c:when test="${area eq 'kyushu'}">
-                                    <jsp:include
-                                        page="/WEB-INF/view/top/FR_040_090_CL_02.jsp"></jsp:include>
-                                </c:when>
-                            </c:choose>
-                        </div>
+                        <th:div th:switch="${session.area}"
+                            class="areamap-field">
+                            <th:block th:case="hokkaido"
+                                th:insert="view/top/FR_040_010_CL_02"></th:block>
+                            <th:block th:case="tohoku"
+                                th:insert="view/top/FR_040_020_CL_02"></th:block>
+                            <th:block th:case="kanto"
+                                th:insert="view/top/FR_040_030_CL_02"></th:block>
+                            <th:block th:case="kanto"
+                                th:insert="view/top/FR_040_040_CL_02"></th:block>
+                            <th:block th:case="koshinetsu"
+                                th:insert="view/top/FR_040_050_CL_02"></th:block>
+                            <th:block th:case="kansai"
+                                th:insert="view/top/FR_040_060_CL_02"></th:block>
+                            <th:block th:case="shikoku"
+                                th:insert="view/top/FR_040_070_CL_02"></th:block>
+                            <th:block th:case="chugoku"
+                                th:insert="view/top/FR_040_080_CL_02"></th:block>
+                            <th:block th:case="kyushu"
+                                th:insert="view/top/FR_040_090_CL_02"></th:block>
+                        </th:div>
                     </div>
                     <div class="areamap-nav">
                         <div class="areamenu_group">
@@ -161,10 +134,10 @@
                         </div>
                         <div class="searchassist-body">
                             <ul class="searchassist-list">
-                                <li><a
-                                    href="/map/chintai/hokkaido_/"
+                                <li><th:a
+                                    th:href="@{|/map/chintai/${session.area }_/|}"
                                     class="ui-btn ui-btn--base ui-btn--small"
-                                    rel="nofollow">北海道</a></li>
+                                    rel="nofollow">[[${session.areaName }]]</th:a></li>
                             </ul>
                         </div>
                     </div>
@@ -236,29 +209,5 @@
             </div>
         </div>
     </div>
-    <%--     <div class="areamap-field-tohoku">
-        <c:forEach var="prefecture"
-            items="${prefectureList}">
-            <dl class="areabox areabox--aomori">
-                <dt class="areabox-title">
-                    <a href="/chintai/${prefecture.prefecture }/">${prefecture.prefectureName }</a>
-                </dt>
-                <dd>
-                    <ul class="ui-list--hz">
-                        <li><a
-                            href="/chintai/${prefecture.prefecture }/ensen/" rel="ra=test"
-                            class="areabox-link">
-                                <div class="areabox-txt">沿線</div>
-                        </a></li>
-                        <li><a
-                            href="/chintai/${prefecture.prefecture }/city/"
-                            class="areabox-link">
-                                <div class="areabox-txt">エリア</div>
-                        </a></li>
-                    </ul>
-                </dd>
-            </dl>
-        </c:forEach>
-    </div> --%>
-</body>
+</div>
 </html>

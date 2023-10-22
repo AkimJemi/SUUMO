@@ -31,10 +31,10 @@ public class SuumoCommon {
     // Path
     public static final String AREA_CHOICE = "view/area/areaChoice";
     public static final String AREA_OPTION = "view/area/areaOption";
-    public static final String CHINTAI_PREFECTURE = "/chintai/chintaiPrefecture";
-    public static final String CHINTAI_ENSEN = "/chintai/chintaiEnsen";
-    public static final String CHINTAI_METRO = "/chintai/chintaiMetro";
-    public static final String CHINTAI_CITY = "/chintai/chintaiCity";
-    public static final String CHINTAI_ICHIRAN = "/chintai/chintaiIchiran";
+    public static final String CHINTAI_PREFECTURE = "view/chintai/chintaiPrefecture";
+    public static final String CHINTAI_ENSEN = "view/chintai/chintaiEnsen";
+    public static final String CHINTAI_METRO = "view/chintai/chintaiMetro";
+    public static final String CHINTAI_CITY = "view/chintai/chintaiCity";
+    public static final String CHINTAI_ICHIRAN = "view/chintai/chintaiIchiran";
 
 }

@@ -1,14 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
+<html layout:decorate="~{view/layout/area_layout}">
 <meta charset="UTF-8">
-<title>【SUUMO】${areaName}の不動産情報・不動産売買・住宅情報</title>
-<%@ include file="/WEB-INF/tag/area/suumoAreaHeader.tag"%>
-<link rel="stylesheet" href="/css/ou-top.css" media="screen" />
-</head>
-<body>
+<div class="flex-1 flex items-center justify-center"
+    layout:fragment="content">
+    <title th:text="|【SUUMO】${session.areaName}の不動産情報・不動産売買・住宅情報|"></title>
+    <link rel="stylesheet" href="/css/ou-top.css" media="screen" />
     <div class="breadcrumb">
         <div class="breadcrumb-inner">
             <ol class="breadcrumb-list">
@@ -37,7 +33,7 @@
                         <div class="areamenu-title1">
                             <i class="ui-icon--loupe2"></i>マンション・アパート・一戸建て
                         </div>
-                        <a href="/chintai/${area}/"
+                        <a th:href="@{|/chintai/${session.area}/|}"
                             class="ui-btn ui-btn--base areamenu-btn">賃貸物件</a>
                     </dd>
                 </dl>
@@ -54,15 +50,15 @@
                                 <div class="areamenu_item">
                                     <div class="areamenu-title2">
                                         <i class="ui-icon--building2"></i><a
-                                            href="/ms/${area}/">マンション</a>
+                                            th:href="@{|/ms/${session.area}/|}">マンション</a>
                                     </div>
                                     <ul>
                                         <li><a
-                                            href="/ms/shinchiku/${area}/"
+                                            th:href="@{|/ms/shinchiku/${area}/}"
                                             class="ui-btn ui-btn--base areamenu-btn"
                                             title="築1年以上の未入居物件を含む">新築マンション</a></li>
                                         <li><a
-                                            href="/ms/chuko/${area}/"
+                                            th:href="@{|/ms/chuko/${area}/}"
                                             class="ui-btn ui-btn--base areamenu-btn">中古マンション</a></li>
                                     </ul>
                                 </div>
@@ -72,14 +68,14 @@
                                     </div>
                                     <ul>
                                         <li><a
-                                            href="/ikkodate/${area}/"
+                                            th:href="@{|//ikkodate/${area}/}"
                                             class="ui-btn ui-btn--base areamenu-btn_line2"
                                             title="建築条件付き土地・築1年以上の未入居物件を含む">新築一戸建て
                                                 <div
                                                     class="areamenu-btn_line2-sub">（建築条件付き土地含む）</div>
                                         </a></li>
                                         <li><a
-                                            href="/chukoikkodate/${area}/"
+                                            th:href="@{|/chukoikkodate/${area}/|}"
                                             class="ui-btn ui-btn--base areamenu-btn">中古一戸建て</a></li>
                                     </ul>
                                 </div>
@@ -101,9 +97,11 @@
                             <dt class="ui-sprite--menu_build">建てる</dt>
                             <dd>
                                 <ul class="areamenu-list">
-                                    <li><a href="/chumon/${area}/"
+                                    <li><a
+                                        th:href="@{|/chumon/${area}/|}"
                                         class="ui-btn ui-btn--base areamenu-btn">注文住宅</a></li>
-                                    <li><a href="/tochi/${area}/"
+                                    <li><a
+                                        th:href="@{|/tochi/${area}/|}"
                                         class="ui-btn ui-btn--base areamenu-btn">土地</a></li>
                                 </ul>
                             </dd>
@@ -112,7 +110,8 @@
                             <dt class="ui-sprite--menu_reform">リフォームする</dt>
                             <dd>
                                 <ul class="areamenu-list">
-                                    <li><a href="/remodel/${area}/"
+                                    <li><a
+                                        th:href="@{|/remodel/${area}/|}"
                                         class="ui-btn ui-btn--base areamenu-btn">リフォーム</a></li>
                                 </ul>
                             </dd>
@@ -187,7 +186,7 @@
             <dl class="areamap_assist-1g">
                 <dt>不動産会社を探す</dt>
                 <dd>
-                    <a href="/fudousankaisha/${area}/"
+                    <a th:href="@{|/fudousankaisha/${session.area}/|}"
                         class="ui-btn ui-btn--base areamap_assist-btn2">不動産会社ガイド<br>
                         <span>(分譲・仲介会社)</span></a>
                 </dd>
@@ -266,5 +265,5 @@
         <!-- ↑/top/CM_000_010_CL_menu03.html↑ -->
         <!-- ↑===================================================================================================================↑ -->
     </div>
-</body>
+</div>
 </html>

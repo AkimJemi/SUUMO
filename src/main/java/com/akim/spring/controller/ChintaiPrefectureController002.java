@@ -19,6 +19,7 @@ public class ChintaiPrefectureController002 extends SuumoCommonController {
     private final String VIEW = CHINTAI_PREFECTURE;
 
     private void chintaiCommon(ModelAndView mv) {
+        System.out.println("ChintaiPrefectureController002.chintaiCommon()");
         ut.setControllerAndView(this.getClass().getName(), mv, VIEW);
         List<AreaPrefectureDTO> prefectureBasicInfoList = ut.getService()
                 .getTransportationInfoService()

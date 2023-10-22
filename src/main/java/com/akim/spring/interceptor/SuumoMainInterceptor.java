@@ -18,7 +18,6 @@ public class SuumoMainInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
             Object handler) throws Exception {
-        System.out.println(request.getServletPath());
         if (StringUtils.pathEquals("/error", request.getServletPath())) {
             System.out.println("error");
         }

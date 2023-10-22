@@ -16,7 +16,7 @@ import lombok.RequiredArgsConstructor;
 public class ChintaiAreaController001 extends SuumoCommonController {
 
     private final SuumoRequestUtil ut;
-    private final String VIEW = AREA_OPTION +".jsp";
+    private final String VIEW = AREA_OPTION;
 
     @GetMapping("")
     public ModelAndView main(ModelAndView mv) {

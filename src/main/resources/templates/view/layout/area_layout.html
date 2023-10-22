@@ -4,7 +4,6 @@
 <head>
 <link rel="stylesheet" href="/css/ou-zen-top.css" media="screen" />
 <meta charset="UTF-8" />
-<title>thymeleaf layout</title>
 <meta name="viewport"
     content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
 <!-- content script -->
@@ -12,15 +11,18 @@
 <!-- content script -->
 <th:block layout:fragment="script"></th:block>
 </head>
-<body>ssss
-    sss
+<body>
     <!-- header fragment 사용 -->
-    <th:block th:replace="fragments/header :: headerFragment"></th:block>
+    <div>
+        <head th:replace="/tag/common/suumoCommonHeader :: html_header" />
+    </div>
     <!-- content fragment 사용 -->
     <div>
         <th:block layout:fragment="content"></th:block>
     </div>
     <!-- footer fragment 사용 -->
-    <th:block th:replace="fragments/footer :: footerFragment"></th:block>
+    <div>
+        <head th:replace="/tag/common/suumoCommonFooter :: html_footer" />
+    </div>
 </body>
 </html>
